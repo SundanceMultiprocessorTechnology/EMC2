@@ -27,3 +27,10 @@ bsp write
 bsp reload
 catch {bsp regenerate}
 platform generate -domains standalone_domain 
+platform config -updatehw {/home/sundance/Emilie_Projects/git/EMC2/BSP/2022.2/firmware/design_1_wrapper.xsa}
+platform generate -domains 
+domain active {zynqmp_pmufw}
+bsp reload
+domain active {zynqmp_fsbl}
+bsp reload
+bsp reload
