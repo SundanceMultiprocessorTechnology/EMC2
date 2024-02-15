@@ -1,10 +1,12 @@
 #! /bin/bash
 rm ./boot/*
+rm ./boot/standalone/*
 rm ./firmware/*
 rm ./petalinux/*
 rm ./software/baremetal/*
 rm ./software/linux/*
 cp ../boot/BOOT.bin ./boot
+cp ../boot/standalone/BOOT.bin ./boot/standalone/BOOT.bin
 cp ../firmware/*.runs/impl_1/*.bit ./firmware
 cp ../firmware/*.xsa ./firmware
 cp ../petalinux/images/linux/*.elf ./petalinux

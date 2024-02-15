@@ -1,0 +1,2 @@
+aarch64-none-elf-ar qc libaxivdma.a CMakeFiles/axivdma.dir/xaxivdma.c.obj CMakeFiles/axivdma.dir/xaxivdma_channel.c.obj CMakeFiles/axivdma.dir/xaxivdma_g.c.obj CMakeFiles/axivdma.dir/xaxivdma_intr.c.obj CMakeFiles/axivdma.dir/xaxivdma_selftest.c.obj CMakeFiles/axivdma.dir/xaxivdma_sinit.c.obj
+/tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-none/bin/aarch64-none-elf-ranlib libaxivdma.a

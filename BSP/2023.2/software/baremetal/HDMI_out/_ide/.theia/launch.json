@@ -1,0 +1,56 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "tcf-debug",
+      "request": "launch",
+      "name": "HDMI_out_app_hw_1",
+      "debugType": "baremetal-zu",
+      "attachToRunningTargetOptions": {
+        "targetSetupMode": "standalone",
+        "executeScript": true,
+        "scriptPath": ""
+      },
+      "autoAttachProcessChildren": false,
+      "target": {
+        "targetConnectionId": "Local",
+        "peersIniPath": "../../../.peers.ini",
+        "context": "ZUPlus"
+      },
+      "targetSetup": {
+        "resetSystem": true,
+        "programDevice": true,
+        "enableRPUSplitMode": false,
+        "resetAPU": false,
+        "resetRPU": false,
+        "bitstreamFile": "${workspaceFolder}/HDMI_out/_ide/bitstream/design_1_wrapper.bit",
+        "zuInitialization": {
+          "isFsbl": true,
+          "usingFSBL": {
+            "initWithFSBL": true,
+            "fsblFile": "${workspaceFolder}/EMC2_BSP_platform/export/EMC2_BSP_platform/sw/boot/fsbl.elf",
+            "fsblExitSymbol": "XFsbl_Exit"
+          },
+          "usingPsuInit": {
+            "runPsuInit": true,
+            "plPowerup": false,
+            "psuInitTclFile": "${workspaceFolder}/HDMI_out/_ide/psinit/psu_init.tcl"
+          }
+        },
+        "downloadElf": [
+          {
+            "core": "psu_cortexa53_0",
+            "resetProcessor": true,
+            "elfFile": "${workspaceFolder}/HDMI_out/build/HDMI_out.elf",
+            "stopAtEntry": false
+          }
+        ],
+        "crossTriggerBreakpoints": {
+          "isSelected": false,
+          "breakpoints": []
+        }
+      },
+      "internalConsoleOptions": "openOnSessionStart"
+    }
+  ]
+}
