@@ -60,10 +60,10 @@ RM = /tools/Xilinx/Vitis/2023.2/tps/lnx64/cmake-3.24.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp
+CMAKE_SOURCE_DIR = /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp
+CMAKE_BINARY_DIR = /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(CMAKE_COMMAND) -E cmake_progress_start /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/v_tpg/src//CMakeFiles/progress.marks
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/v_tpg/src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 0
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(CMAKE_COMMAND) -E cmake_progress_start /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/v_tpg/src//CMakeFiles/progress.marks
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/v_tpg/src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/v_tpg/src/clean
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/v_tpg/src/clean
 .PHONY : clean
 
 # The main clean target
@@ -151,22 +151,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/v_tpg/src/preinstall
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/v_tpg/src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/v_tpg/src/preinstall
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/v_tpg/src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/rule:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/rule
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/rule
 .PHONY : libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/rule
 
 # Convenience name for target.
@@ -175,7 +175,7 @@ v_tpg: libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/rule
 
 # fast build rule for target.
 v_tpg/fast:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build
 .PHONY : v_tpg/fast
 
 xv_tpg.obj: xv_tpg.c.obj
@@ -183,7 +183,7 @@ xv_tpg.obj: xv_tpg.c.obj
 
 # target to build an object file
 xv_tpg.c.obj:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg.c.obj
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg.c.obj
 .PHONY : xv_tpg.c.obj
 
 xv_tpg.i: xv_tpg.c.i
@@ -191,7 +191,7 @@ xv_tpg.i: xv_tpg.c.i
 
 # target to preprocess a source file
 xv_tpg.c.i:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg.c.i
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg.c.i
 .PHONY : xv_tpg.c.i
 
 xv_tpg.s: xv_tpg.c.s
@@ -199,7 +199,7 @@ xv_tpg.s: xv_tpg.c.s
 
 # target to generate assembly for a file
 xv_tpg.c.s:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg.c.s
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg.c.s
 .PHONY : xv_tpg.c.s
 
 xv_tpg_g.obj: xv_tpg_g.c.obj
@@ -207,7 +207,7 @@ xv_tpg_g.obj: xv_tpg_g.c.obj
 
 # target to build an object file
 xv_tpg_g.c.obj:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg_g.c.obj
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg_g.c.obj
 .PHONY : xv_tpg_g.c.obj
 
 xv_tpg_g.i: xv_tpg_g.c.i
@@ -215,7 +215,7 @@ xv_tpg_g.i: xv_tpg_g.c.i
 
 # target to preprocess a source file
 xv_tpg_g.c.i:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg_g.c.i
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg_g.c.i
 .PHONY : xv_tpg_g.c.i
 
 xv_tpg_g.s: xv_tpg_g.c.s
@@ -223,7 +223,7 @@ xv_tpg_g.s: xv_tpg_g.c.s
 
 # target to generate assembly for a file
 xv_tpg_g.c.s:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg_g.c.s
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg_g.c.s
 .PHONY : xv_tpg_g.c.s
 
 xv_tpg_linux.obj: xv_tpg_linux.c.obj
@@ -231,7 +231,7 @@ xv_tpg_linux.obj: xv_tpg_linux.c.obj
 
 # target to build an object file
 xv_tpg_linux.c.obj:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg_linux.c.obj
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg_linux.c.obj
 .PHONY : xv_tpg_linux.c.obj
 
 xv_tpg_linux.i: xv_tpg_linux.c.i
@@ -239,7 +239,7 @@ xv_tpg_linux.i: xv_tpg_linux.c.i
 
 # target to preprocess a source file
 xv_tpg_linux.c.i:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg_linux.c.i
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg_linux.c.i
 .PHONY : xv_tpg_linux.c.i
 
 xv_tpg_linux.s: xv_tpg_linux.c.s
@@ -247,7 +247,7 @@ xv_tpg_linux.s: xv_tpg_linux.c.s
 
 # target to generate assembly for a file
 xv_tpg_linux.c.s:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg_linux.c.s
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg_linux.c.s
 .PHONY : xv_tpg_linux.c.s
 
 xv_tpg_sinit.obj: xv_tpg_sinit.c.obj
@@ -255,7 +255,7 @@ xv_tpg_sinit.obj: xv_tpg_sinit.c.obj
 
 # target to build an object file
 xv_tpg_sinit.c.obj:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg_sinit.c.obj
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg_sinit.c.obj
 .PHONY : xv_tpg_sinit.c.obj
 
 xv_tpg_sinit.i: xv_tpg_sinit.c.i
@@ -263,7 +263,7 @@ xv_tpg_sinit.i: xv_tpg_sinit.c.i
 
 # target to preprocess a source file
 xv_tpg_sinit.c.i:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg_sinit.c.i
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg_sinit.c.i
 .PHONY : xv_tpg_sinit.c.i
 
 xv_tpg_sinit.s: xv_tpg_sinit.c.s
@@ -271,7 +271,7 @@ xv_tpg_sinit.s: xv_tpg_sinit.c.s
 
 # target to generate assembly for a file
 xv_tpg_sinit.c.s:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg_sinit.c.s
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/build.make libsrc/v_tpg/src/CMakeFiles/v_tpg.dir/xv_tpg_sinit.c.s
 .PHONY : xv_tpg_sinit.c.s
 
 # Help Target
@@ -310,6 +310,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

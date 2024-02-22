@@ -9,7 +9,7 @@ config SYSTEM_ZYNQMP
         bool "ZYNQMP Configuration"
         help
           ZYNQMP Configuration for petalinux project.
-          All these config options will be in /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/petalinux/project-spec/configs/config
+          All these config options will be in /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/petalinux/project-spec/configs/config
 
 
 config SUBSYSTEM_VARIANT_ZYNQMPEV
@@ -432,7 +432,7 @@ config SUBSYSTEM_AUTOCONFIG_U__BOOT
 endif
 endmenu
 
-source /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/petalinux/project-spec/configs/configs/Kconfig.syshw
+source /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/petalinux/project-spec/configs/configs/Kconfig.syshw
 
 choice
 	prompt "Subsystem Architecture"

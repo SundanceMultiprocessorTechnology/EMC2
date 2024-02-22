@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Feb 20 09:45:36 2024
+# Process ID: 1701095
+# Current directory: /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/firmware/EMC2_HDMI_out.runs/design_1_v_axi4s_vid_out_0_0_synth_1
+# Command line: vivado -log design_1_v_axi4s_vid_out_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_v_axi4s_vid_out_0_0.tcl
+# Log file: /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/firmware/EMC2_HDMI_out.runs/design_1_v_axi4s_vid_out_0_0_synth_1/design_1_v_axi4s_vid_out_0_0.vds
+# Journal file: /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/firmware/EMC2_HDMI_out.runs/design_1_v_axi4s_vid_out_0_0_synth_1/vivado.jou
+# Running On: viv2023, OS: Linux, CPU Frequency: 2111.998 MHz, CPU Physical cores: 8, Host memory: 28724 MB
+#-----------------------------------------------------------
+source design_1_v_axi4s_vid_out_0_0.tcl -notrace

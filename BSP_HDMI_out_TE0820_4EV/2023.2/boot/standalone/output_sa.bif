@@ -1,0 +1,8 @@
+//arch = zynqmp; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader, destination_cpu = a53-0]../../software/baremetal_classic/fsbl/Debug/fsbl.elf
+	[destination_device = pl]../../firmware/EMC2_HDMI_out.runs/impl_1/design_1_wrapper.bit
+	[destination_cpu = a53-0]../../software/baremetal/HDMI_out/build/HDMI_out.elf
+	[load = 0x38000000, destination_cpu = a53-0]./EMC2_with_logo.rgba
+}

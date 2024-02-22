@@ -901,6 +901,7 @@
 	};
 	&sata {
 		xlnx,rable = <0>;
+		xlnx,is-cache-coherent = <0>;
 		status = "okay";
 		xlnx,tz-nonsecure-sata0 = <0>;
 		xlnx,interconnect-s-axi-masters = "psu_cortexa53_0.M_AXI_DP , & , psu_cortexa53_1.M_AXI_DP , & , psu_cortexa53_2.M_AXI_DP , & , psu_cortexa53_3.M_AXI_DP , & , psu_cortexr5_0.M_AXI_DP , & , psu_cortexr5_1.M_AXI_DP , & , psu_pmu_0.M_AXI_DP";
@@ -1077,15 +1078,17 @@
 		xlnx,rable = <0>;
 		xlnx,is-cache-coherent = <0>;
 		status = "okay";
+		xlnx,usb-reset-io = <25>;
 		xlnx,usb-polarity = <0>;
 		xlnx,interconnect-s-axi-masters = "psu_cortexa53_0.M_AXI_DP , & , psu_cortexa53_1.M_AXI_DP , & , psu_cortexa53_2.M_AXI_DP , & , psu_cortexa53_3.M_AXI_DP , & , psu_cortexr5_0.M_AXI_DP , & , psu_cortexr5_1.M_AXI_DP , & , psu_pmu_0.M_AXI_DP";
 		xlnx,ip-name = "psu_usb";
-		xlnx,usb-reset-mode = <0>;
+		xlnx,usb-reset-mode = <2>;
 		xlnx,usb-board-interface = "custom";
 		xlnx,tz-nonsecure = <1>;
 		xlnx,name = "psu_usb_0";
 	};
 	&dwc3_0 {
+		xlnx,usb-reset = <25>;
 		xlnx,rable = <0>;
 		xlnx,is-cache-coherent = <0>;
 		status = "okay";

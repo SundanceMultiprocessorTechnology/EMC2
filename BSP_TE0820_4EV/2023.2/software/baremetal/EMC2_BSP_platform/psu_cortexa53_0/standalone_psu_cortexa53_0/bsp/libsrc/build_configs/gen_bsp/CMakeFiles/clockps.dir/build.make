@@ -56,10 +56,10 @@ RM = /tools/Xilinx/Vitis/2023.2/tps/lnx64/cmake-3.24.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp
+CMAKE_SOURCE_DIR = /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp
+CMAKE_BINARY_DIR = /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp
 
 # Utility rule file for clockps.
 
@@ -70,7 +70,7 @@ include CMakeFiles/clockps.dir/compiler_depend.make
 include CMakeFiles/clockps.dir/progress.make
 
 CMakeFiles/clockps:
-	lopper -O /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/clockps/src /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/hw_artifacts/psu_cortexa53_0_baremetal.dts -- baremetalconfig_xlnx psu_cortexa53_0 /tools/Xilinx/Vitis/2023.2/data/embeddedsw/XilinxProcessorIPLib/drivers/clockps_v1_5/src
+	lopper -O /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/clockps/src /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/hw_artifacts/psu_cortexa53_0_baremetal.dts -- baremetalconfig_xlnx psu_cortexa53_0 /tools/Xilinx/Vitis/2023.2/data/embeddedsw/XilinxProcessorIPLib/drivers/clockps_v1_5/src
 
 clockps: CMakeFiles/clockps
 clockps: CMakeFiles/clockps.dir/build.make
@@ -85,6 +85,6 @@ CMakeFiles/clockps.dir/clean:
 .PHONY : CMakeFiles/clockps.dir/clean
 
 CMakeFiles/clockps.dir/depend:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles/clockps.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles/clockps.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clockps.dir/depend
 

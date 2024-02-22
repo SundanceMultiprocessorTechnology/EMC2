@@ -1,6 +1,6 @@
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp
+-- Build files have been written to: /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp
 -- Cache values
 // BOARD
 BOARD:STRING=emc2-dp_te0820_4ev_1e
@@ -15,7 +15,7 @@ CMAKE_INSTALL_PREFIX:PATH=/usr/local
 CMAKE_SIZE:FILEPATH=aarch64-none-elf-size
 
 // Specs file path for using CMAKE toolchain files
-CMAKE_SPECS_FILE:STRING=/home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/Xilinx.spec
+CMAKE_SPECS_FILE:STRING=/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/Xilinx.spec
 
 // Device Id
 DEVICE_ID:STRING=xczu4ev

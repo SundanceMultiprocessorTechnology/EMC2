@@ -1,6 +1,6 @@
 sdt: hw_artifacts/psu_cortexa53_0_baremetal.dts
 family: ZynqMP
-path: /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp
+path: /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp
 os: standalone
 os_info:
   standalone:
@@ -272,6 +272,7 @@ drv_info:
     driver: rtcpsu
     ip_name: psu_rtc
     path: /tools/Xilinx/Vitis/2023.2/data/embeddedsw/XilinxProcessorIPLib/drivers/rtcpsu_v1_13
+  psu_sata: None
   psu_sd_0:
     driver: sdps
     ip_name: psu_sd

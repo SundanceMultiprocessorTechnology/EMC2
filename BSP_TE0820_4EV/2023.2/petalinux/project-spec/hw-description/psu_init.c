@@ -1089,6 +1089,30 @@ unsigned long psu_clock_init_data(void)
 /*##################################################################### */
 
     /*
+    * Register : I2C1_REF_CTRL @ 0XFF5E0124
+
+    * Clock active signal. Switch to 0 to disable the clock
+    *  PSU_CRL_APB_I2C1_REF_CTRL_CLKACT                            0x1
+
+    * 6 bit divider
+    *  PSU_CRL_APB_I2C1_REF_CTRL_DIVISOR1                          0x1
+
+    * 6 bit divider
+    *  PSU_CRL_APB_I2C1_REF_CTRL_DIVISOR0                          0xf
+
+    * 000 = IOPLL; 010 = RPLL; 011 = DPLL; (This signal may only be toggled af
+    * ter 4 cycles of the old clock and 4 cycles of the new clock. This is not
+    *  usually an issue, but designers must be aware.)
+    *  PSU_CRL_APB_I2C1_REF_CTRL_SRCSEL                            0x0
+
+    * This register controls this reference clock
+    * (OFFSET, MASK, VALUE)      (0XFF5E0124, 0x013F3F07U ,0x01010F00U)
+    */
+	PSU_Mask_Write(CRL_APB_I2C1_REF_CTRL_OFFSET,
+		0x013F3F07U, 0x01010F00U);
+/*##################################################################### */
+
+    /*
     * Register : CPU_R5_CTRL @ 0XFF5E0090
 
     * Turing this off will shut down the OCM, some parts of the APM, and preve
@@ -1341,6 +1365,27 @@ unsigned long psu_clock_init_data(void)
     */
 	PSU_Mask_Write(CRL_APB_TIMESTAMP_REF_CTRL_OFFSET,
 		0x01003F07U, 0x01000104U);
+/*##################################################################### */
+
+    /*
+    * Register : SATA_REF_CTRL @ 0XFD1A00A0
+
+    * 000 = IOPLL_TO_FPD; 010 = APLL; 011 = DPLL; (This signal may only be tog
+    * gled after 4 cycles of the old clock and 4 cycles of the new clock. This
+    *  is not usually an issue, but designers must be aware.)
+    *  PSU_CRF_APB_SATA_REF_CTRL_SRCSEL                            0x0
+
+    * Clock active signal. Switch to 0 to disable the clock
+    *  PSU_CRF_APB_SATA_REF_CTRL_CLKACT                            0x1
+
+    * 6 bit divider
+    *  PSU_CRF_APB_SATA_REF_CTRL_DIVISOR0                          0x2
+
+    * This register controls this reference clock
+    * (OFFSET, MASK, VALUE)      (0XFD1A00A0, 0x01003F07U ,0x01000200U)
+    */
+	PSU_Mask_Write(CRF_APB_SATA_REF_CTRL_OFFSET,
+		0x01003F07U, 0x01000200U);
 /*##################################################################### */
 
     /*
@@ -12279,100 +12324,68 @@ unsigned long psu_mio_init_data(void)
 /*##################################################################### */
 
     /*
-    * Register : MIO_PIN_25 @ 0XFF180064
-
-    * Level 0 Mux Select 0= Level 1 Mux Output 1= Not Used
-    *  PSU_IOU_SLCR_MIO_PIN_25_L0_SEL                              0
-
-    * Level 1 Mux Select 0= Level 2 Mux Output 1= nand, Output, nfc_re_n- (NAN
-    * D Read Enable)
-    *  PSU_IOU_SLCR_MIO_PIN_25_L1_SEL                              0
-
-    * Level 2 Mux Select 0= Level 3 Mux Output 1= sd0, Input, sdio0_wp- (SD ca
-    * rd write protect from connector) 2= test_scan, Input, test_scan_in[25]-
-    * (Test Scan Port) = test_scan, Output, test_scan_out[25]- (Test Scan Port
-    * ) 3= csu, Input, csu_ext_tamper- (CSU Ext Tamper)
-    *  PSU_IOU_SLCR_MIO_PIN_25_L2_SEL                              0
-
-    * Level 3 Mux Select 0= gpio0, Input, gpio_0_pin_in[25]- (GPIO bank 0) 0=
-    * gpio0, Output, gpio_0_pin_out[25]- (GPIO bank 0) 1= can1, Input, can1_ph
-    * y_rx- (Can RX signal) 2= i2c1, Input, i2c1_sda_input- (SDA signal) 2= i2
-    * c1, Output, i2c1_sda_out- (SDA signal) 3= swdt1, Output, swdt1_rst_out-
-    * (Watch Dog Timer Output clock) 4= Not Used 5= ttc3, Output, ttc3_wave_ou
-    * t- (TTC Waveform Clock) 6= ua1, Input, ua1_rxd- (UART receiver serial in
-    * put) 7= Not Used
-    *  PSU_IOU_SLCR_MIO_PIN_25_L3_SEL                              0
-
-    * Configures MIO Pin 25 peripheral interface mapping
-    * (OFFSET, MASK, VALUE)      (0XFF180064, 0x000000FEU ,0x00000000U)
-    */
-	PSU_Mask_Write(IOU_SLCR_MIO_PIN_25_OFFSET, 0x000000FEU, 0x00000000U);
-/*##################################################################### */
-
-    /*
-    * Register : MIO_PIN_26 @ 0XFF180068
-
-    * Level 0 Mux Select 0= Level 1 Mux Output 1= gem0, Output, gem0_rgmii_tx_
-    * clk- (TX RGMII clock)
-    *  PSU_IOU_SLCR_MIO_PIN_26_L0_SEL                              0
-
-    * Level 1 Mux Select 0= Level 2 Mux Output 1= nand, Output, nfc_ce[1]- (NA
-    * ND chip enable)
-    *  PSU_IOU_SLCR_MIO_PIN_26_L1_SEL                              0
-
-    * Level 2 Mux Select 0= Level 3 Mux Output 1= pmu, Input, pmu_gpi[0]- (PMU
-    *  GPI) 2= test_scan, Input, test_scan_in[26]- (Test Scan Port) = test_sca
-    * n, Output, test_scan_out[26]- (Test Scan Port) 3= csu, Input, csu_ext_ta
-    * mper- (CSU Ext Tamper)
-    *  PSU_IOU_SLCR_MIO_PIN_26_L2_SEL                              0
-
-    * Level 3 Mux Select 0= gpio1, Input, gpio_1_pin_in[0]- (GPIO bank 1) 0= g
-    * pio1, Output, gpio_1_pin_out[0]- (GPIO bank 1) 1= can0, Input, can0_phy_
-    * rx- (Can RX signal) 2= i2c0, Input, i2c0_scl_input- (SCL signal) 2= i2c0
-    * , Output, i2c0_scl_out- (SCL signal) 3= pjtag, Input, pjtag_tck- (PJTAG
-    * TCK) 4= spi0, Input, spi0_sclk_in- (SPI Clock) 4= spi0, Output, spi0_scl
-    * k_out- (SPI Clock) 5= ttc2, Input, ttc2_clk_in- (TTC Clock) 6= ua0, Inpu
-    * t, ua0_rxd- (UART receiver serial input) 7= trace, Output, tracedq[4]- (
-    * Trace Port Databus)
-    *  PSU_IOU_SLCR_MIO_PIN_26_L3_SEL                              2
-
-    * Configures MIO Pin 26 peripheral interface mapping
-    * (OFFSET, MASK, VALUE)      (0XFF180068, 0x000000FEU ,0x00000040U)
-    */
-	PSU_Mask_Write(IOU_SLCR_MIO_PIN_26_OFFSET, 0x000000FEU, 0x00000040U);
-/*##################################################################### */
-
-    /*
-    * Register : MIO_PIN_27 @ 0XFF18006C
+    * Register : MIO_PIN_28 @ 0XFF180070
 
     * Level 0 Mux Select 0= Level 1 Mux Output 1= gem0, Output, gem0_rgmii_txd
-    * [0]- (TX RGMII data)
-    *  PSU_IOU_SLCR_MIO_PIN_27_L0_SEL                              0
+    * [1]- (TX RGMII data)
+    *  PSU_IOU_SLCR_MIO_PIN_28_L0_SEL                              0
 
-    * Level 1 Mux Select 0= Level 2 Mux Output 1= nand, Input, nfc_rb_n[0]- (N
+    * Level 1 Mux Select 0= Level 2 Mux Output 1= nand, Input, nfc_rb_n[1]- (N
     * AND Ready/Busy)
-    *  PSU_IOU_SLCR_MIO_PIN_27_L1_SEL                              0
+    *  PSU_IOU_SLCR_MIO_PIN_28_L1_SEL                              0
 
-    * Level 2 Mux Select 0= Level 3 Mux Output 1= pmu, Input, pmu_gpi[1]- (PMU
-    *  GPI) 2= test_scan, Input, test_scan_in[27]- (Test Scan Port) = test_sca
-    * n, Output, test_scan_out[27]- (Test Scan Port) 3= dpaux, Input, dp_aux_d
-    * ata_in- (Dp Aux Data) = dpaux, Output, dp_aux_data_out- (Dp Aux Data)
-    *  PSU_IOU_SLCR_MIO_PIN_27_L2_SEL                              0
+    * Level 2 Mux Select 0= Level 3 Mux Output 1= pmu, Input, pmu_gpi[2]- (PMU
+    *  GPI) 2= test_scan, Input, test_scan_in[28]- (Test Scan Port) = test_sca
+    * n, Output, test_scan_out[28]- (Test Scan Port) 3= dpaux, Input, dp_hot_p
+    * lug_detect- (Dp Aux Hot Plug)
+    *  PSU_IOU_SLCR_MIO_PIN_28_L2_SEL                              0
 
-    * Level 3 Mux Select 0= gpio1, Input, gpio_1_pin_in[1]- (GPIO bank 1) 0= g
-    * pio1, Output, gpio_1_pin_out[1]- (GPIO bank 1) 1= can0, Output, can0_phy
-    * _tx- (Can TX signal) 2= i2c0, Input, i2c0_sda_input- (SDA signal) 2= i2c
-    * 0, Output, i2c0_sda_out- (SDA signal) 3= pjtag, Input, pjtag_tdi- (PJTAG
-    *  TDI) 4= spi0, Output, spi0_n_ss_out[2]- (SPI Master Selects) 5= ttc2, O
-    * utput, ttc2_wave_out- (TTC Waveform Clock) 6= ua0, Output, ua0_txd- (UAR
-    * T transmitter serial output) 7= trace, Output, tracedq[5]- (Trace Port D
-    * atabus)
-    *  PSU_IOU_SLCR_MIO_PIN_27_L3_SEL                              2
+    * Level 3 Mux Select 0= gpio1, Input, gpio_1_pin_in[2]- (GPIO bank 1) 0= g
+    * pio1, Output, gpio_1_pin_out[2]- (GPIO bank 1) 1= can1, Output, can1_phy
+    * _tx- (Can TX signal) 2= i2c1, Input, i2c1_scl_input- (SCL signal) 2= i2c
+    * 1, Output, i2c1_scl_out- (SCL signal) 3= pjtag, Output, pjtag_tdo- (PJTA
+    * G TDO) 4= spi0, Output, spi0_n_ss_out[1]- (SPI Master Selects) 5= ttc1,
+    * Input, ttc1_clk_in- (TTC Clock) 6= ua1, Output, ua1_txd- (UART transmitt
+    * er serial output) 7= trace, Output, tracedq[6]- (Trace Port Databus)
+    *  PSU_IOU_SLCR_MIO_PIN_28_L3_SEL                              2
 
-    * Configures MIO Pin 27 peripheral interface mapping
-    * (OFFSET, MASK, VALUE)      (0XFF18006C, 0x000000FEU ,0x00000040U)
+    * Configures MIO Pin 28 peripheral interface mapping
+    * (OFFSET, MASK, VALUE)      (0XFF180070, 0x000000FEU ,0x00000040U)
     */
-	PSU_Mask_Write(IOU_SLCR_MIO_PIN_27_OFFSET, 0x000000FEU, 0x00000040U);
+	PSU_Mask_Write(IOU_SLCR_MIO_PIN_28_OFFSET, 0x000000FEU, 0x00000040U);
+/*##################################################################### */
+
+    /*
+    * Register : MIO_PIN_29 @ 0XFF180074
+
+    * Level 0 Mux Select 0= Level 1 Mux Output 1= gem0, Output, gem0_rgmii_txd
+    * [2]- (TX RGMII data)
+    *  PSU_IOU_SLCR_MIO_PIN_29_L0_SEL                              0
+
+    * Level 1 Mux Select 0= Level 2 Mux Output 1= pcie, Input, pcie_reset_n- (
+    * PCIE Reset signal)
+    *  PSU_IOU_SLCR_MIO_PIN_29_L1_SEL                              0
+
+    * Level 2 Mux Select 0= Level 3 Mux Output 1= pmu, Input, pmu_gpi[3]- (PMU
+    *  GPI) 2= test_scan, Input, test_scan_in[29]- (Test Scan Port) = test_sca
+    * n, Output, test_scan_out[29]- (Test Scan Port) 3= dpaux, Input, dp_aux_d
+    * ata_in- (Dp Aux Data) = dpaux, Output, dp_aux_data_out- (Dp Aux Data)
+    *  PSU_IOU_SLCR_MIO_PIN_29_L2_SEL                              0
+
+    * Level 3 Mux Select 0= gpio1, Input, gpio_1_pin_in[3]- (GPIO bank 1) 0= g
+    * pio1, Output, gpio_1_pin_out[3]- (GPIO bank 1) 1= can1, Input, can1_phy_
+    * rx- (Can RX signal) 2= i2c1, Input, i2c1_sda_input- (SDA signal) 2= i2c1
+    * , Output, i2c1_sda_out- (SDA signal) 3= pjtag, Input, pjtag_tms- (PJTAG
+    * TMS) 4= spi0, Input, spi0_n_ss_in- (SPI Master Selects) 4= spi0, Output,
+    *  spi0_n_ss_out[0]- (SPI Master Selects) 5= ttc1, Output, ttc1_wave_out-
+    * (TTC Waveform Clock) 6= ua1, Input, ua1_rxd- (UART receiver serial input
+    * ) 7= trace, Output, tracedq[7]- (Trace Port Databus)
+    *  PSU_IOU_SLCR_MIO_PIN_29_L3_SEL                              2
+
+    * Configures MIO Pin 29 peripheral interface mapping
+    * (OFFSET, MASK, VALUE)      (0XFF180074, 0x000000FEU ,0x00000040U)
+    */
+	PSU_Mask_Write(IOU_SLCR_MIO_PIN_29_OFFSET, 0x000000FEU, 0x00000040U);
 /*##################################################################### */
 
     /*
@@ -12439,6 +12452,67 @@ unsigned long psu_mio_init_data(void)
     * (OFFSET, MASK, VALUE)      (0XFF18007C, 0x000000FEU ,0x000000C0U)
     */
 	PSU_Mask_Write(IOU_SLCR_MIO_PIN_31_OFFSET, 0x000000FEU, 0x000000C0U);
+/*##################################################################### */
+
+    /*
+    * Register : MIO_PIN_38 @ 0XFF180098
+
+    * Level 0 Mux Select 0= Level 1 Mux Output 1= gem1, Output, gem1_rgmii_tx_
+    * clk- (TX RGMII clock)
+    *  PSU_IOU_SLCR_MIO_PIN_38_L0_SEL                              0
+
+    * Level 1 Mux Select 0= Level 2 Mux Output 1= Not Used
+    *  PSU_IOU_SLCR_MIO_PIN_38_L1_SEL                              0
+
+    * Level 2 Mux Select 0= Level 3 Mux Output 1= sd0, Output, sdio0_clk_out-
+    * (SDSDIO clock) 2= Not Used 3= Not Used
+    *  PSU_IOU_SLCR_MIO_PIN_38_L2_SEL                              0
+
+    * Level 3 Mux Select 0= gpio1, Input, gpio_1_pin_in[12]- (GPIO bank 1) 0=
+    * gpio1, Output, gpio_1_pin_out[12]- (GPIO bank 1) 1= can0, Input, can0_ph
+    * y_rx- (Can RX signal) 2= i2c0, Input, i2c0_scl_input- (SCL signal) 2= i2
+    * c0, Output, i2c0_scl_out- (SCL signal) 3= pjtag, Input, pjtag_tck- (PJTA
+    * G TCK) 4= spi0, Input, spi0_sclk_in- (SPI Clock) 4= spi0, Output, spi0_s
+    * clk_out- (SPI Clock) 5= ttc0, Input, ttc0_clk_in- (TTC Clock) 6= ua0, In
+    * put, ua0_rxd- (UART receiver serial input) 7= trace, Output, trace_clk-
+    * (Trace Port Clock)
+    *  PSU_IOU_SLCR_MIO_PIN_38_L3_SEL                              2
+
+    * Configures MIO Pin 38 peripheral interface mapping
+    * (OFFSET, MASK, VALUE)      (0XFF180098, 0x000000FEU ,0x00000040U)
+    */
+	PSU_Mask_Write(IOU_SLCR_MIO_PIN_38_OFFSET, 0x000000FEU, 0x00000040U);
+/*##################################################################### */
+
+    /*
+    * Register : MIO_PIN_39 @ 0XFF18009C
+
+    * Level 0 Mux Select 0= Level 1 Mux Output 1= gem1, Output, gem1_rgmii_txd
+    * [0]- (TX RGMII data)
+    *  PSU_IOU_SLCR_MIO_PIN_39_L0_SEL                              0
+
+    * Level 1 Mux Select 0= Level 2 Mux Output 1= Not Used
+    *  PSU_IOU_SLCR_MIO_PIN_39_L1_SEL                              0
+
+    * Level 2 Mux Select 0= Level 3 Mux Output 1= sd0, Input, sdio0_cd_n- (SD
+    * card detect from connector) 2= sd1, Input, sd1_data_in[4]- (8-bit Data b
+    * us) = sd1, Output, sdio1_data_out[4]- (8-bit Data bus) 3= Not Used
+    *  PSU_IOU_SLCR_MIO_PIN_39_L2_SEL                              0
+
+    * Level 3 Mux Select 0= gpio1, Input, gpio_1_pin_in[13]- (GPIO bank 1) 0=
+    * gpio1, Output, gpio_1_pin_out[13]- (GPIO bank 1) 1= can0, Output, can0_p
+    * hy_tx- (Can TX signal) 2= i2c0, Input, i2c0_sda_input- (SDA signal) 2= i
+    * 2c0, Output, i2c0_sda_out- (SDA signal) 3= pjtag, Input, pjtag_tdi- (PJT
+    * AG TDI) 4= spi0, Output, spi0_n_ss_out[2]- (SPI Master Selects) 5= ttc0,
+    *  Output, ttc0_wave_out- (TTC Waveform Clock) 6= ua0, Output, ua0_txd- (U
+    * ART transmitter serial output) 7= trace, Output, trace_ctl- (Trace Port
+    * Control Signal)
+    *  PSU_IOU_SLCR_MIO_PIN_39_L3_SEL                              2
+
+    * Configures MIO Pin 39 peripheral interface mapping
+    * (OFFSET, MASK, VALUE)      (0XFF18009C, 0x000000FEU ,0x00000040U)
+    */
+	PSU_Mask_Write(IOU_SLCR_MIO_PIN_39_OFFSET, 0x000000FEU, 0x00000040U);
 /*##################################################################### */
 
     /*
@@ -13540,6 +13614,12 @@ unsigned long psu_mio_init_data(void)
     * Master Tri-state Enable for pin 27, active high
     *  PSU_IOU_SLCR_MIO_MST_TRI0_PIN_27_TRI                        0
 
+    * Master Tri-state Enable for pin 28, active high
+    *  PSU_IOU_SLCR_MIO_MST_TRI0_PIN_28_TRI                        0
+
+    * Master Tri-state Enable for pin 29, active high
+    *  PSU_IOU_SLCR_MIO_MST_TRI0_PIN_29_TRI                        0
+
     * Master Tri-state Enable for pin 30, active high
     *  PSU_IOU_SLCR_MIO_MST_TRI0_PIN_30_TRI                        1
 
@@ -13547,14 +13627,20 @@ unsigned long psu_mio_init_data(void)
     *  PSU_IOU_SLCR_MIO_MST_TRI0_PIN_31_TRI                        0
 
     * MIO pin Tri-state Enables, 31:0
-    * (OFFSET, MASK, VALUE)      (0XFF180204, 0xCFFFFFFFU ,0x40000000U)
+    * (OFFSET, MASK, VALUE)      (0XFF180204, 0xFFFFFFFFU ,0x40000000U)
     */
 	PSU_Mask_Write(IOU_SLCR_MIO_MST_TRI0_OFFSET,
-		0xCFFFFFFFU, 0x40000000U);
+		0xFFFFFFFFU, 0x40000000U);
 /*##################################################################### */
 
     /*
     * Register : MIO_MST_TRI1 @ 0XFF180208
+
+    * Master Tri-state Enable for pin 38, active high
+    *  PSU_IOU_SLCR_MIO_MST_TRI1_PIN_38_TRI                        0
+
+    * Master Tri-state Enable for pin 39, active high
+    *  PSU_IOU_SLCR_MIO_MST_TRI1_PIN_39_TRI                        0
 
     * Master Tri-state Enable for pin 46, active high
     *  PSU_IOU_SLCR_MIO_MST_TRI1_PIN_46_TRI                        0
@@ -13611,10 +13697,10 @@ unsigned long psu_mio_init_data(void)
     *  PSU_IOU_SLCR_MIO_MST_TRI1_PIN_63_TRI                        0
 
     * MIO pin Tri-state Enables, 63:32
-    * (OFFSET, MASK, VALUE)      (0XFF180208, 0xFFFFC000U ,0x00B00000U)
+    * (OFFSET, MASK, VALUE)      (0XFF180208, 0xFFFFC0C0U ,0x00B00000U)
     */
 	PSU_Mask_Write(IOU_SLCR_MIO_MST_TRI1_OFFSET,
-		0xFFFFC000U, 0x00B00000U);
+		0xFFFFC0C0U, 0x00B00000U);
 /*##################################################################### */
 
     /*
@@ -15371,10 +15457,13 @@ unsigned long psu_peripherals_init_data(void)
     * GT block level reset
     *  PSU_CRF_APB_RST_FPD_TOP_GT_RESET                            0
 
+    * Sata block level reset
+    *  PSU_CRF_APB_RST_FPD_TOP_SATA_RESET                          0
+
     * FPD Block level software controlled reset
-    * (OFFSET, MASK, VALUE)      (0XFD1A0100, 0x0000007CU ,0x00000000U)
+    * (OFFSET, MASK, VALUE)      (0XFD1A0100, 0x0000007EU ,0x00000000U)
     */
-	PSU_Mask_Write(CRF_APB_RST_FPD_TOP_OFFSET, 0x0000007CU, 0x00000000U);
+	PSU_Mask_Write(CRF_APB_RST_FPD_TOP_OFFSET, 0x0000007EU, 0x00000000U);
 /*##################################################################### */
 
     /*
@@ -15700,12 +15789,15 @@ unsigned long psu_peripherals_init_data(void)
     * Block level reset
     *  PSU_CRL_APB_RST_LPD_IOU2_I2C0_RESET                         0
 
+    * Block level reset
+    *  PSU_CRL_APB_RST_LPD_IOU2_I2C1_RESET                         0
+
     * Software control register for the IOU block. Each bit will cause a singl
     * erperipheral or part of the peripheral to be reset.
-    * (OFFSET, MASK, VALUE)      (0XFF5E0238, 0x00000200U ,0x00000000U)
+    * (OFFSET, MASK, VALUE)      (0XFF5E0238, 0x00000600U ,0x00000000U)
     */
 	PSU_Mask_Write(CRL_APB_RST_LPD_IOU2_OFFSET,
-		0x00000200U, 0x00000000U);
+		0x00000600U, 0x00000000U);
 /*##################################################################### */
 
     /*
@@ -16015,82 +16107,168 @@ unsigned long psu_peripherals_init_data(void)
     * USB RESET
     */
     /*
-    * USB RESET WITH BOOT PIN MODE
+    * USB0 RESET
     */
     /*
-    * BOOT PIN HIGH
+    * DIR MODE BANK 0
     */
     /*
-    * Register : BOOT_PIN_CTRL @ 0XFF5E0250
+    * Register : DIRM_0 @ 0XFF0A0204
 
-    * Value driven onto the mode pins, when out_en = 1
-    *  PSU_CRL_APB_BOOT_PIN_CTRL_OUT_VAL                           0X2
+    * Direction mode 0: input 1: output Each bit configures the corresponding
+    * pin within the 32-bit bank
+    *  PSU_GPIO_DIRM_0_DIRECTION_0                                 0x2000000
 
-    * When 0, the pins will be inputs from the board to the PS. When 1, the PS
-    *  will drive these pins
-    *  PSU_CRL_APB_BOOT_PIN_CTRL_OUT_EN                            0X2
-
-    * Used to control the mode pins after boot.
-    * (OFFSET, MASK, VALUE)      (0XFF5E0250, 0x00000F0FU ,0x00000202U)
+    * Direction mode (GPIO Bank0, MIO)
+    * (OFFSET, MASK, VALUE)      (0XFF0A0204, 0x03FFFFFFU ,0x02000000U)
     */
-	PSU_Mask_Write(CRL_APB_BOOT_PIN_CTRL_OFFSET,
-		0x00000F0FU, 0x00000202U);
+	PSU_Mask_Write(GPIO_DIRM_0_OFFSET, 0x03FFFFFFU, 0x02000000U);
 /*##################################################################### */
 
     /*
-    * ADD 1US DELAY
+    * DIR MODE BANK 1
+    */
+    /*
+    * DIR MODE BANK 2
+    */
+    /*
+    * OUTPUT ENABLE BANK 0
+    */
+    /*
+    * Register : OEN_0 @ 0XFF0A0208
+
+    * Output enables 0: disabled 1: enabled Each bit configures the correspond
+    * ing pin within the 32-bit bank
+    *  PSU_GPIO_OEN_0_OP_ENABLE_0                                  0x2000000
+
+    * Output enable (GPIO Bank0, MIO)
+    * (OFFSET, MASK, VALUE)      (0XFF0A0208, 0x03FFFFFFU ,0x02000000U)
+    */
+	PSU_Mask_Write(GPIO_OEN_0_OFFSET, 0x03FFFFFFU, 0x02000000U);
+/*##################################################################### */
+
+    /*
+    * OUTPUT ENABLE BANK 1
+    */
+    /*
+    * OUTPUT ENABLE BANK 2
+    */
+    /*
+    * MASK_DATA_0_LSW LOW BANK [15:0]
+    */
+    /*
+    * MASK_DATA_0_MSW LOW BANK [25:16]
+    */
+    /*
+    * Register : MASK_DATA_0_MSW @ 0XFF0A0004
+
+    * Operation is the same as MASK_DATA_0_LSW[MASK_0_LSW]
+    *  PSU_GPIO_MASK_DATA_0_MSW_MASK_0_MSW                         0x1ff
+
+    * Operation is the same as MASK_DATA_0_LSW[DATA_0_LSW]
+    *  PSU_GPIO_MASK_DATA_0_MSW_DATA_0_MSW                         0x200
+
+    * Maskable Output Data (GPIO Bank0, MIO, Upper 10bits)
+    * (OFFSET, MASK, VALUE)      (0XFF0A0004, 0x03FF03FFU ,0x01FF0200U)
+    */
+	PSU_Mask_Write(GPIO_MASK_DATA_0_MSW_OFFSET,
+		0x03FF03FFU, 0x01FF0200U);
+/*##################################################################### */
+
+    /*
+    * MASK_DATA_1_LSW LOW BANK [41:26]
+    */
+    /*
+    * MASK_DATA_1_MSW HIGH BANK [51:42]
+    */
+    /*
+    * MASK_DATA_1_LSW HIGH BANK [67:52]
+    */
+    /*
+    * MASK_DATA_1_LSW HIGH BANK [77:68]
+    */
+    /*
+    * ADD 1 MS DELAY
     */
 		mask_delay(1);
 
 /*##################################################################### */
 
     /*
-    * BOOT PIN LOW
+    * MASK_DATA_0_LSW LOW BANK [15:0]
     */
     /*
-    * Register : BOOT_PIN_CTRL @ 0XFF5E0250
-
-    * Value driven onto the mode pins, when out_en = 1
-    *  PSU_CRL_APB_BOOT_PIN_CTRL_OUT_VAL                           0X0
-
-    * When 0, the pins will be inputs from the board to the PS. When 1, the PS
-    *  will drive these pins
-    *  PSU_CRL_APB_BOOT_PIN_CTRL_OUT_EN                            0X2
-
-    * Used to control the mode pins after boot.
-    * (OFFSET, MASK, VALUE)      (0XFF5E0250, 0x00000F0FU ,0x00000002U)
+    * MASK_DATA_0_MSW LOW BANK [25:16]
     */
-	PSU_Mask_Write(CRL_APB_BOOT_PIN_CTRL_OFFSET,
-		0x00000F0FU, 0x00000002U);
+    /*
+    * Register : MASK_DATA_0_MSW @ 0XFF0A0004
+
+    * Operation is the same as MASK_DATA_0_LSW[MASK_0_LSW]
+    *  PSU_GPIO_MASK_DATA_0_MSW_MASK_0_MSW                         0x1ff
+
+    * Operation is the same as MASK_DATA_0_LSW[DATA_0_LSW]
+    *  PSU_GPIO_MASK_DATA_0_MSW_DATA_0_MSW                         0x0
+
+    * Maskable Output Data (GPIO Bank0, MIO, Upper 10bits)
+    * (OFFSET, MASK, VALUE)      (0XFF0A0004, 0x03FF03FFU ,0x01FF0000U)
+    */
+	PSU_Mask_Write(GPIO_MASK_DATA_0_MSW_OFFSET,
+		0x03FF03FFU, 0x01FF0000U);
 /*##################################################################### */
 
     /*
-    * ADD 5US DELAY
+    * MASK_DATA_1_LSW LOW BANK [41:26]
+    */
+    /*
+    * MASK_DATA_1_MSW HIGH BANK [51:42]
+    */
+    /*
+    * MASK_DATA_1_LSW HIGH BANK [67:52]
+    */
+    /*
+    * MASK_DATA_1_LSW HIGH BANK [77:68]
+    */
+    /*
+    * ADD 5 MS DELAY
     */
 		mask_delay(5);
 
 /*##################################################################### */
 
     /*
-    * BOOT PIN HIGH
+    * MASK_DATA_0_LSW LOW BANK [15:0]
     */
     /*
-    * Register : BOOT_PIN_CTRL @ 0XFF5E0250
-
-    * Value driven onto the mode pins, when out_en = 1
-    *  PSU_CRL_APB_BOOT_PIN_CTRL_OUT_VAL                           0X2
-
-    * When 0, the pins will be inputs from the board to the PS. When 1, the PS
-    *  will drive these pins
-    *  PSU_CRL_APB_BOOT_PIN_CTRL_OUT_EN                            0X2
-
-    * Used to control the mode pins after boot.
-    * (OFFSET, MASK, VALUE)      (0XFF5E0250, 0x00000F0FU ,0x00000202U)
+    * MASK_DATA_0_MSW LOW BANK [25:16]
     */
-	PSU_Mask_Write(CRL_APB_BOOT_PIN_CTRL_OFFSET,
-		0x00000F0FU, 0x00000202U);
+    /*
+    * Register : MASK_DATA_0_MSW @ 0XFF0A0004
+
+    * Operation is the same as MASK_DATA_0_LSW[MASK_0_LSW]
+    *  PSU_GPIO_MASK_DATA_0_MSW_MASK_0_MSW                         0x1ff
+
+    * Operation is the same as MASK_DATA_0_LSW[DATA_0_LSW]
+    *  PSU_GPIO_MASK_DATA_0_MSW_DATA_0_MSW                         0x200
+
+    * Maskable Output Data (GPIO Bank0, MIO, Upper 10bits)
+    * (OFFSET, MASK, VALUE)      (0XFF0A0004, 0x03FF03FFU ,0x01FF0200U)
+    */
+	PSU_Mask_Write(GPIO_MASK_DATA_0_MSW_OFFSET,
+		0x03FF03FFU, 0x01FF0200U);
 /*##################################################################### */
 
+    /*
+    * MASK_DATA_1_LSW LOW BANK [41:26]
+    */
+    /*
+    * MASK_DATA_1_MSW HIGH BANK [51:42]
+    */
+    /*
+    * MASK_DATA_1_LSW HIGH BANK [67:52]
+    */
+    /*
+    * MASK_DATA_1_LSW HIGH BANK [77:68]
+    */
     /*
     * GPIO POLARITY INITIALIZATION
     */
@@ -17898,6 +18076,22 @@ unsigned long psu_serdes_init_data(void)
 /*##################################################################### */
 
     /*
+    * Register : PLL_REF_SEL1 @ 0XFD410004
+
+    * PLL1 Reference Selection. 0x0 - 5MHz, 0x1 - 9.6MHz, 0x2 - 10MHz, 0x3 - 1
+    * 2MHz, 0x4 - 13MHz, 0x5 - 19.2MHz, 0x6 - 20MHz, 0x7 - 24MHz, 0x8 - 26MHz,
+    *  0x9 - 27MHz, 0xA - 38.4MHz, 0xB - 40MHz, 0xC - 52MHz, 0xD - 100MHz, 0xE
+    *  - 108MHz, 0xF - 125MHz, 0x10 - 135MHz, 0x11 - 150 MHz. 0x12 to 0x1F - R
+    * eserved
+    *  PSU_SERDES_PLL_REF_SEL1_PLLREFSEL1                          0x11
+
+    * PLL1 Reference Selection Register
+    * (OFFSET, MASK, VALUE)      (0XFD410004, 0x0000001FU ,0x00000011U)
+    */
+	PSU_Mask_Write(SERDES_PLL_REF_SEL1_OFFSET, 0x0000001FU, 0x00000011U);
+/*##################################################################### */
+
+    /*
     * GT REFERENCE CLOCK FREQUENCY SELECTION
     */
     /*
@@ -17916,6 +18110,20 @@ unsigned long psu_serdes_init_data(void)
     */
 	PSU_Mask_Write(SERDES_L0_L0_REF_CLK_SEL_OFFSET,
 		0x00000088U, 0x00000008U);
+/*##################################################################### */
+
+    /*
+    * Register : L0_L1_REF_CLK_SEL @ 0XFD402864
+
+    * Sel of lane 1 ref clock local mux. Set to 1 to select lane 1 slicer outp
+    * ut. Set to 0 to select lane1 ref clock mux output.
+    *  PSU_SERDES_L0_L1_REF_CLK_SEL_L1_REF_CLK_LCL_SEL             0x1
+
+    * Lane1 Ref Clock Selection Register
+    * (OFFSET, MASK, VALUE)      (0XFD402864, 0x00000080U ,0x00000080U)
+    */
+	PSU_Mask_Write(SERDES_L0_L1_REF_CLK_SEL_OFFSET,
+		0x00000080U, 0x00000080U);
 /*##################################################################### */
 
     /*
@@ -17957,6 +18165,32 @@ unsigned long psu_serdes_init_data(void)
     * (OFFSET, MASK, VALUE)      (0XFD40236C, 0x00000007U ,0x00000003U)
     */
 	PSU_Mask_Write(SERDES_L0_PLL_SS_STEPS_1_MSB_OFFSET,
+		0x00000007U, 0x00000003U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_PLL_SS_STEPS_0_LSB @ 0XFD406368
+
+    * Spread Spectrum No of Steps [7:0]
+    *  PSU_SERDES_L1_PLL_SS_STEPS_0_LSB_SS_NUM_OF_STEPS_0_LSB      0x18
+
+    * Spread Spectrum No of Steps bits 7:0
+    * (OFFSET, MASK, VALUE)      (0XFD406368, 0x000000FFU ,0x00000018U)
+    */
+	PSU_Mask_Write(SERDES_L1_PLL_SS_STEPS_0_LSB_OFFSET,
+		0x000000FFU, 0x00000018U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_PLL_SS_STEPS_1_MSB @ 0XFD40636C
+
+    * Spread Spectrum No of Steps [10:8]
+    *  PSU_SERDES_L1_PLL_SS_STEPS_1_MSB_SS_NUM_OF_STEPS_1_MSB      0x3
+
+    * Spread Spectrum No of Steps bits 10:8
+    * (OFFSET, MASK, VALUE)      (0XFD40636C, 0x00000007U ,0x00000003U)
+    */
+	PSU_Mask_Write(SERDES_L1_PLL_SS_STEPS_1_MSB_OFFSET,
 		0x00000007U, 0x00000003U);
 /*##################################################################### */
 
@@ -18019,6 +18253,67 @@ unsigned long psu_serdes_init_data(void)
 /*##################################################################### */
 
     /*
+    * Register : L1_PLL_SS_STEP_SIZE_0_LSB @ 0XFD406370
+
+    * Step Size for Spread Spectrum [7:0]
+    *  PSU_SERDES_L1_PLL_SS_STEP_SIZE_0_LSB_SS_STEP_SIZE_0_LSB     0xD3
+
+    * Step Size for Spread Spectrum LSB
+    * (OFFSET, MASK, VALUE)      (0XFD406370, 0x000000FFU ,0x000000D3U)
+    */
+	PSU_Mask_Write(SERDES_L1_PLL_SS_STEP_SIZE_0_LSB_OFFSET,
+		0x000000FFU, 0x000000D3U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_PLL_SS_STEP_SIZE_1 @ 0XFD406374
+
+    * Step Size for Spread Spectrum [15:8]
+    *  PSU_SERDES_L1_PLL_SS_STEP_SIZE_1_SS_STEP_SIZE_1             0xDA
+
+    * Step Size for Spread Spectrum 1
+    * (OFFSET, MASK, VALUE)      (0XFD406374, 0x000000FFU ,0x000000DAU)
+    */
+	PSU_Mask_Write(SERDES_L1_PLL_SS_STEP_SIZE_1_OFFSET,
+		0x000000FFU, 0x000000DAU);
+/*##################################################################### */
+
+    /*
+    * Register : L1_PLL_SS_STEP_SIZE_2 @ 0XFD406378
+
+    * Step Size for Spread Spectrum [23:16]
+    *  PSU_SERDES_L1_PLL_SS_STEP_SIZE_2_SS_STEP_SIZE_2             0x2
+
+    * Step Size for Spread Spectrum 2
+    * (OFFSET, MASK, VALUE)      (0XFD406378, 0x000000FFU ,0x00000002U)
+    */
+	PSU_Mask_Write(SERDES_L1_PLL_SS_STEP_SIZE_2_OFFSET,
+		0x000000FFU, 0x00000002U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_PLL_SS_STEP_SIZE_3_MSB @ 0XFD40637C
+
+    * Step Size for Spread Spectrum [25:24]
+    *  PSU_SERDES_L1_PLL_SS_STEP_SIZE_3_MSB_SS_STEP_SIZE_3_MSB     0x0
+
+    * Enable/Disable test mode force on SS step size
+    *  PSU_SERDES_L1_PLL_SS_STEP_SIZE_3_MSB_FORCE_SS_STEP_SIZE     0x1
+
+    * Enable/Disable test mode force on SS no of steps
+    *  PSU_SERDES_L1_PLL_SS_STEP_SIZE_3_MSB_FORCE_SS_NUM_OF_STEPS  0x1
+
+    * Enable test mode forcing on enable Spread Spectrum
+    *  PSU_SERDES_L1_PLL_SS_STEP_SIZE_3_MSB_TM_FORCE_EN_SS         0x1
+
+    * Enable force on enable Spread Spectrum
+    * (OFFSET, MASK, VALUE)      (0XFD40637C, 0x000000B3U ,0x000000B0U)
+    */
+	PSU_Mask_Write(SERDES_L1_PLL_SS_STEP_SIZE_3_MSB_OFFSET,
+		0x000000B3U, 0x000000B0U);
+/*##################################################################### */
+
+    /*
     * Register : L0_TM_DIG_6 @ 0XFD40106C
 
     * Bypass Descrambler
@@ -18047,6 +18342,60 @@ unsigned long psu_serdes_init_data(void)
     */
 	PSU_Mask_Write(SERDES_L0_TX_DIG_TM_61_OFFSET,
 		0x00000003U, 0x00000003U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_PLL_FBDIV_FRAC_3_MSB @ 0XFD406360
+
+    * Enable test mode force on fractional mode enable
+    *  PSU_SERDES_L1_PLL_FBDIV_FRAC_3_MSB_TM_FORCE_EN_FRAC         0x1
+
+    * Fractional feedback division control and fractional value for feedback d
+    * ivision bits 26:24
+    * (OFFSET, MASK, VALUE)      (0XFD406360, 0x00000040U ,0x00000040U)
+    */
+	PSU_Mask_Write(SERDES_L1_PLL_FBDIV_FRAC_3_MSB_OFFSET,
+		0x00000040U, 0x00000040U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_TM_DIG_6 @ 0XFD40506C
+
+    * Bypass 8b10b decoder
+    *  PSU_SERDES_L1_TM_DIG_6_BYPASS_DECODER                       0x1
+
+    * Enable Bypass for <3> TM_DIG_CTRL_6
+    *  PSU_SERDES_L1_TM_DIG_6_FORCE_BYPASS_DEC                     0x1
+
+    * Bypass Descrambler
+    *  PSU_SERDES_L1_TM_DIG_6_BYPASS_DESCRAM                       0x1
+
+    * Enable Bypass for <1> TM_DIG_CTRL_6
+    *  PSU_SERDES_L1_TM_DIG_6_FORCE_BYPASS_DESCRAM                 0x1
+
+    * Data path test modes in decoder and descram
+    * (OFFSET, MASK, VALUE)      (0XFD40506C, 0x0000000FU ,0x0000000FU)
+    */
+	PSU_Mask_Write(SERDES_L1_TM_DIG_6_OFFSET, 0x0000000FU, 0x0000000FU);
+/*##################################################################### */
+
+    /*
+    * Register : L1_TX_DIG_TM_61 @ 0XFD4040F4
+
+    * Enable/disable encoder bypass signal
+    *  PSU_SERDES_L1_TX_DIG_TM_61_BYPASS_ENC                       0x1
+
+    * Bypass scrambler signal
+    *  PSU_SERDES_L1_TX_DIG_TM_61_BYPASS_SCRAM                     0x1
+
+    * Enable/disable scrambler bypass signal
+    *  PSU_SERDES_L1_TX_DIG_TM_61_FORCE_BYPASS_SCRAM               0x1
+
+    * MPHY PLL Gear and bypass scrambler
+    * (OFFSET, MASK, VALUE)      (0XFD4040F4, 0x0000000BU ,0x0000000BU)
+    */
+	PSU_Mask_Write(SERDES_L1_TX_DIG_TM_61_OFFSET,
+		0x0000000BU, 0x0000000BU);
 /*##################################################################### */
 
     /*
@@ -18291,6 +18640,181 @@ unsigned long psu_serdes_init_data(void)
     * (OFFSET, MASK, VALUE)      (0XFD401994, 0x00000007U ,0x00000007U)
     */
 	PSU_Mask_Write(SERDES_L0_TM_ILL13_OFFSET, 0x00000007U, 0x00000007U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_TM_MISC2 @ 0XFD40589C
+
+    * ILL calib counts BYPASSED with calcode bits
+    *  PSU_SERDES_L1_TM_MISC2_ILL_CAL_BYPASS_COUNTS                0x1
+
+    * sampler cal
+    * (OFFSET, MASK, VALUE)      (0XFD40589C, 0x00000080U ,0x00000080U)
+    */
+	PSU_Mask_Write(SERDES_L1_TM_MISC2_OFFSET, 0x00000080U, 0x00000080U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_TM_IQ_ILL1 @ 0XFD4058F8
+
+    * IQ ILL F0 CALCODE bypass value. MPHY : G1a, PCIE : Gen 1, SATA : Gen1 ,
+    * USB3 : SS
+    *  PSU_SERDES_L1_TM_IQ_ILL1_ILL_BYPASS_IQ_CALCODE_F0           0x96
+
+    * iqpi cal code
+    * (OFFSET, MASK, VALUE)      (0XFD4058F8, 0x000000FFU ,0x00000096U)
+    */
+	PSU_Mask_Write(SERDES_L1_TM_IQ_ILL1_OFFSET,
+		0x000000FFU, 0x00000096U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_TM_IQ_ILL2 @ 0XFD4058FC
+
+    * IQ ILL F1 CALCODE bypass value. MPHY : G1b, PCIE : Gen2, SATA: Gen2
+    *  PSU_SERDES_L1_TM_IQ_ILL2_ILL_BYPASS_IQ_CALCODE_F1           0x96
+
+    * iqpi cal code
+    * (OFFSET, MASK, VALUE)      (0XFD4058FC, 0x000000FFU ,0x00000096U)
+    */
+	PSU_Mask_Write(SERDES_L1_TM_IQ_ILL2_OFFSET,
+		0x000000FFU, 0x00000096U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_TM_ILL12 @ 0XFD405990
+
+    * G1A pll ctr bypass value
+    *  PSU_SERDES_L1_TM_ILL12_G1A_PLL_CTR_BYP_VAL                  0x1
+
+    * ill pll counter values
+    * (OFFSET, MASK, VALUE)      (0XFD405990, 0x000000FFU ,0x00000001U)
+    */
+	PSU_Mask_Write(SERDES_L1_TM_ILL12_OFFSET, 0x000000FFU, 0x00000001U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_TM_E_ILL1 @ 0XFD405924
+
+    * E ILL F0 CALCODE bypass value. MPHY : G1a, PCIE : Gen 1, SATA : Gen1 , U
+    * SB3 : SS
+    *  PSU_SERDES_L1_TM_E_ILL1_ILL_BYPASS_E_CALCODE_F0             0x9C
+
+    * epi cal code
+    * (OFFSET, MASK, VALUE)      (0XFD405924, 0x000000FFU ,0x0000009CU)
+    */
+	PSU_Mask_Write(SERDES_L1_TM_E_ILL1_OFFSET, 0x000000FFU, 0x0000009CU);
+/*##################################################################### */
+
+    /*
+    * Register : L1_TM_E_ILL2 @ 0XFD405928
+
+    * E ILL F1 CALCODE bypass value. MPHY : G1b, PCIE : Gen2, SATA: Gen2
+    *  PSU_SERDES_L1_TM_E_ILL2_ILL_BYPASS_E_CALCODE_F1             0x39
+
+    * epi cal code
+    * (OFFSET, MASK, VALUE)      (0XFD405928, 0x000000FFU ,0x00000039U)
+    */
+	PSU_Mask_Write(SERDES_L1_TM_E_ILL2_OFFSET, 0x000000FFU, 0x00000039U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_TM_ILL11 @ 0XFD40598C
+
+    * G2A_PCIe1 PLL ctr bypass value
+    *  PSU_SERDES_L1_TM_ILL11_G2A_PCIEG1_PLL_CTR_11_8_BYP_VAL      0x2
+
+    * ill pll counter values
+    * (OFFSET, MASK, VALUE)      (0XFD40598C, 0x000000F0U ,0x00000020U)
+    */
+	PSU_Mask_Write(SERDES_L1_TM_ILL11_OFFSET, 0x000000F0U, 0x00000020U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_TM_IQ_ILL3 @ 0XFD405900
+
+    * IQ ILL F2CALCODE bypass value. MPHY : G2a, SATA : Gen3
+    *  PSU_SERDES_L1_TM_IQ_ILL3_ILL_BYPASS_IQ_CALCODE_F2           0x96
+
+    * iqpi cal code
+    * (OFFSET, MASK, VALUE)      (0XFD405900, 0x000000FFU ,0x00000096U)
+    */
+	PSU_Mask_Write(SERDES_L1_TM_IQ_ILL3_OFFSET,
+		0x000000FFU, 0x00000096U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_TM_E_ILL3 @ 0XFD40592C
+
+    * E ILL F2CALCODE bypass value. MPHY : G2a, SATA : Gen3
+    *  PSU_SERDES_L1_TM_E_ILL3_ILL_BYPASS_E_CALCODE_F2             0x64
+
+    * epi cal code
+    * (OFFSET, MASK, VALUE)      (0XFD40592C, 0x000000FFU ,0x00000064U)
+    */
+	PSU_Mask_Write(SERDES_L1_TM_E_ILL3_OFFSET, 0x000000FFU, 0x00000064U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_TM_ILL8 @ 0XFD405980
+
+    * ILL calibration code change wait time
+    *  PSU_SERDES_L1_TM_ILL8_ILL_CAL_ITER_WAIT                     0xFF
+
+    * ILL cal routine control
+    * (OFFSET, MASK, VALUE)      (0XFD405980, 0x000000FFU ,0x000000FFU)
+    */
+	PSU_Mask_Write(SERDES_L1_TM_ILL8_OFFSET, 0x000000FFU, 0x000000FFU);
+/*##################################################################### */
+
+    /*
+    * Register : L1_TM_IQ_ILL8 @ 0XFD405914
+
+    * IQ ILL polytrim bypass value
+    *  PSU_SERDES_L1_TM_IQ_ILL8_ILL_BYPASS_IQ_POLYTRIM_VAL         0xF7
+
+    * iqpi polytrim
+    * (OFFSET, MASK, VALUE)      (0XFD405914, 0x000000FFU ,0x000000F7U)
+    */
+	PSU_Mask_Write(SERDES_L1_TM_IQ_ILL8_OFFSET,
+		0x000000FFU, 0x000000F7U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_TM_IQ_ILL9 @ 0XFD405918
+
+    * bypass IQ polytrim
+    *  PSU_SERDES_L1_TM_IQ_ILL9_ILL_BYPASS_IQ_POLYTIM              0x1
+
+    * enables for lf,constant gm trim and polytirm
+    * (OFFSET, MASK, VALUE)      (0XFD405918, 0x00000001U ,0x00000001U)
+    */
+	PSU_Mask_Write(SERDES_L1_TM_IQ_ILL9_OFFSET,
+		0x00000001U, 0x00000001U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_TM_E_ILL8 @ 0XFD405940
+
+    * E ILL polytrim bypass value
+    *  PSU_SERDES_L1_TM_E_ILL8_ILL_BYPASS_E_POLYTRIM_VAL           0xF7
+
+    * epi polytrim
+    * (OFFSET, MASK, VALUE)      (0XFD405940, 0x000000FFU ,0x000000F7U)
+    */
+	PSU_Mask_Write(SERDES_L1_TM_E_ILL8_OFFSET, 0x000000FFU, 0x000000F7U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_TM_E_ILL9 @ 0XFD405944
+
+    * bypass E polytrim
+    *  PSU_SERDES_L1_TM_E_ILL9_ILL_BYPASS_E_POLYTIM                0x1
+
+    * enables for lf,constant gm trim and polytirm
+    * (OFFSET, MASK, VALUE)      (0XFD405944, 0x00000001U ,0x00000001U)
+    */
+	PSU_Mask_Write(SERDES_L1_TM_E_ILL9_OFFSET, 0x00000001U, 0x00000001U);
 /*##################################################################### */
 
     /*
@@ -18664,7 +19188,7 @@ unsigned long psu_serdes_init_data(void)
     /*
     * SERDES ILL CALIB
     */
-		serdes_illcalib(0,0,0,0,0,0,3,0);
+		serdes_illcalib(0,0,0,0,2,3,3,0);
 
 /*##################################################################### */
 
@@ -18681,10 +19205,14 @@ unsigned long psu_serdes_init_data(void)
     *  2 - Sata0, 3 - USB0, 4 - DP.1, 5 - SGMII0, 6 - Unused, 7 - Unused
     *  PSU_SERDES_ICM_CFG0_L0_ICM_CFG                              3
 
+    * Controls UPHY Lane 1 protocol configuration. 0 - PowerDown, 1 - PCIe.1,
+    * 2 - Sata1, 3 - USB0, 4 - DP.0, 5 - SGMII1, 6 - Unused, 7 - Unused
+    *  PSU_SERDES_ICM_CFG0_L1_ICM_CFG                              2
+
     * ICM Configuration Register 0
-    * (OFFSET, MASK, VALUE)      (0XFD410010, 0x00000007U ,0x00000003U)
+    * (OFFSET, MASK, VALUE)      (0XFD410010, 0x00000077U ,0x00000023U)
     */
-	PSU_Mask_Write(SERDES_ICM_CFG0_OFFSET, 0x00000007U, 0x00000003U);
+	PSU_Mask_Write(SERDES_ICM_CFG0_OFFSET, 0x00000077U, 0x00000023U);
 /*##################################################################### */
 
     /*
@@ -18694,14 +19222,96 @@ unsigned long psu_serdes_init_data(void)
     * ENABLE SERIAL DATA MUX DEEMPH
     */
     /*
+    * Register : L1_TX_ANA_TM_118 @ 0XFD4041D8
+
+    * Test register force for enabling/disablign TX deemphasis bits <17:0>
+    *  PSU_SERDES_L1_TX_ANA_TM_118_FORCE_TX_DEEMPH_17_0            0x1
+
+    * Enable Override of TX deemphasis
+    * (OFFSET, MASK, VALUE)      (0XFD4041D8, 0x00000001U ,0x00000001U)
+    */
+	PSU_Mask_Write(SERDES_L1_TX_ANA_TM_118_OFFSET,
+		0x00000001U, 0x00000001U);
+/*##################################################################### */
+
+    /*
     * CDR AND RX EQUALIZATION SETTINGS
     */
+    /*
+    * Register : L1_TM_CDR5 @ 0XFD405C14
+
+    * FPHL FSM accumulate cycles
+    *  PSU_SERDES_L1_TM_CDR5_FPHL_FSM_ACC_CYCLES                   0x7
+
+    * FFL Phase0 int gain aka 2ol SD update rate
+    *  PSU_SERDES_L1_TM_CDR5_FFL_PH0_INT_GAIN                      0x6
+
+    * Fast phase lock controls -- FSM accumulator cycle control and phase 0 in
+    * t gain control.
+    * (OFFSET, MASK, VALUE)      (0XFD405C14, 0x000000FFU ,0x000000E6U)
+    */
+	PSU_Mask_Write(SERDES_L1_TM_CDR5_OFFSET, 0x000000FFU, 0x000000E6U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_TM_CDR16 @ 0XFD405C40
+
+    * FFL Phase0 prop gain aka 1ol SD update rate
+    *  PSU_SERDES_L1_TM_CDR16_FFL_PH0_PROP_GAIN                    0xC
+
+    * Fast phase lock controls -- phase 0 prop gain
+    * (OFFSET, MASK, VALUE)      (0XFD405C40, 0x0000001FU ,0x0000000CU)
+    */
+	PSU_Mask_Write(SERDES_L1_TM_CDR16_OFFSET, 0x0000001FU, 0x0000000CU);
+/*##################################################################### */
+
+    /*
+    * Register : L1_TM_EQ0 @ 0XFD40594C
+
+    * EQ stg 2 controls BYPASSED
+    *  PSU_SERDES_L1_TM_EQ0_EQ_STG2_CTRL_BYP                       0x1
+
+    * eq stg1 and stg2 controls
+    * (OFFSET, MASK, VALUE)      (0XFD40594C, 0x00000020U ,0x00000020U)
+    */
+	PSU_Mask_Write(SERDES_L1_TM_EQ0_OFFSET, 0x00000020U, 0x00000020U);
+/*##################################################################### */
+
+    /*
+    * Register : L1_TM_EQ1 @ 0XFD405950
+
+    * EQ STG2 RL PROG
+    *  PSU_SERDES_L1_TM_EQ1_EQ_STG2_RL_PROG                        0x2
+
+    * EQ stg 2 preamp mode val
+    *  PSU_SERDES_L1_TM_EQ1_EQ_STG2_PREAMP_MODE_VAL                0x1
+
+    * eq stg1 and stg2 controls
+    * (OFFSET, MASK, VALUE)      (0XFD405950, 0x00000007U ,0x00000006U)
+    */
+	PSU_Mask_Write(SERDES_L1_TM_EQ1_OFFSET, 0x00000007U, 0x00000006U);
+/*##################################################################### */
+
     /*
     * GEM SERDES SETTINGS
     */
     /*
     * ENABLE PRE EMPHAIS AND VOLTAGE SWING
     */
+    /*
+    * Register : L1_TX_ANA_TM_18 @ 0XFD404048
+
+    * pipe_TX_Deemph. 0: -6dB de-emphasis, 1: -3.5dB de-emphasis, 2 : No de-em
+    * phasis, Others: reserved
+    *  PSU_SERDES_L1_TX_ANA_TM_18_PIPE_TX_DEEMPH_7_0               0x1
+
+    * Override for PIPE TX de-emphasis
+    * (OFFSET, MASK, VALUE)      (0XFD404048, 0x000000FFU ,0x00000001U)
+    */
+	PSU_Mask_Write(SERDES_L1_TX_ANA_TM_18_OFFSET,
+		0x000000FFU, 0x00000001U);
+/*##################################################################### */
+
 
 	return 1;
 }
@@ -18786,6 +19396,34 @@ unsigned long psu_resetout_init_data(void)
     */
 	PSU_Mask_Write(CRL_APB_RST_LPD_IOU0_OFFSET,
 		0x00000008U, 0x00000000U);
+/*##################################################################### */
+
+    /*
+    * PUTTING SATA IN RESET
+    */
+    /*
+    * Register : sata_misc_ctrl @ 0XFD3D0100
+
+    * Sata PM clock control select
+    *  PSU_SIOU_SATA_MISC_CTRL_SATA_PM_CLK_SEL                     0x1
+
+    * Misc Contorls for SATA.This register may only be modified during bootup
+    * (while SATA block is disabled)
+    * (OFFSET, MASK, VALUE)      (0XFD3D0100, 0x00000003U ,0x00000001U)
+    */
+	PSU_Mask_Write(SIOU_SATA_MISC_CTRL_OFFSET, 0x00000003U, 0x00000001U);
+/*##################################################################### */
+
+    /*
+    * Register : RST_FPD_TOP @ 0XFD1A0100
+
+    * Sata block level reset
+    *  PSU_CRF_APB_RST_FPD_TOP_SATA_RESET                          0X0
+
+    * FPD Block level software controlled reset
+    * (OFFSET, MASK, VALUE)      (0XFD1A0100, 0x00000002U ,0x00000000U)
+    */
+	PSU_Mask_Write(CRF_APB_RST_FPD_TOP_OFFSET, 0x00000002U, 0x00000000U);
 /*##################################################################### */
 
     /*
@@ -19025,8 +19663,127 @@ unsigned long psu_resetout_init_data(void)
 /*##################################################################### */
 
     /*
+    * CHECK PLL LOCK FOR LANE1
+    */
+    /*
+    * Register : L1_PLL_STATUS_READ_1 @ 0XFD4063E4
+
+    * Status Read value of PLL Lock
+    *  PSU_SERDES_L1_PLL_STATUS_READ_1_PLL_LOCK_STATUS_READ        1
+    * (OFFSET, MASK, VALUE)      (0XFD4063E4, 0x00000010U ,0x00000010U)
+		*/
+	mask_poll(SERDES_L1_PLL_STATUS_READ_1_OFFSET, 0x00000010U);
+
+/*##################################################################### */
+
+    /*
     * SATA AHCI VENDOR SETTING
     */
+    /*
+    * Register : PP2C @ 0XFD0C00AC
+
+    * CIBGMN: COMINIT Burst Gap Minimum.
+    *  PSU_SATA_AHCI_VENDOR_PP2C_CIBGMN                            0x1B
+
+    * CIBGMX: COMINIT Burst Gap Maximum.
+    *  PSU_SATA_AHCI_VENDOR_PP2C_CIBGMX                            0x4D
+
+    * CIBGN: COMINIT Burst Gap Nominal.
+    *  PSU_SATA_AHCI_VENDOR_PP2C_CIBGN                             0x18
+
+    * CINMP: COMINIT Negate Minimum Period.
+    *  PSU_SATA_AHCI_VENDOR_PP2C_CINMP                             0x28
+
+    * PP2C - Port Phy2Cfg Register. This register controls the configuration o
+    * f the Phy Control OOB timing for the COMINIT parameters for either Port
+    * 0 or Port 1. The Port configured is controlled by the value programmed i
+    * nto the Port Config Register.
+    * (OFFSET, MASK, VALUE)      (0XFD0C00AC, 0xFFFFFFFFU ,0x28184D1BU)
+    */
+	PSU_Mask_Write(SATA_AHCI_VENDOR_PP2C_OFFSET,
+		0xFFFFFFFFU, 0x28184D1BU);
+/*##################################################################### */
+
+    /*
+    * Register : PP3C @ 0XFD0C00B0
+
+    * CWBGMN: COMWAKE Burst Gap Minimum.
+    *  PSU_SATA_AHCI_VENDOR_PP3C_CWBGMN                            0x06
+
+    * CWBGMX: COMWAKE Burst Gap Maximum.
+    *  PSU_SATA_AHCI_VENDOR_PP3C_CWBGMX                            0x19
+
+    * CWBGN: COMWAKE Burst Gap Nominal.
+    *  PSU_SATA_AHCI_VENDOR_PP3C_CWBGN                             0x08
+
+    * CWNMP: COMWAKE Negate Minimum Period.
+    *  PSU_SATA_AHCI_VENDOR_PP3C_CWNMP                             0x0E
+
+    * PP3C - Port Phy3CfgRegister. This register controls the configuration of
+    *  the Phy Control OOB timing for the COMWAKE parameters for either Port 0
+    *  or Port 1. The Port configured is controlled by the value programmed in
+    * to the Port Config Register.
+    * (OFFSET, MASK, VALUE)      (0XFD0C00B0, 0xFFFFFFFFU ,0x0E081906U)
+    */
+	PSU_Mask_Write(SATA_AHCI_VENDOR_PP3C_OFFSET,
+		0xFFFFFFFFU, 0x0E081906U);
+/*##################################################################### */
+
+    /*
+    * Register : PP4C @ 0XFD0C00B4
+
+    * BMX: COM Burst Maximum.
+    *  PSU_SATA_AHCI_VENDOR_PP4C_BMX                               0x13
+
+    * BNM: COM Burst Nominal.
+    *  PSU_SATA_AHCI_VENDOR_PP4C_BNM                               0x08
+
+    * SFD: Signal Failure Detection, if the signal detection de-asserts for a
+    * time greater than this then the OOB detector will determine this is a li
+    * ne idle and cause the PhyInit state machine to exit the Phy Ready State.
+    *  A value of zero disables the Signal Failure Detector. The value is base
+    * d on the OOB Detector Clock typically (PMCLK Clock Period) * SFD giving
+    * a nominal time of 500ns based on a 150MHz PMCLK.
+    *  PSU_SATA_AHCI_VENDOR_PP4C_SFD                               0x4A
+
+    * PTST: Partial to Slumber timer value, specific delay the controller shou
+    * ld apply while in partial before entering slumber. The value is bases on
+    *  the system clock divided by 128, total delay = (Sys Clock Period) * PTS
+    * T * 128
+    *  PSU_SATA_AHCI_VENDOR_PP4C_PTST                              0x06
+
+    * PP4C - Port Phy4Cfg Register. This register controls the configuration o
+    * f the Phy Control Burst timing for the COM parameters for either Port 0
+    * or Port 1. The Port configured is controlled by the value programmed int
+    * o the Port Config Register.
+    * (OFFSET, MASK, VALUE)      (0XFD0C00B4, 0xFFFFFFFFU ,0x064A0813U)
+    */
+	PSU_Mask_Write(SATA_AHCI_VENDOR_PP4C_OFFSET,
+		0xFFFFFFFFU, 0x064A0813U);
+/*##################################################################### */
+
+    /*
+    * Register : PP5C @ 0XFD0C00B8
+
+    * RIT: Retry Interval Timer. The calculated value divided by two, the lowe
+    * r digit of precision is not needed.
+    *  PSU_SATA_AHCI_VENDOR_PP5C_RIT                               0xC96A4
+
+    * RCT: Rate Change Timer, a value based on the 54.2us for which a SATA dev
+    * ice will transmit at a fixed rate ALIGNp after OOB has completed, for a
+    * fast SERDES it is suggested that this value be 54.2us / 4
+    *  PSU_SATA_AHCI_VENDOR_PP5C_RCT                               0x3FF
+
+    * PP5C - Port Phy5Cfg Register. This register controls the configuration o
+    * f the Phy Control Retry Interval timing for either Port 0 or Port 1. The
+    *  Port configured is controlled by the value programmed into the Port Con
+    * fig Register.
+    * (OFFSET, MASK, VALUE)      (0XFD0C00B8, 0xFFFFFFFFU ,0x3FFC96A4U)
+    */
+	PSU_Mask_Write(SATA_AHCI_VENDOR_PP5C_OFFSET,
+		0xFFFFFFFFU, 0x3FFC96A4U);
+/*##################################################################### */
+
 
 	return 1;
 }
@@ -19070,6 +19827,21 @@ unsigned long psu_resetin_init_data(void)
     */
 	PSU_Mask_Write(CRL_APB_RST_LPD_IOU0_OFFSET,
 		0x00000008U, 0x00000008U);
+/*##################################################################### */
+
+    /*
+    * PUTTING SATA IN RESET
+    */
+    /*
+    * Register : RST_FPD_TOP @ 0XFD1A0100
+
+    * Sata block level reset
+    *  PSU_CRF_APB_RST_FPD_TOP_SATA_RESET                          0X1
+
+    * FPD Block level software controlled reset
+    * (OFFSET, MASK, VALUE)      (0XFD1A0100, 0x00000002U ,0x00000002U)
+    */
+	PSU_Mask_Write(CRF_APB_RST_FPD_TOP_OFFSET, 0x00000002U, 0x00000002U);
 /*##################################################################### */
 
 

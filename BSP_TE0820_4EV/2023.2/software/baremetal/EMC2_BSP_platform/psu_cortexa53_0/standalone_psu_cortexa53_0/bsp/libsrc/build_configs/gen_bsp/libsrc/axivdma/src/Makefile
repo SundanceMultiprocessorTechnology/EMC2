@@ -60,10 +60,10 @@ RM = /tools/Xilinx/Vitis/2023.2/tps/lnx64/cmake-3.24.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp
+CMAKE_SOURCE_DIR = /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp
+CMAKE_BINARY_DIR = /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -135,14 +135,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(CMAKE_COMMAND) -E cmake_progress_start /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/axivdma/src//CMakeFiles/progress.marks
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/axivdma/src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 0
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(CMAKE_COMMAND) -E cmake_progress_start /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/libsrc/axivdma/src//CMakeFiles/progress.marks
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/axivdma/src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/axivdma/src/clean
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/axivdma/src/clean
 .PHONY : clean
 
 # The main clean target
@@ -151,22 +151,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/axivdma/src/preinstall
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/axivdma/src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/axivdma/src/preinstall
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/axivdma/src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 libsrc/axivdma/src/CMakeFiles/axivdma.dir/rule:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/axivdma/src/CMakeFiles/axivdma.dir/rule
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 libsrc/axivdma/src/CMakeFiles/axivdma.dir/rule
 .PHONY : libsrc/axivdma/src/CMakeFiles/axivdma.dir/rule
 
 # Convenience name for target.
@@ -175,7 +175,7 @@ axivdma: libsrc/axivdma/src/CMakeFiles/axivdma.dir/rule
 
 # fast build rule for target.
 axivdma/fast:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/build
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/build
 .PHONY : axivdma/fast
 
 xaxivdma.obj: xaxivdma.c.obj
@@ -183,7 +183,7 @@ xaxivdma.obj: xaxivdma.c.obj
 
 # target to build an object file
 xaxivdma.c.obj:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma.c.obj
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma.c.obj
 .PHONY : xaxivdma.c.obj
 
 xaxivdma.i: xaxivdma.c.i
@@ -191,7 +191,7 @@ xaxivdma.i: xaxivdma.c.i
 
 # target to preprocess a source file
 xaxivdma.c.i:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma.c.i
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma.c.i
 .PHONY : xaxivdma.c.i
 
 xaxivdma.s: xaxivdma.c.s
@@ -199,7 +199,7 @@ xaxivdma.s: xaxivdma.c.s
 
 # target to generate assembly for a file
 xaxivdma.c.s:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma.c.s
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma.c.s
 .PHONY : xaxivdma.c.s
 
 xaxivdma_channel.obj: xaxivdma_channel.c.obj
@@ -207,7 +207,7 @@ xaxivdma_channel.obj: xaxivdma_channel.c.obj
 
 # target to build an object file
 xaxivdma_channel.c.obj:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_channel.c.obj
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_channel.c.obj
 .PHONY : xaxivdma_channel.c.obj
 
 xaxivdma_channel.i: xaxivdma_channel.c.i
@@ -215,7 +215,7 @@ xaxivdma_channel.i: xaxivdma_channel.c.i
 
 # target to preprocess a source file
 xaxivdma_channel.c.i:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_channel.c.i
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_channel.c.i
 .PHONY : xaxivdma_channel.c.i
 
 xaxivdma_channel.s: xaxivdma_channel.c.s
@@ -223,7 +223,7 @@ xaxivdma_channel.s: xaxivdma_channel.c.s
 
 # target to generate assembly for a file
 xaxivdma_channel.c.s:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_channel.c.s
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_channel.c.s
 .PHONY : xaxivdma_channel.c.s
 
 xaxivdma_g.obj: xaxivdma_g.c.obj
@@ -231,7 +231,7 @@ xaxivdma_g.obj: xaxivdma_g.c.obj
 
 # target to build an object file
 xaxivdma_g.c.obj:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_g.c.obj
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_g.c.obj
 .PHONY : xaxivdma_g.c.obj
 
 xaxivdma_g.i: xaxivdma_g.c.i
@@ -239,7 +239,7 @@ xaxivdma_g.i: xaxivdma_g.c.i
 
 # target to preprocess a source file
 xaxivdma_g.c.i:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_g.c.i
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_g.c.i
 .PHONY : xaxivdma_g.c.i
 
 xaxivdma_g.s: xaxivdma_g.c.s
@@ -247,7 +247,7 @@ xaxivdma_g.s: xaxivdma_g.c.s
 
 # target to generate assembly for a file
 xaxivdma_g.c.s:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_g.c.s
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_g.c.s
 .PHONY : xaxivdma_g.c.s
 
 xaxivdma_intr.obj: xaxivdma_intr.c.obj
@@ -255,7 +255,7 @@ xaxivdma_intr.obj: xaxivdma_intr.c.obj
 
 # target to build an object file
 xaxivdma_intr.c.obj:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_intr.c.obj
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_intr.c.obj
 .PHONY : xaxivdma_intr.c.obj
 
 xaxivdma_intr.i: xaxivdma_intr.c.i
@@ -263,7 +263,7 @@ xaxivdma_intr.i: xaxivdma_intr.c.i
 
 # target to preprocess a source file
 xaxivdma_intr.c.i:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_intr.c.i
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_intr.c.i
 .PHONY : xaxivdma_intr.c.i
 
 xaxivdma_intr.s: xaxivdma_intr.c.s
@@ -271,7 +271,7 @@ xaxivdma_intr.s: xaxivdma_intr.c.s
 
 # target to generate assembly for a file
 xaxivdma_intr.c.s:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_intr.c.s
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_intr.c.s
 .PHONY : xaxivdma_intr.c.s
 
 xaxivdma_selftest.obj: xaxivdma_selftest.c.obj
@@ -279,7 +279,7 @@ xaxivdma_selftest.obj: xaxivdma_selftest.c.obj
 
 # target to build an object file
 xaxivdma_selftest.c.obj:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_selftest.c.obj
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_selftest.c.obj
 .PHONY : xaxivdma_selftest.c.obj
 
 xaxivdma_selftest.i: xaxivdma_selftest.c.i
@@ -287,7 +287,7 @@ xaxivdma_selftest.i: xaxivdma_selftest.c.i
 
 # target to preprocess a source file
 xaxivdma_selftest.c.i:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_selftest.c.i
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_selftest.c.i
 .PHONY : xaxivdma_selftest.c.i
 
 xaxivdma_selftest.s: xaxivdma_selftest.c.s
@@ -295,7 +295,7 @@ xaxivdma_selftest.s: xaxivdma_selftest.c.s
 
 # target to generate assembly for a file
 xaxivdma_selftest.c.s:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_selftest.c.s
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_selftest.c.s
 .PHONY : xaxivdma_selftest.c.s
 
 xaxivdma_sinit.obj: xaxivdma_sinit.c.obj
@@ -303,7 +303,7 @@ xaxivdma_sinit.obj: xaxivdma_sinit.c.obj
 
 # target to build an object file
 xaxivdma_sinit.c.obj:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_sinit.c.obj
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_sinit.c.obj
 .PHONY : xaxivdma_sinit.c.obj
 
 xaxivdma_sinit.i: xaxivdma_sinit.c.i
@@ -311,7 +311,7 @@ xaxivdma_sinit.i: xaxivdma_sinit.c.i
 
 # target to preprocess a source file
 xaxivdma_sinit.c.i:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_sinit.c.i
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_sinit.c.i
 .PHONY : xaxivdma_sinit.c.i
 
 xaxivdma_sinit.s: xaxivdma_sinit.c.s
@@ -319,7 +319,7 @@ xaxivdma_sinit.s: xaxivdma_sinit.c.s
 
 # target to generate assembly for a file
 xaxivdma_sinit.c.s:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_sinit.c.s
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(MAKE) $(MAKESILENT) -f libsrc/axivdma/src/CMakeFiles/axivdma.dir/build.make libsrc/axivdma/src/CMakeFiles/axivdma.dir/xaxivdma_sinit.c.s
 .PHONY : xaxivdma_sinit.c.s
 
 # Help Target
@@ -364,6 +364,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/build_configs/gen_bsp && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -3,7 +3,7 @@
   "type": "PLATFORM",
   "configuration": {
     "description": "",
-    "xsa": "/home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/firmware/design_1_wrapper.xsa",
+    "xsa": "/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/firmware/design_1_wrapper.xsa",
     "xsaPathInPlatform": "EMC2_BSP_platform/hw/design_1_wrapper.xsa",
     "emulationXsa": "",
     "emulationXsaPathInPlatform": "",
@@ -33,9 +33,9 @@
         "os": "standalone",
         "appTemplate": "empty_application",
         "isBootDomain": false,
-        "qemuData": "/home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/resources/standalone_psu_cortexa53_0/qemu",
-        "qemuArgsFile": "/home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/resources/standalone_psu_cortexa53_0/qemu/qemu_args.txt",
-        "pmcQemuArgsFile": "/home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/resources/standalone_psu_cortexa53_0/qemu/pmu_args.txt",
+        "qemuData": "/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/resources/standalone_psu_cortexa53_0/qemu",
+        "qemuArgsFile": "/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/resources/standalone_psu_cortexa53_0/qemu/qemu_args.txt",
+        "pmcQemuArgsFile": "/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/resources/standalone_psu_cortexa53_0/qemu/pmu_args.txt",
         "isBSPGenReq": false
       }
     ],

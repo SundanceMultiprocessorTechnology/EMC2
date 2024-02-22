@@ -1,7 +1,7 @@
 #############################################################################################       ##                     #
 #############################################################################################        ##   S U N D A N C E  #
 #####                                                                                   #####          ###                 #
-#####     This file contains the constraints for the EMC²-Z7015 and EMC²-Z7030          #####             ####             #   
+#####     This file contains the constraints for the EMCï¿½-Z7015 and EMCï¿½-Z7030          #####             ####             #   
 #####     carrier board.                                                                #####                ####          # 
 #####                                                                                   #####                    #####     # 
 #####     For the FMC interface, constraints have been defined both for single-ended    #####                         ###### 
@@ -11,7 +11,7 @@
 #####     described in the Starter's Guide document.                                    #####
 #####                                                                                   #####
 #####     The MGT signals are 2 lanes available in the FPGA through the PEX switch,     #####
-#####     1 lane available in FMC, 1 lane available in SATA (PCIe). The EMC² has 4      #####
+#####     1 lane available in FMC, 1 lane available in SATA (PCIe). The EMCï¿½ has 4      #####
 #####     lanes available through the PEX switch which needs to be configured to use    #####
 #####     them.                                                                         #####
 #####                                                                                   #####
@@ -72,8 +72,7 @@ set_property PACKAGE_PIN Y8 [get_ports {hdmi_out_data[8]}]
 set_property PACKAGE_PIN V8 [get_ports {hdmi_out_data[9]}]
 set_property PACKAGE_PIN W8 [get_ports {hdmi_out_data[10]}]
 set_property PACKAGE_PIN U8 [get_ports {hdmi_out_data[11]}]
-
-set_property SLEW FAST [get_ports {hdmi_out_data[11]}]
+t_property SLEW FAST [get_ports {hdmi_out_data[11]}]
 set_property SLEW FAST [get_ports {hdmi_out_data[10]}]
 set_property SLEW FAST [get_ports {hdmi_out_data[9]}]
 set_property SLEW FAST [get_ports {hdmi_out_data[8]}]
@@ -87,21 +86,3 @@ set_property SLEW FAST [get_ports {hdmi_out_data[1]}]
 set_property SLEW FAST [get_ports {hdmi_out_data[0]}]
 
 set_property IOSTANDARD LVCMOS18 [get_ports hdmi_*]
-
-#set_property DRIVE 16 [get_ports {hdmi_out_data[11]}]
-#set_property DRIVE 16 [get_ports {hdmi_out_data[10]}]
-#set_property DRIVE 16 [get_ports {hdmi_out_data[9]}]
-#set_property DRIVE 16 [get_ports {hdmi_out_data[8]}]
-#set_property DRIVE 16 [get_ports {hdmi_out_data[7]}]
-#set_property DRIVE 16 [get_ports {hdmi_out_data[6]}]
-#set_property DRIVE 16 [get_ports {hdmi_out_data[5]}]
-#set_property DRIVE 16 [get_ports {hdmi_out_data[4]}]
-#set_property DRIVE 16 [get_ports {hdmi_out_data[3]}]
-#set_property DRIVE 16 [get_ports {hdmi_out_data[2]}]
-#set_property DRIVE 16 [get_ports {hdmi_out_data[1]}]
-#set_property DRIVE 16 [get_ports {hdmi_out_data[0]}]
-
-set_property IOSTANDARD LVCMOS33 [get_ports iic_0_scl_io]
-set_property IOSTANDARD LVCMOS33 [get_ports iic_0_sda_io]
-set_property PULLUP true [get_ports iic_0_scl_io]
-set_property PULLUP true [get_ports iic_0_sda_io]

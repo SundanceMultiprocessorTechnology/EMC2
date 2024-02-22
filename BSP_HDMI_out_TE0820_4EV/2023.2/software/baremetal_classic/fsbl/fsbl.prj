@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="fsbl" location="/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/software/baremetal_classic/fsbl" platform="/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_HDMI_out_plat/export/EMC2_HDMI_out_plat/EMC2_HDMI_out_plat.xpfm" platformUID="xilinx:emc2-dp_te0820_4ev_1e::0.0(custom)" systemProject="fsbl_system" sysConfig="EMC2_HDMI_out_plat" runtime="C/C++" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="370b5843f7001e0681cc606a86d3e33f">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.2100693208">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.1679047476" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="zynqmp_fsbl" hasBspSettings="true"/>
+</sdkproject:SdkProject>

@@ -1332,6 +1332,14 @@
 #define XPAR_PSU_RSA_0_BASEADDR 0xffce0000
 #define XPAR_PSU_RSA_0_HIGHADDR 0xffceffff
 
+/* Definitions for peripheral SATA */
+#define XPAR_SATA_BASEADDR 0xfd0c0000
+#define XPAR_SATA_HIGHADDR 0xfd0c1fff
+
+/* Canonical definitions for peripheral SATA */
+#define XPAR_AHCI_0_BASEADDR 0xfd0c0000
+#define XPAR_AHCI_0_HIGHADDR 0xfd0c1fff
+
 /* Definitions for peripheral PSGTR */
 #define XPAR_PSGTR_BASEADDR 0xfd400000
 #define XPAR_PSGTR_HIGHADDR 0xfd43ffff

@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/axipmon/src/xaxipmon.c" "libsrc/axipmon/src/CMakeFiles/axipmon.dir/xaxipmon.c.obj" "gcc" "libsrc/axipmon/src/CMakeFiles/axipmon.dir/xaxipmon.c.obj.d"
-  "/home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/axipmon/src/xaxipmon_g.c" "libsrc/axipmon/src/CMakeFiles/axipmon.dir/xaxipmon_g.c.obj" "gcc" "libsrc/axipmon/src/CMakeFiles/axipmon.dir/xaxipmon_g.c.obj.d"
-  "/home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/axipmon/src/xaxipmon_selftest.c" "libsrc/axipmon/src/CMakeFiles/axipmon.dir/xaxipmon_selftest.c.obj" "gcc" "libsrc/axipmon/src/CMakeFiles/axipmon.dir/xaxipmon_selftest.c.obj.d"
-  "/home/sundance/Emilie_Projects/git/EMC2/BSP/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/axipmon/src/xaxipmon_sinit.c" "libsrc/axipmon/src/CMakeFiles/axipmon.dir/xaxipmon_sinit.c.obj" "gcc" "libsrc/axipmon/src/CMakeFiles/axipmon.dir/xaxipmon_sinit.c.obj.d"
+  "/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/axipmon/src/xaxipmon.c" "libsrc/axipmon/src/CMakeFiles/axipmon.dir/xaxipmon.c.obj" "gcc" "libsrc/axipmon/src/CMakeFiles/axipmon.dir/xaxipmon.c.obj.d"
+  "/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/axipmon/src/xaxipmon_g.c" "libsrc/axipmon/src/CMakeFiles/axipmon.dir/xaxipmon_g.c.obj" "gcc" "libsrc/axipmon/src/CMakeFiles/axipmon.dir/xaxipmon_g.c.obj.d"
+  "/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/axipmon/src/xaxipmon_selftest.c" "libsrc/axipmon/src/CMakeFiles/axipmon.dir/xaxipmon_selftest.c.obj" "gcc" "libsrc/axipmon/src/CMakeFiles/axipmon.dir/xaxipmon_selftest.c.obj.d"
+  "/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal/EMC2_BSP_platform/psu_cortexa53_0/standalone_psu_cortexa53_0/bsp/libsrc/axipmon/src/xaxipmon_sinit.c" "libsrc/axipmon/src/CMakeFiles/axipmon.dir/xaxipmon_sinit.c.obj" "gcc" "libsrc/axipmon/src/CMakeFiles/axipmon.dir/xaxipmon_sinit.c.obj.d"
   )
 
 # Targets to which this target links.

@@ -71,7 +71,7 @@ int main()
     	xil_printf("\r\nHDMI Init 720p60");
 
 
-    	Status = adv7511_init(XPAR_XIICPS_0_BASEADDR, 0x00, ADV7511_ADDR);
+    	//Status = adv7511_init(XPAR_XIICPS_0_BASEADDR, 0x00, ADV7511_ADDR);
 
 
     	Status = tpg_init(XPAR_V_TPG_0_BASEADDR);
