@@ -132,7 +132,7 @@ Extra dts/dtsi files (SUBSYSTEM_EXTRA_DT_FILES) []
 *
 generate boot args automatically (SUBSYSTEM_BOOTARGS_AUTO) [Y/n/?] 
 enable kernel earlyprintk (SUBSYSTEM_BOOTARGS_EARLYPRINTK) [Y/n/?] 
-Auto generated bootargs (NO EDIT!) (SUBSYSTEM_BOOTARGS_GENERATED) [earlycon console=ttyPS0,115200 clk_ignore_unused root=/dev/mmcblk0p2 ro rootwait] 
+Auto generated bootargs (NO EDIT!) (SUBSYSTEM_BOOTARGS_GENERATED) [earlycon console=ttyPS0,115200 clk_ignore_unused root=/dev/mmcblk1p2 ro rootwait] 
 Add extra boot args (SUBSYSTEM_EXTRA_BOOTARGS) [] 
 Devicetree compiler flags (SUBSYSTEM_DEVICETREE_COMPILER_FLAGS) [-@] 
 Devicetree overlay (SUBSYSTEM_DTB_OVERLAY) [N/y/?] 
@@ -218,7 +218,7 @@ Root filesystem type
   5. NFS (SUBSYSTEM_ROOTFS_NFS)
 > 6. EXT4 (SD/eMMC/SATA/USB) (SUBSYSTEM_ROOTFS_EXT4)
   7. other (SUBSYSTEM_ROOTFS_OTHER)
-choice[1-7]: Device node of SD device (SUBSYSTEM_SDROOT_DEV) [/dev/mmcblk0p2] 
+choice[1-7]: Device node of SD device (SUBSYSTEM_SDROOT_DEV) [/dev/mmcblk1p2] 
 name for bootable kernel image (SUBSYSTEM_UIMAGE_NAME) [image.ub] 
 Root filesystem formats (SUBSYSTEM_RFS_FORMATS) [cpio cpio.gz cpio.gz.u-boot ext4 tar.gz jffs2] 
 DTB padding size (SUBSYSTEM_DTB_PADDING_SIZE) [0x1000] 
