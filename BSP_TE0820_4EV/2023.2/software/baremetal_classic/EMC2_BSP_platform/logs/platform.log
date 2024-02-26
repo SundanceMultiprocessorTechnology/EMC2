@@ -1,0 +1,1776 @@
+TRACE::2024-02-22.13:17:08::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:08::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:08::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:08::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:08::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:08::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:08::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-02-22.13:17:20::SCWPlatform::Opened new HwDB with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:20::SCWWriter::formatted JSON is {
+	"platformName":	"EMC2_BSP_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"EMC2_BSP_platform",
+	"platHandOff":	"/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/firmware/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2024-02-22.13:17:20::SCWWriter::formatted JSON is {
+	"platformName":	"EMC2_BSP_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"EMC2_BSP_platform",
+	"platHandOff":	"/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/firmware/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"EMC2_BSP_platform",
+	"systems":	[{
+			"systemName":	"EMC2_BSP_platform",
+			"systemDesc":	"EMC2_BSP_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"EMC2_BSP_platform"
+		}]
+}
+TRACE::2024-02-22.13:17:20::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:20::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:20::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:20::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:20::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:20::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:20::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:20::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:20::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:20::SCWDomain::checking for install qemu data   : 
+TRACE::2024-02-22.13:17:20::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/
+TRACE::2024-02-22.13:17:20::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt
+TRACE::2024-02-22.13:17:20::SCWDomain:: Using the PMUQEMU args from install at  : /tools/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/pmu_args.txt
+TRACE::2024-02-22.13:17:20::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:20::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:20::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:20::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:20::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:20::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:20::SCWDomain::Qemu Directory name is changed from "" to "qemu"
+TRACE::2024-02-22.13:17:20::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:20::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:20::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:20::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:20::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:20::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:20::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-02-22.13:17:20::SCWMssOS::No sw design opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:20::SCWMssOS::mss does not exists at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:20::SCWMssOS::Creating sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:20::SCWMssOS::Adding the swdes entry, created swdb /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss with des name /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:20::SCWMssOS::updating the scw layer changes to swdes at   /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:20::SCWMssOS::Writing mss at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:20::SCWMssOS::Completed writing the mss file at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp
+TRACE::2024-02-22.13:17:20::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2024-02-22.13:17:20::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2024-02-22.13:17:20::SCWMssOS::Completed writing the mss file at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp
+TRACE::2024-02-22.13:17:20::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2024-02-22.13:17:23::SCWMssOS::Saving the mss changes /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:23::SCWMssOS::Adding the swdes entry, mss present, able to open swdb /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-02-22.13:17:23::SCWMssOS::Writing the mss file completed /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:23::SCWMssOS::Commit changes completed.
+TRACE::2024-02-22.13:17:23::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:23::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:23::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:23::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:23::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:23::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:23::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:23::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:23::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:23::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:23::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:23::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:23::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:23::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:23::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:23::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:23::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:23::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:23::SCWWriter::formatted JSON is {
+	"platformName":	"EMC2_BSP_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"EMC2_BSP_platform",
+	"platHandOff":	"/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/firmware/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"EMC2_BSP_platform",
+	"systems":	[{
+			"systemName":	"EMC2_BSP_platform",
+			"systemDesc":	"EMC2_BSP_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"EMC2_BSP_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"30bf7a338e430160628fbbc746398d24",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2024-02-22.13:17:23::SCWPlatform::Started generating the artifacts platform EMC2_BSP_platform
+TRACE::2024-02-22.13:17:23::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-02-22.13:17:23::SCWPlatform::Started generating the artifacts for system configuration EMC2_BSP_platform
+LOG::2024-02-22.13:17:23::SCWSystem::Checking the domain standalone_domain
+LOG::2024-02-22.13:17:23::SCWSystem::Not a boot domain 
+LOG::2024-02-22.13:17:23::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2024-02-22.13:17:23::SCWDomain::Generating domain artifcats
+TRACE::2024-02-22.13:17:23::SCWMssOS::Generating standalone artifcats
+TRACE::2024-02-22.13:17:23::SCWMssOS::Copying the qemu file from  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/resources/EMC2_BSP_platform/standalone_domain/qemu_args.txt To /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/export/EMC2_BSP_platform/sw/EMC2_BSP_platform/qemu/
+TRACE::2024-02-22.13:17:23::SCWMssOS::Copying the qemu file from  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/resources/EMC2_BSP_platform/standalone_domain/qemu_args.txt To /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/export/EMC2_BSP_platform/sw/EMC2_BSP_platform/qemu/
+TRACE::2024-02-22.13:17:23::SCWMssOS::Copying the qemu file from  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/resources/EMC2_BSP_platform/standalone_domain/qemu_args.txt To /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/export/EMC2_BSP_platform/sw/EMC2_BSP_platform/standalone_domain/qemu/
+TRACE::2024-02-22.13:17:23::SCWMssOS::Copying the qemu file from  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/resources/EMC2_BSP_platform/standalone_domain/qemu_args.txt To /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/export/EMC2_BSP_platform/sw/EMC2_BSP_platform/standalone_domain/qemu/
+TRACE::2024-02-22.13:17:23::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-02-22.13:17:23::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:23::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:23::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:23::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:23::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:23::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:23::SCWMssOS::Completed writing the mss file at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp
+TRACE::2024-02-22.13:17:23::SCWMssOS::Mss edits present, copying mssfile into export location /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:23::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-02-22.13:17:23::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-02-22.13:17:23::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2024-02-22.13:17:23::SCWMssOS::skipping the bsp build ... 
+TRACE::2024-02-22.13:17:23::SCWMssOS::Copying to export directory.
+TRACE::2024-02-22.13:17:23::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-02-22.13:17:23::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2024-02-22.13:17:23::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2024-02-22.13:17:23::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2024-02-22.13:17:23::SCWSystem::Completed Processing the sysconfig EMC2_BSP_platform
+LOG::2024-02-22.13:17:23::SCWPlatform::Completed generating the artifacts for system configuration EMC2_BSP_platform
+TRACE::2024-02-22.13:17:23::SCWPlatform::Started preparing the platform 
+TRACE::2024-02-22.13:17:23::SCWSystem::Writing the bif file for system config EMC2_BSP_platform
+TRACE::2024-02-22.13:17:23::SCWSystem::dir created 
+TRACE::2024-02-22.13:17:23::SCWSystem::Writing the bif 
+TRACE::2024-02-22.13:17:23::SCWPlatform::Started writing the spfm file 
+TRACE::2024-02-22.13:17:23::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-02-22.13:17:23::SCWPlatform::Completed generating the platform
+TRACE::2024-02-22.13:17:23::SCWMssOS::Saving the mss changes /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:23::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-02-22.13:17:23::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-02-22.13:17:23::SCWMssOS::Commit changes completed.
+TRACE::2024-02-22.13:17:23::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:23::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:23::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:23::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:23::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:23::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:23::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:23::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:23::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:23::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:23::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:23::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:23::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:23::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:23::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:23::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:23::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:23::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:23::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:23::SCWWriter::formatted JSON is {
+	"platformName":	"EMC2_BSP_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"EMC2_BSP_platform",
+	"platHandOff":	"/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/firmware/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"EMC2_BSP_platform",
+	"systems":	[{
+			"systemName":	"EMC2_BSP_platform",
+			"systemDesc":	"EMC2_BSP_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"EMC2_BSP_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"30bf7a338e430160628fbbc746398d24",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-02-22.13:17:23::SCWPlatform::updated the xpfm file.
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:24::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:24::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWMssOS::Saving the mss changes /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-02-22.13:17:24::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-02-22.13:17:24::SCWMssOS::Commit changes completed.
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:24::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:24::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:24::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:24::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:24::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:24::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWWriter::formatted JSON is {
+	"platformName":	"EMC2_BSP_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"EMC2_BSP_platform",
+	"platHandOff":	"/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/firmware/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"EMC2_BSP_platform",
+	"systems":	[{
+			"systemName":	"EMC2_BSP_platform",
+			"systemDesc":	"EMC2_BSP_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"EMC2_BSP_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"30bf7a338e430160628fbbc746398d24",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:24::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:24::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:24::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:24::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:24::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:24::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWMssOS::Saving the mss changes /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-02-22.13:17:24::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-02-22.13:17:24::SCWMssOS::Commit changes completed.
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:24::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:24::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:24::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:24::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:24::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:24::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWWriter::formatted JSON is {
+	"platformName":	"EMC2_BSP_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"EMC2_BSP_platform",
+	"platHandOff":	"/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/firmware/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"EMC2_BSP_platform",
+	"systems":	[{
+			"systemName":	"EMC2_BSP_platform",
+			"systemDesc":	"EMC2_BSP_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"EMC2_BSP_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psu_cortexa53_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"30bf7a338e430160628fbbc746398d24",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-02-22.13:17:24::SCWMssOS::Saving the mss changes /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-02-22.13:17:24::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-02-22.13:17:24::SCWMssOS::Commit changes completed.
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:24::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:24::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:24::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:24::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:24::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2024-02-22.13:17:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:24::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:24::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:24::SCWWriter::formatted JSON is {
+	"platformName":	"EMC2_BSP_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"EMC2_BSP_platform",
+	"platHandOff":	"/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/firmware/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"EMC2_BSP_platform",
+	"systems":	[{
+			"systemName":	"EMC2_BSP_platform",
+			"systemDesc":	"EMC2_BSP_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"EMC2_BSP_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psu_cortexa53_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"30bf7a338e430160628fbbc746398d24",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-02-22.13:17:25::SCWPlatform::Clearing the existing platform
+TRACE::2024-02-22.13:17:25::SCWSystem::Clearing the existing sysconfig
+TRACE::2024-02-22.13:17:25::SCWMssOS::Removing the swdes entry for  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:25::SCWSystem::Clearing the domains completed.
+TRACE::2024-02-22.13:17:25::SCWPlatform::Clearing the opened hw db.
+TRACE::2024-02-22.13:17:25::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:25::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:25::SCWPlatform:: Platform location is /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:25::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:25::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:25::SCWPlatform::Removing the HwDB with name /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:25::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:25::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:25::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:25::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:25::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:25::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:25::SCWPlatform::Do not have an existing db opened. 
+TRACE::2024-02-22.13:17:40::SCWPlatform::Opened new HwDB with name design_1_wrapper_2
+TRACE::2024-02-22.13:17:40::SCWReader::Active system found as  EMC2_BSP_platform
+TRACE::2024-02-22.13:17:40::SCWReader::Handling sysconfig EMC2_BSP_platform
+TRACE::2024-02-22.13:17:40::SCWDomain::checking for install qemu data   : 
+TRACE::2024-02-22.13:17:40::SCWDomain:: Using the QEMU Data from install at  : /tools/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/
+TRACE::2024-02-22.13:17:40::SCWDomain:: Using the QEMU args  from install at  : /tools/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/qemu_args.txt
+TRACE::2024-02-22.13:17:40::SCWDomain:: Using the PMUQEMU args from install at  : /tools/Xilinx/Vitis/2023.2/data/emulation/platforms/zynqmp/sw/a53_standalone/qemu/pmu_args.txt
+TRACE::2024-02-22.13:17:40::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:40::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:17:40::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:17:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:40::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:40::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:17:40::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:17:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:40::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:40::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:17:40::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:17:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:40::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:40::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:17:40::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:17:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:40::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:40::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-02-22.13:17:40::SCWMssOS::No sw design opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:40::SCWMssOS::mss exists loading the mss file  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:40::SCWMssOS::Opened the sw design from mss  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:40::SCWMssOS::Adding the swdes entry /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-02-22.13:17:40::SCWMssOS::updating the scw layer about changes
+TRACE::2024-02-22.13:17:40::SCWMssOS::Opened the sw design.  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:40::SCWMssOS::Saving the mss changes /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:40::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-02-22.13:17:40::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-02-22.13:17:40::SCWMssOS::Commit changes completed.
+TRACE::2024-02-22.13:17:40::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2024-02-22.13:17:40::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2024-02-22.13:17:40::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:17:40::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:17:40::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:17:40::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:17:40::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:17:40::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:17:40::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:40::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:17:40::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:17:40::SCWReader::No isolation master present  
+TRACE::2024-02-22.13:31:55::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:31:55::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:31:55::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:31:55::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:31:55::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:31:55::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:31:55::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:31:55::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:31:55::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:31:55::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:31:55::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:31:55::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:32:00::SCWMssOS::In reload Mss file.
+TRACE::2024-02-22.13:32:00::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:32:00::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:32:00::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:32:00::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:32:00::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:32:00::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:32:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:32:00::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:32:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:32:00::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:32:00::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-02-22.13:32:00::SCWMssOS::No sw design opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:32:00::SCWMssOS::mss exists loading the mss file  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:32:00::SCWMssOS::Opened the sw design from mss  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:32:00::SCWMssOS::Adding the swdes entry /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-02-22.13:32:00::SCWMssOS::updating the scw layer about changes
+TRACE::2024-02-22.13:32:00::SCWMssOS::Opened the sw design.  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:32:00::SCWMssOS::Saving the mss changes /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:32:00::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-02-22.13:32:00::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-02-22.13:32:00::SCWMssOS::Commit changes completed.
+TRACE::2024-02-22.13:32:00::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:32:00::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:32:00::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:32:00::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:32:00::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:32:00::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:32:00::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:32:00::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:32:00::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:32:00::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:32:00::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:32:00::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:32:00::SCWMssOS::Removing the swdes entry for  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:32:09::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:32:09::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:32:09::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:32:09::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:32:09::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:32:09::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:32:09::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:32:09::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:32:09::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:32:09::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:32:09::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-02-22.13:32:09::SCWMssOS::No sw design opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:32:09::SCWMssOS::mss exists loading the mss file  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:32:09::SCWMssOS::Opened the sw design from mss  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:32:09::SCWMssOS::Adding the swdes entry /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-02-22.13:32:09::SCWMssOS::updating the scw layer about changes
+TRACE::2024-02-22.13:32:10::SCWMssOS::Opened the sw design.  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:18::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:18::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:18::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:18::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:34:18::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:18::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:34:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:34:18::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:34:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:34:18::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:18::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:34:18::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:18::SCWMssOS::Adding Library:  xilffs:5.1
+TRACE::2024-02-22.13:34:18::SCWMssOS::Added Library:  xilffs
+TRACE::2024-02-22.13:34:18::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:18::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:18::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:18::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:34:18::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:18::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:34:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:34:18::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:34:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:34:18::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:18::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:34:18::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:21::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:21::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:21::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:21::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:34:21::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:21::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:34:21::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:34:21::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:34:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:34:21::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:21::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:34:21::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:21::SCWMssOS::Adding Library:  xilpm:5.1
+TRACE::2024-02-22.13:34:21::SCWMssOS::Added Library:  xilpm
+TRACE::2024-02-22.13:34:21::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:21::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:21::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:21::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:34:21::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:21::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:34:21::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:34:21::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:34:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:34:21::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:21::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:34:21::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:23::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:23::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:23::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:23::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:34:23::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:23::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:34:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:34:23::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:34:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:34:23::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:23::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:34:23::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:23::SCWMssOS::Adding Library:  xilsecure:5.2
+TRACE::2024-02-22.13:34:23::SCWMssOS::Added Library:  xilsecure
+TRACE::2024-02-22.13:34:23::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:23::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:23::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:23::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:34:23::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:23::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:34:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:34:23::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:34:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:34:23::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:23::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:34:23::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:31::SCWMssOS::Saving the mss changes /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:31::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-02-22.13:34:31::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-02-22.13:34:31::SCWMssOS::Commit changes completed.
+TRACE::2024-02-22.13:34:31::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:31::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:31::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:31::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:34:31::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:31::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:34:31::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:34:31::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:34:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:34:31::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:31::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:34:31::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:31::SCWWriter::formatted JSON is {
+	"platformName":	"EMC2_BSP_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"EMC2_BSP_platform",
+	"platHandOff":	"/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/firmware/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"EMC2_BSP_platform",
+	"systems":	[{
+			"systemName":	"EMC2_BSP_platform",
+			"systemDesc":	"EMC2_BSP_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"EMC2_BSP_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psu_cortexa53_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"30bf7a338e430160628fbbc746398d24",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.1", "xilpm:5.1", "xilsecure:5.2"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2024-02-22.13:34:31::SCWMssOS::Saving the mss changes /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:31::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-02-22.13:34:31::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-02-22.13:34:31::SCWMssOS::Commit changes completed.
+TRACE::2024-02-22.13:34:31::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:31::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:31::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:31::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:34:31::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:31::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:34:31::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:34:31::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:34:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:34:31::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:31::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:34:31::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:31::SCWMssOS::Removing the swdes entry for  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:32::SCWMssOS::In reload Mss file.
+TRACE::2024-02-22.13:34:32::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:34:32::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:34:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:34:32::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:34:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:34:32::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:32::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-02-22.13:34:32::SCWMssOS::No sw design opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:32::SCWMssOS::mss exists loading the mss file  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:32::SCWMssOS::Opened the sw design from mss  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:32::SCWMssOS::Adding the swdes entry /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-02-22.13:34:32::SCWMssOS::updating the scw layer about changes
+TRACE::2024-02-22.13:34:32::SCWMssOS::Opened the sw design.  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:32::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:34:32::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:34:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:34:32::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:34:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:34:32::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:32::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:34:32::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:32::SCWMssOS:: library already available in sw design:  xilffs:5.1
+TRACE::2024-02-22.13:34:32::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:34:32::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:34:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:34:32::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:34:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:34:32::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:32::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:34:32::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:32::SCWMssOS:: library already available in sw design:  xilpm:5.1
+TRACE::2024-02-22.13:34:32::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:34:32::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:34:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:34:32::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:34:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:34:32::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:32::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:34:32::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:32::SCWMssOS:: library already available in sw design:  xilsecure:5.2
+TRACE::2024-02-22.13:34:32::SCWMssOS::Saving the mss changes /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:32::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-02-22.13:34:32::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-02-22.13:34:32::SCWMssOS::Commit changes completed.
+TRACE::2024-02-22.13:34:32::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:34:32::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:32::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:34:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:34:32::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:34:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:34:32::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:32::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:34:32::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:32::SCWMssOS::Removing the swdes entry for  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:34::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:34::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:34::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:34::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:34:34::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:34:34::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:34:34::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:34:34::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:34:34::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:34:34::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:34::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-02-22.13:34:34::SCWMssOS::No sw design opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:34::SCWMssOS::mss exists loading the mss file  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:34::SCWMssOS::Opened the sw design from mss  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:34::SCWMssOS::Adding the swdes entry /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-02-22.13:34:34::SCWMssOS::updating the scw layer about changes
+TRACE::2024-02-22.13:34:34::SCWMssOS::Opened the sw design.  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:34:34::SCWMssOS::Completed writing the mss file at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp
+TRACE::2024-02-22.13:34:34::SCWMssOS::Forcing BSP Sources regeneration.
+LOG::2024-02-22.13:35:24::SCWPlatform::Started generating the artifacts platform EMC2_BSP_platform
+TRACE::2024-02-22.13:35:24::SCWPlatform::Sanity checking of platform is completed
+LOG::2024-02-22.13:35:24::SCWPlatform::Started generating the artifacts for system configuration EMC2_BSP_platform
+LOG::2024-02-22.13:35:24::SCWSystem::Checking the domain standalone_domain
+LOG::2024-02-22.13:35:24::SCWSystem::Not a boot domain 
+LOG::2024-02-22.13:35:24::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2024-02-22.13:35:24::SCWDomain::Generating domain artifcats
+TRACE::2024-02-22.13:35:24::SCWMssOS::Generating standalone artifcats
+TRACE::2024-02-22.13:35:24::SCWMssOS::Copying the qemu file from  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/resources/EMC2_BSP_platform/standalone_domain/qemu_args.txt To /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/export/EMC2_BSP_platform/sw/EMC2_BSP_platform/qemu/
+TRACE::2024-02-22.13:35:24::SCWMssOS::Copying the qemu file from  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/resources/EMC2_BSP_platform/standalone_domain/qemu_args.txt To /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/export/EMC2_BSP_platform/sw/EMC2_BSP_platform/qemu/
+TRACE::2024-02-22.13:35:24::SCWMssOS::Copying the qemu file from  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/resources/EMC2_BSP_platform/standalone_domain/qemu_args.txt To /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/export/EMC2_BSP_platform/sw/EMC2_BSP_platform/standalone_domain/qemu/
+TRACE::2024-02-22.13:35:24::SCWMssOS::Copying the qemu file from  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/resources/EMC2_BSP_platform/standalone_domain/qemu_args.txt To /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/export/EMC2_BSP_platform/sw/EMC2_BSP_platform/standalone_domain/qemu/
+TRACE::2024-02-22.13:35:24::SCWMssOS:: Copying the user libraries. 
+TRACE::2024-02-22.13:35:24::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:35:24::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:35:24::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:35:24::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:35:24::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:35:24::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:35:24::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:35:24::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:35:24::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:35:24::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:35:24::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2024-02-22.13:35:24::SCWMssOS::No sw design opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:35:24::SCWMssOS::mss exists loading the mss file  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:35:24::SCWMssOS::Opened the sw design from mss  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:35:24::SCWMssOS::Adding the swdes entry /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2024-02-22.13:35:24::SCWMssOS::updating the scw layer about changes
+TRACE::2024-02-22.13:35:24::SCWMssOS::Opened the sw design.  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:35:24::SCWMssOS::Completed writing the mss file at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp
+TRACE::2024-02-22.13:35:24::SCWMssOS::Mss edits present, copying mssfile into export location /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:35:24::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2024-02-22.13:35:24::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2024-02-22.13:35:24::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2024-02-22.13:35:24::SCWMssOS::doing bsp build ... 
+TRACE::2024-02-22.13:35:24::SCWMssOS::System Command Ran  cd  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp ; bash -c "make  " 
+TRACE::2024-02-22.13:35:24::SCWMssOS::make --no-print-directory seq_libs
+
+TRACE::2024-02-22.13:35:24::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/axipmon_v6_10/src
+
+TRACE::2024-02-22.13:35:24::SCWMssOS::make -C psu_cortexa53_0/libsrc/axipmon_v6_10/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64
+TRACE::2024-02-22.13:35:24::SCWMssOS::-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-di
+TRACE::2024-02-22.13:35:24::SCWMssOS::stribute-patterns"
+
+TRACE::2024-02-22.13:35:24::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/clockps_v1_5/src
+
+TRACE::2024-02-22.13:35:24::SCWMssOS::make -C psu_cortexa53_0/libsrc/clockps_v1_5/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:24::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:24::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:25::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/coresightps_dcc_v1_9/src
+
+TRACE::2024-02-22.13:35:25::SCWMssOS::make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_9/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=
+TRACE::2024-02-22.13:35:25::SCWMssOS::aarch64-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-
+TRACE::2024-02-22.13:35:25::SCWMssOS::loop-distribute-patterns"
+
+TRACE::2024-02-22.13:35:25::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/cpu_cortexa53_v2_1/src
+
+TRACE::2024-02-22.13:35:25::SCWMssOS::make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aa
+TRACE::2024-02-22.13:35:25::SCWMssOS::rch64-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-lo
+TRACE::2024-02-22.13:35:25::SCWMssOS::op-distribute-patterns"
+
+TRACE::2024-02-22.13:35:25::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/csudma_v1_14/src
+
+TRACE::2024-02-22.13:35:25::SCWMssOS::make -C psu_cortexa53_0/libsrc/csudma_v1_14/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:25::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:25::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:25::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/ddrcpsu_v1_5/src
+
+TRACE::2024-02-22.13:35:25::SCWMssOS::make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_5/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:25::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:25::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:25::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/emacps_v3_19/src
+
+TRACE::2024-02-22.13:35:25::SCWMssOS::make -C psu_cortexa53_0/libsrc/emacps_v3_19/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:25::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:25::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:25::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/gpiops_v3_12/src
+
+TRACE::2024-02-22.13:35:25::SCWMssOS::make -C psu_cortexa53_0/libsrc/gpiops_v3_12/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:25::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:25::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:25::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/iicps_v3_18/src
+
+TRACE::2024-02-22.13:35:25::SCWMssOS::make -C psu_cortexa53_0/libsrc/iicps_v3_18/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-n
+TRACE::2024-02-22.13:35:25::SCWMssOS::one-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dist
+TRACE::2024-02-22.13:35:25::SCWMssOS::ribute-patterns"
+
+TRACE::2024-02-22.13:35:25::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/ipipsu_v2_14/src
+
+TRACE::2024-02-22.13:35:25::SCWMssOS::make -C psu_cortexa53_0/libsrc/ipipsu_v2_14/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:25::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:25::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:25::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/qspipsu_v1_18/src
+
+TRACE::2024-02-22.13:35:25::SCWMssOS::make -C psu_cortexa53_0/libsrc/qspipsu_v1_18/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64
+TRACE::2024-02-22.13:35:25::SCWMssOS::-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-di
+TRACE::2024-02-22.13:35:25::SCWMssOS::stribute-patterns"
+
+TRACE::2024-02-22.13:35:26::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/resetps_v1_6/src
+
+TRACE::2024-02-22.13:35:26::SCWMssOS::make -C psu_cortexa53_0/libsrc/resetps_v1_6/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:26::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:26::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:26::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/rtcpsu_v1_13/src
+
+TRACE::2024-02-22.13:35:26::SCWMssOS::make -C psu_cortexa53_0/libsrc/rtcpsu_v1_13/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:26::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:26::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:26::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/scugic_v5_2/src
+
+TRACE::2024-02-22.13:35:26::SCWMssOS::make -C psu_cortexa53_0/libsrc/scugic_v5_2/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-n
+TRACE::2024-02-22.13:35:26::SCWMssOS::one-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dist
+TRACE::2024-02-22.13:35:26::SCWMssOS::ribute-patterns"
+
+TRACE::2024-02-22.13:35:26::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/sdps_v4_2/src
+
+TRACE::2024-02-22.13:35:26::SCWMssOS::make -C psu_cortexa53_0/libsrc/sdps_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+TRACE::2024-02-22.13:35:26::SCWMssOS::e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distri
+TRACE::2024-02-22.13:35:26::SCWMssOS::bute-patterns"
+
+TRACE::2024-02-22.13:35:26::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/standalone_v9_0/src
+
+TRACE::2024-02-22.13:35:26::SCWMssOS::make -C psu_cortexa53_0/libsrc/standalone_v9_0/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch
+TRACE::2024-02-22.13:35:26::SCWMssOS::64-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-
+TRACE::2024-02-22.13:35:26::SCWMssOS::distribute-patterns"
+
+TRACE::2024-02-22.13:35:28::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/sysmonpsu_v2_9/src
+
+TRACE::2024-02-22.13:35:28::SCWMssOS::make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_9/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch6
+TRACE::2024-02-22.13:35:28::SCWMssOS::4-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-d
+TRACE::2024-02-22.13:35:28::SCWMssOS::istribute-patterns"
+
+TRACE::2024-02-22.13:35:28::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/uartps_v3_13/src
+
+TRACE::2024-02-22.13:35:28::SCWMssOS::make -C psu_cortexa53_0/libsrc/uartps_v3_13/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:28::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:28::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:28::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/usbpsu_v1_14/src
+
+TRACE::2024-02-22.13:35:28::SCWMssOS::make -C psu_cortexa53_0/libsrc/usbpsu_v1_14/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:28::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:28::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:28::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/xilffs_v5_1/src
+
+TRACE::2024-02-22.13:35:28::SCWMssOS::make -C psu_cortexa53_0/libsrc/xilffs_v5_1/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-n
+TRACE::2024-02-22.13:35:28::SCWMssOS::one-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dist
+TRACE::2024-02-22.13:35:28::SCWMssOS::ribute-patterns"
+
+TRACE::2024-02-22.13:35:29::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/xilpm_v5_1/src
+
+TRACE::2024-02-22.13:35:29::SCWMssOS::make -C psu_cortexa53_0/libsrc/xilpm_v5_1/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-no
+TRACE::2024-02-22.13:35:29::SCWMssOS::ne-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distr
+TRACE::2024-02-22.13:35:29::SCWMssOS::ibute-patterns"
+
+TRACE::2024-02-22.13:35:29::SCWMssOS::Include files for this library have already been copied.
+
+TRACE::2024-02-22.13:35:29::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/xilsecure_v5_2/src
+
+TRACE::2024-02-22.13:35:29::SCWMssOS::make -C psu_cortexa53_0/libsrc/xilsecure_v5_2/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch6
+TRACE::2024-02-22.13:35:29::SCWMssOS::4-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-d
+TRACE::2024-02-22.13:35:29::SCWMssOS::istribute-patterns"
+
+TRACE::2024-02-22.13:35:30::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/zdma_v1_17/src
+
+TRACE::2024-02-22.13:35:30::SCWMssOS::make -C psu_cortexa53_0/libsrc/zdma_v1_17/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-no
+TRACE::2024-02-22.13:35:30::SCWMssOS::ne-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distr
+TRACE::2024-02-22.13:35:30::SCWMssOS::ibute-patterns"
+
+TRACE::2024-02-22.13:35:31::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/xilpm_v5_1/src
+
+TRACE::2024-02-22.13:35:31::SCWMssOS::make -C psu_cortexa53_0/libsrc/xilpm_v5_1/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+TRACE::2024-02-22.13:35:31::SCWMssOS::elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribu
+TRACE::2024-02-22.13:35:31::SCWMssOS::te-patterns"
+
+TRACE::2024-02-22.13:35:31::SCWMssOS::Compiling xilpm library
+
+TRACE::2024-02-22.13:35:38::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/xilsecure_v5_2/src
+
+TRACE::2024-02-22.13:35:38::SCWMssOS::make -C psu_cortexa53_0/libsrc/xilsecure_v5_2/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-n
+TRACE::2024-02-22.13:35:38::SCWMssOS::one-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dist
+TRACE::2024-02-22.13:35:38::SCWMssOS::ribute-patterns"
+
+TRACE::2024-02-22.13:35:38::SCWMssOS::Compiling XilSecure Library
+
+TRACE::2024-02-22.13:35:53::SCWMssOS::Finished building libraries sequentially.
+
+TRACE::2024-02-22.13:35:53::SCWMssOS::make -j 6 --no-print-directory par_libs
+
+TRACE::2024-02-22.13:35:53::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/clockps_v1_5/src
+
+TRACE::2024-02-22.13:35:53::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/cpu_cortexa53_v2_1/src
+
+TRACE::2024-02-22.13:35:53::SCWMssOS::make -C psu_cortexa53_0/libsrc/clockps_v1_5/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:53::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:53::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:53::SCWMssOS::make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aa
+TRACE::2024-02-22.13:35:53::SCWMssOS::rch64-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-lo
+TRACE::2024-02-22.13:35:53::SCWMssOS::op-distribute-patterns"
+
+TRACE::2024-02-22.13:35:53::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/coresightps_dcc_v1_9/src
+
+TRACE::2024-02-22.13:35:53::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/axipmon_v6_10/src
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/axipmon_v6_10/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64
+TRACE::2024-02-22.13:35:54::SCWMssOS::-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-di
+TRACE::2024-02-22.13:35:54::SCWMssOS::stribute-patterns"
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_9/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=
+TRACE::2024-02-22.13:35:54::SCWMssOS::aarch64-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-
+TRACE::2024-02-22.13:35:54::SCWMssOS::loop-distribute-patterns"
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/ddrcpsu_v1_5/src
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_5/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:54::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:54::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/emacps_v3_19/src
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/gpiops_v3_12/src
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/csudma_v1_14/src
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/csudma_v1_14/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:54::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:54::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/emacps_v3_19/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:54::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:54::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/gpiops_v3_12/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:54::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:54::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/iicps_v3_18/src
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/ipipsu_v2_14/src
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/iicps_v3_18/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-n
+TRACE::2024-02-22.13:35:54::SCWMssOS::one-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dist
+TRACE::2024-02-22.13:35:54::SCWMssOS::ribute-patterns"
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/qspipsu_v1_18/src
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/ipipsu_v2_14/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:54::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:54::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/qspipsu_v1_18/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64
+TRACE::2024-02-22.13:35:54::SCWMssOS::-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-di
+TRACE::2024-02-22.13:35:54::SCWMssOS::stribute-patterns"
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/resetps_v1_6/src
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/rtcpsu_v1_13/src
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/resetps_v1_6/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:54::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:54::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/scugic_v5_2/src
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/rtcpsu_v1_13/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:54::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:54::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/scugic_v5_2/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-n
+TRACE::2024-02-22.13:35:54::SCWMssOS::one-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dist
+TRACE::2024-02-22.13:35:54::SCWMssOS::ribute-patterns"
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/sdps_v4_2/src
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/sdps_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+TRACE::2024-02-22.13:35:54::SCWMssOS::e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distri
+TRACE::2024-02-22.13:35:54::SCWMssOS::bute-patterns"
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/standalone_v9_0/src
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/standalone_v9_0/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch
+TRACE::2024-02-22.13:35:54::SCWMssOS::64-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-
+TRACE::2024-02-22.13:35:54::SCWMssOS::distribute-patterns"
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/usbpsu_v1_14/src
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/uartps_v3_13/src
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/uartps_v3_13/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:54::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:54::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/usbpsu_v1_14/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:35:54::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:35:54::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/sysmonpsu_v2_9/src
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_9/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch6
+TRACE::2024-02-22.13:35:54::SCWMssOS::4-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-d
+TRACE::2024-02-22.13:35:54::SCWMssOS::istribute-patterns"
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/xilffs_v5_1/src
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/xilpm_v5_1/src
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/xilffs_v5_1/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-n
+TRACE::2024-02-22.13:35:54::SCWMssOS::one-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dist
+TRACE::2024-02-22.13:35:54::SCWMssOS::ribute-patterns"
+
+TRACE::2024-02-22.13:35:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/xilpm_v5_1/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-no
+TRACE::2024-02-22.13:35:54::SCWMssOS::ne-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distr
+TRACE::2024-02-22.13:35:54::SCWMssOS::ibute-patterns"
+
+TRACE::2024-02-22.13:35:55::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/xilsecure_v5_2/src
+
+TRACE::2024-02-22.13:35:55::SCWMssOS::make -C psu_cortexa53_0/libsrc/xilsecure_v5_2/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch6
+TRACE::2024-02-22.13:35:55::SCWMssOS::4-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-d
+TRACE::2024-02-22.13:35:55::SCWMssOS::istribute-patterns"
+
+TRACE::2024-02-22.13:35:55::SCWMssOS::Include files for this library have already been copied.
+
+TRACE::2024-02-22.13:35:55::SCWMssOS::Running Make include in psu_cortexa53_0/libsrc/zdma_v1_17/src
+
+TRACE::2024-02-22.13:35:55::SCWMssOS::make -C psu_cortexa53_0/libsrc/zdma_v1_17/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-no
+TRACE::2024-02-22.13:35:55::SCWMssOS::ne-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distr
+TRACE::2024-02-22.13:35:55::SCWMssOS::ibute-patterns"
+
+TRACE::2024-02-22.13:35:56::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/axipmon_v6_10/src
+
+TRACE::2024-02-22.13:35:56::SCWMssOS::make -C psu_cortexa53_0/libsrc/axipmon_v6_10/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-no
+TRACE::2024-02-22.13:35:56::SCWMssOS::ne-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distr
+TRACE::2024-02-22.13:35:56::SCWMssOS::ibute-patterns"
+
+TRACE::2024-02-22.13:35:56::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/clockps_v1_5/src
+
+TRACE::2024-02-22.13:35:56::SCWMssOS::make -C psu_cortexa53_0/libsrc/clockps_v1_5/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+TRACE::2024-02-22.13:35:56::SCWMssOS::e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distri
+TRACE::2024-02-22.13:35:56::SCWMssOS::bute-patterns"
+
+TRACE::2024-02-22.13:35:56::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/coresightps_dcc_v1_9/src
+
+TRACE::2024-02-22.13:35:56::SCWMssOS::make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_9/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aar
+TRACE::2024-02-22.13:35:56::SCWMssOS::ch64-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loo
+TRACE::2024-02-22.13:35:56::SCWMssOS::p-distribute-patterns"
+
+TRACE::2024-02-22.13:35:56::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/cpu_cortexa53_v2_1/src
+
+TRACE::2024-02-22.13:35:56::SCWMssOS::make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch
+TRACE::2024-02-22.13:35:56::SCWMssOS::64-none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-
+TRACE::2024-02-22.13:35:56::SCWMssOS::distribute-patterns"
+
+TRACE::2024-02-22.13:35:56::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/csudma_v1_14/src
+
+TRACE::2024-02-22.13:35:56::SCWMssOS::make -C psu_cortexa53_0/libsrc/csudma_v1_14/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+TRACE::2024-02-22.13:35:56::SCWMssOS::e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distri
+TRACE::2024-02-22.13:35:56::SCWMssOS::bute-patterns"
+
+TRACE::2024-02-22.13:35:56::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/ddrcpsu_v1_5/src
+
+TRACE::2024-02-22.13:35:56::SCWMssOS::make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_5/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+TRACE::2024-02-22.13:35:56::SCWMssOS::e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distri
+TRACE::2024-02-22.13:35:56::SCWMssOS::bute-patterns"
+
+TRACE::2024-02-22.13:36:01::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/emacps_v3_19/src
+
+TRACE::2024-02-22.13:36:01::SCWMssOS::make -C psu_cortexa53_0/libsrc/emacps_v3_19/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+TRACE::2024-02-22.13:36:01::SCWMssOS::e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distri
+TRACE::2024-02-22.13:36:01::SCWMssOS::bute-patterns"
+
+TRACE::2024-02-22.13:36:01::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/gpiops_v3_12/src
+
+TRACE::2024-02-22.13:36:01::SCWMssOS::make -C psu_cortexa53_0/libsrc/gpiops_v3_12/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+TRACE::2024-02-22.13:36:01::SCWMssOS::e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distri
+TRACE::2024-02-22.13:36:01::SCWMssOS::bute-patterns"
+
+TRACE::2024-02-22.13:36:13::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/iicps_v3_18/src
+
+TRACE::2024-02-22.13:36:13::SCWMssOS::make -C psu_cortexa53_0/libsrc/iicps_v3_18/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2024-02-22.13:36:13::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distrib
+TRACE::2024-02-22.13:36:13::SCWMssOS::ute-patterns"
+
+TRACE::2024-02-22.13:36:18::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/ipipsu_v2_14/src
+
+TRACE::2024-02-22.13:36:18::SCWMssOS::make -C psu_cortexa53_0/libsrc/ipipsu_v2_14/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+TRACE::2024-02-22.13:36:18::SCWMssOS::e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distri
+TRACE::2024-02-22.13:36:18::SCWMssOS::bute-patterns"
+
+TRACE::2024-02-22.13:36:22::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/qspipsu_v1_18/src
+
+TRACE::2024-02-22.13:36:22::SCWMssOS::make -C psu_cortexa53_0/libsrc/qspipsu_v1_18/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-no
+TRACE::2024-02-22.13:36:22::SCWMssOS::ne-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distr
+TRACE::2024-02-22.13:36:22::SCWMssOS::ibute-patterns"
+
+TRACE::2024-02-22.13:36:22::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/resetps_v1_6/src
+
+TRACE::2024-02-22.13:36:22::SCWMssOS::make -C psu_cortexa53_0/libsrc/resetps_v1_6/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+TRACE::2024-02-22.13:36:22::SCWMssOS::e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distri
+TRACE::2024-02-22.13:36:22::SCWMssOS::bute-patterns"
+
+TRACE::2024-02-22.13:36:36::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/rtcpsu_v1_13/src
+
+TRACE::2024-02-22.13:36:36::SCWMssOS::make -C psu_cortexa53_0/libsrc/rtcpsu_v1_13/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+TRACE::2024-02-22.13:36:36::SCWMssOS::e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distri
+TRACE::2024-02-22.13:36:36::SCWMssOS::bute-patterns"
+
+TRACE::2024-02-22.13:36:37::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/scugic_v5_2/src
+
+TRACE::2024-02-22.13:36:37::SCWMssOS::make -C psu_cortexa53_0/libsrc/scugic_v5_2/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2024-02-22.13:36:37::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distrib
+TRACE::2024-02-22.13:36:37::SCWMssOS::ute-patterns"
+
+TRACE::2024-02-22.13:36:37::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/sdps_v4_2/src
+
+TRACE::2024-02-22.13:36:37::SCWMssOS::make -C psu_cortexa53_0/libsrc/sdps_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-e
+TRACE::2024-02-22.13:36:37::SCWMssOS::lf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribut
+TRACE::2024-02-22.13:36:37::SCWMssOS::e-patterns"
+
+TRACE::2024-02-22.13:36:39::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/standalone_v9_0/src
+
+TRACE::2024-02-22.13:36:39::SCWMssOS::make -C psu_cortexa53_0/libsrc/standalone_v9_0/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-
+TRACE::2024-02-22.13:36:39::SCWMssOS::none-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dis
+TRACE::2024-02-22.13:36:39::SCWMssOS::tribute-patterns"
+
+TRACE::2024-02-22.13:36:53::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/sysmonpsu_v2_9/src
+
+TRACE::2024-02-22.13:36:53::SCWMssOS::make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_9/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-n
+TRACE::2024-02-22.13:36:53::SCWMssOS::one-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-dist
+TRACE::2024-02-22.13:36:53::SCWMssOS::ribute-patterns"
+
+TRACE::2024-02-22.13:36:54::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/uartps_v3_13/src
+
+TRACE::2024-02-22.13:36:54::SCWMssOS::make -C psu_cortexa53_0/libsrc/uartps_v3_13/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+TRACE::2024-02-22.13:36:54::SCWMssOS::e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distri
+TRACE::2024-02-22.13:36:54::SCWMssOS::bute-patterns"
+
+TRACE::2024-02-22.13:36:57::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/usbpsu_v1_14/src
+
+TRACE::2024-02-22.13:36:57::SCWMssOS::make -C psu_cortexa53_0/libsrc/usbpsu_v1_14/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-non
+TRACE::2024-02-22.13:36:57::SCWMssOS::e-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distri
+TRACE::2024-02-22.13:36:57::SCWMssOS::bute-patterns"
+
+TRACE::2024-02-22.13:37:04::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/xilffs_v5_1/src
+
+TRACE::2024-02-22.13:37:04::SCWMssOS::make -C psu_cortexa53_0/libsrc/xilffs_v5_1/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none
+TRACE::2024-02-22.13:37:04::SCWMssOS::-elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distrib
+TRACE::2024-02-22.13:37:04::SCWMssOS::ute-patterns"
+
+TRACE::2024-02-22.13:37:07::SCWMssOS::Running Make libs in psu_cortexa53_0/libsrc/zdma_v1_17/src
+
+TRACE::2024-02-22.13:37:07::SCWMssOS::make -C psu_cortexa53_0/libsrc/zdma_v1_17/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ASSEMBLER=aarch64-none-
+TRACE::2024-02-22.13:37:07::SCWMssOS::elf-as" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -fno-tree-loop-distribu
+TRACE::2024-02-22.13:37:07::SCWMssOS::te-patterns"
+
+TRACE::2024-02-22.13:37:27::SCWMssOS::Finished building libraries parallelly.
+
+TRACE::2024-02-22.13:37:27::SCWMssOS::make --no-print-directory archive
+
+TRACE::2024-02-22.13:37:27::SCWMssOS::aarch64-none-elf-ar -r  psu_cortexa53_0/lib/libxil.a psu_cortexa53_0/lib/_exit.o psu_cortexa53_0/lib/_open.o psu_cortexa53_0/li
+TRACE::2024-02-22.13:37:27::SCWMssOS::b/_sbrk.o psu_cortexa53_0/lib/abort.o psu_cortexa53_0/lib/asm_vectors.o psu_cortexa53_0/lib/boot.o psu_cortexa53_0/lib/close.o 
+TRACE::2024-02-22.13:37:27::SCWMssOS::psu_cortexa53_0/lib/cpputest_time.o psu_cortexa53_0/lib/errno.o psu_cortexa53_0/lib/fcntl.o psu_cortexa53_0/lib/fstat.o psu_cor
+TRACE::2024-02-22.13:37:27::SCWMssOS::texa53_0/lib/getentropy.o psu_cortexa53_0/lib/getpid.o psu_cortexa53_0/lib/inbyte.o psu_cortexa53_0/lib/initialise_monitor_hand
+TRACE::2024-02-22.13:37:27::SCWMssOS::les.o psu_cortexa53_0/lib/isatty.o psu_cortexa53_0/lib/kill.o psu_cortexa53_0/lib/lseek.o psu_cortexa53_0/lib/open.o psu_cortex
+TRACE::2024-02-22.13:37:27::SCWMssOS::a53_0/lib/outbyte.o psu_cortexa53_0/lib/print.o psu_cortexa53_0/lib/putnum.o psu_cortexa53_0/lib/read.o psu_cortexa53_0/lib/sbr
+TRACE::2024-02-22.13:37:27::SCWMssOS::k.o psu_cortexa53_0/lib/sleep.o psu_cortexa53_0/lib/time.o psu_cortexa53_0/lib/translation_table.o psu_cortexa53_0/lib/unlink.o
+TRACE::2024-02-22.13:37:27::SCWMssOS:: psu_cortexa53_0/lib/vectors.o psu_cortexa53_0/lib/write.o psu_cortexa53_0/lib/xaxipmon.o psu_cortexa53_0/lib/xaxipmon_g.o psu_
+TRACE::2024-02-22.13:37:27::SCWMssOS::cortexa53_0/lib/xaxipmon_selftest.o psu_cortexa53_0/lib/xaxipmon_sinit.o psu_cortexa53_0/lib/xclockps.o psu_cortexa53_0/lib/xcl
+TRACE::2024-02-22.13:37:27::SCWMssOS::ockps_divider.o psu_cortexa53_0/lib/xclockps_fixedfactor.o psu_cortexa53_0/lib/xclockps_g.o psu_cortexa53_0/lib/xclockps_gate.o
+TRACE::2024-02-22.13:37:27::SCWMssOS:: psu_cortexa53_0/lib/xclockps_mux.o psu_cortexa53_0/lib/xclockps_pll.o psu_cortexa53_0/lib/xclockps_sinit.o psu_cortexa53_0/lib
+TRACE::2024-02-22.13:37:27::SCWMssOS::/xcoresightpsdcc.o psu_cortexa53_0/lib/xcsudma.o psu_cortexa53_0/lib/xcsudma_g.o psu_cortexa53_0/lib/xcsudma_intr.o psu_cortexa
+TRACE::2024-02-22.13:37:27::SCWMssOS::53_0/lib/xcsudma_selftest.o psu_cortexa53_0/lib/xcsudma_sinit.o psu_cortexa53_0/lib/xddrcpsu.o psu_cortexa53_0/lib/xddrcpsu_sin
+TRACE::2024-02-22.13:37:27::SCWMssOS::it.o psu_cortexa53_0/lib/xemacps.o psu_cortexa53_0/lib/xemacps_bdring.o psu_cortexa53_0/lib/xemacps_control.o psu_cortexa53_0/l
+TRACE::2024-02-22.13:37:27::SCWMssOS::ib/xemacps_g.o psu_cortexa53_0/lib/xemacps_hw.o psu_cortexa53_0/lib/xemacps_intr.o psu_cortexa53_0/lib/xemacps_sinit.o psu_cort
+TRACE::2024-02-22.13:37:27::SCWMssOS::exa53_0/lib/xgpiops.o psu_cortexa53_0/lib/xgpiops_g.o psu_cortexa53_0/lib/xgpiops_hw.o psu_cortexa53_0/lib/xgpiops_intr.o psu_c
+TRACE::2024-02-22.13:37:27::SCWMssOS::ortexa53_0/lib/xgpiops_selftest.o psu_cortexa53_0/lib/xgpiops_sinit.o psu_cortexa53_0/lib/xiicps.o psu_cortexa53_0/lib/xiicps_g
+TRACE::2024-02-22.13:37:27::SCWMssOS::.o psu_cortexa53_0/lib/xiicps_hw.o psu_cortexa53_0/lib/xiicps_intr.o psu_cortexa53_0/lib/xiicps_master.o psu_cortexa53_0/lib/xi
+TRACE::2024-02-22.13:37:27::SCWMssOS::icps_options.o psu_cortexa53_0/lib/xiicps_selftest.o psu_cortexa53_0/lib/xiicps_sinit.o psu_cortexa53_0/lib/xiicps_slave.o psu_
+TRACE::2024-02-22.13:37:27::SCWMssOS::cortexa53_0/lib/xiicps_xfer.o psu_cortexa53_0/lib/xil-crt0.o psu_cortexa53_0/lib/xil_assert.o psu_cortexa53_0/lib/xil_cache.o p
+TRACE::2024-02-22.13:37:27::SCWMssOS::su_cortexa53_0/lib/xil_clocking.o psu_cortexa53_0/lib/xil_exception.o psu_cortexa53_0/lib/xil_mem.o psu_cortexa53_0/lib/xil_mmu
+TRACE::2024-02-22.13:37:27::SCWMssOS::.o psu_cortexa53_0/lib/xil_printf.o psu_cortexa53_0/lib/xil_sleepcommon.o psu_cortexa53_0/lib/xil_sleeptimer.o psu_cortexa53_0/
+TRACE::2024-02-22.13:37:27::SCWMssOS::lib/xil_smc.o psu_cortexa53_0/lib/xil_spinlock.o psu_cortexa53_0/lib/xil_testcache.o psu_cortexa53_0/lib/xil_testio.o psu_corte
+TRACE::2024-02-22.13:37:27::SCWMssOS::xa53_0/lib/xil_testmem.o psu_cortexa53_0/lib/xil_util.o psu_cortexa53_0/lib/xinterrupt_wrap.o psu_cortexa53_0/lib/xipipsu.o psu
+TRACE::2024-02-22.13:37:27::SCWMssOS::_cortexa53_0/lib/xipipsu_buf.o psu_cortexa53_0/lib/xipipsu_g.o psu_cortexa53_0/lib/xipipsu_helper.o psu_cortexa53_0/lib/xipipsu
+TRACE::2024-02-22.13:37:27::SCWMssOS::_sinit.o psu_cortexa53_0/lib/xplatform_info.o psu_cortexa53_0/lib/xpm_counter.o psu_cortexa53_0/lib/xpm_init.o psu_cortexa53_0/
+TRACE::2024-02-22.13:37:27::SCWMssOS::lib/xqspipsu.o psu_cortexa53_0/lib/xqspipsu_control.o psu_cortexa53_0/lib/xqspipsu_g.o psu_cortexa53_0/lib/xqspipsu_hw.o psu_co
+TRACE::2024-02-22.13:37:27::SCWMssOS::rtexa53_0/lib/xqspipsu_options.o psu_cortexa53_0/lib/xqspipsu_sinit.o psu_cortexa53_0/lib/xqspipsu_xfer.o psu_cortexa53_0/lib/x
+TRACE::2024-02-22.13:37:27::SCWMssOS::resetps.o psu_cortexa53_0/lib/xresetps_g.o psu_cortexa53_0/lib/xresetps_sinit.o psu_cortexa53_0/lib/xrtcpsu.o psu_cortexa53_0/l
+TRACE::2024-02-22.13:37:27::SCWMssOS::ib/xrtcpsu_g.o psu_cortexa53_0/lib/xrtcpsu_intr.o psu_cortexa53_0/lib/xrtcpsu_selftest.o psu_cortexa53_0/lib/xrtcpsu_sinit.o ps
+TRACE::2024-02-22.13:37:27::SCWMssOS::u_cortexa53_0/lib/xscugic.o psu_cortexa53_0/lib/xscugic_g.o psu_cortexa53_0/lib/xscugic_hw.o psu_cortexa53_0/lib/xscugic_intr.o
+TRACE::2024-02-22.13:37:27::SCWMssOS:: psu_cortexa53_0/lib/xscugic_selftest.o psu_cortexa53_0/lib/xscugic_sinit.o psu_cortexa53_0/lib/xsdps.o psu_cortexa53_0/lib/xsd
+TRACE::2024-02-22.13:37:27::SCWMssOS::ps_card.o psu_cortexa53_0/lib/xsdps_g.o psu_cortexa53_0/lib/xsdps_host.o psu_cortexa53_0/lib/xsdps_options.o psu_cortexa53_0/li
+TRACE::2024-02-22.13:37:27::SCWMssOS::b/xsdps_sinit.o psu_cortexa53_0/lib/xsysmonpsu.o psu_cortexa53_0/lib/xsysmonpsu_g.o psu_cortexa53_0/lib/xsysmonpsu_intr.o psu_c
+TRACE::2024-02-22.13:37:27::SCWMssOS::ortexa53_0/lib/xsysmonpsu_selftest.o psu_cortexa53_0/lib/xsysmonpsu_sinit.o psu_cortexa53_0/lib/xtime_l.o psu_cortexa53_0/lib/x
+TRACE::2024-02-22.13:37:27::SCWMssOS::uartps.o psu_cortexa53_0/lib/xuartps_g.o psu_cortexa53_0/lib/xuartps_hw.o psu_cortexa53_0/lib/xuartps_intr.o psu_cortexa53_0/li
+TRACE::2024-02-22.13:37:27::SCWMssOS::b/xuartps_options.o psu_cortexa53_0/lib/xuartps_selftest.o psu_cortexa53_0/lib/xuartps_sinit.o psu_cortexa53_0/lib/xusbpsu.o ps
+TRACE::2024-02-22.13:37:27::SCWMssOS::u_cortexa53_0/lib/xusbpsu_command.o psu_cortexa53_0/lib/xusbpsu_controltransfers.o psu_cortexa53_0/lib/xusbpsu_device.o psu_cor
+TRACE::2024-02-22.13:37:27::SCWMssOS::texa53_0/lib/xusbpsu_endpoint.o psu_cortexa53_0/lib/xusbpsu_ep0handler.o psu_cortexa53_0/lib/xusbpsu_ephandler.o psu_cortexa53_
+TRACE::2024-02-22.13:37:27::SCWMssOS::0/lib/xusbpsu_event.o psu_cortexa53_0/lib/xusbpsu_g.o psu_cortexa53_0/lib/xusbpsu_hibernation.o psu_cortexa53_0/lib/xusbpsu_int
+TRACE::2024-02-22.13:37:27::SCWMssOS::r.o psu_cortexa53_0/lib/xusbpsu_sinit.o psu_cortexa53_0/lib/xzdma.o psu_cortexa53_0/lib/xzdma_g.o psu_cortexa53_0/lib/xzdma_int
+TRACE::2024-02-22.13:37:27::SCWMssOS::r.o psu_cortexa53_0/lib/xzdma_selftest.o psu_cortexa53_0/lib/xzdma_sinit.o
+
+TRACE::2024-02-22.13:37:27::SCWMssOS::Finished building libraries
+
+TRACE::2024-02-22.13:37:27::SCWMssOS::Copying to export directory.
+TRACE::2024-02-22.13:37:28::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2024-02-22.13:37:28::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2024-02-22.13:37:28::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2024-02-22.13:37:28::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2024-02-22.13:37:28::SCWSystem::Completed Processing the sysconfig EMC2_BSP_platform
+LOG::2024-02-22.13:37:28::SCWPlatform::Completed generating the artifacts for system configuration EMC2_BSP_platform
+TRACE::2024-02-22.13:37:28::SCWPlatform::Started preparing the platform 
+TRACE::2024-02-22.13:37:28::SCWSystem::Writing the bif file for system config EMC2_BSP_platform
+TRACE::2024-02-22.13:37:28::SCWSystem::dir created 
+TRACE::2024-02-22.13:37:28::SCWSystem::Writing the bif 
+TRACE::2024-02-22.13:37:28::SCWPlatform::Started writing the spfm file 
+TRACE::2024-02-22.13:37:28::SCWPlatform::Started writing the xpfm file 
+TRACE::2024-02-22.13:37:28::SCWPlatform::Completed generating the platform
+TRACE::2024-02-22.13:37:28::SCWMssOS::Saving the mss changes /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:37:28::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2024-02-22.13:37:28::SCWMssOS::Completed writemss as part of save.
+TRACE::2024-02-22.13:37:28::SCWMssOS::Commit changes completed.
+TRACE::2024-02-22.13:37:28::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:37:28::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:37:28::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:37:28::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:37:28::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:37:28::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:37:28::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:37:28::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:37:28::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:37:28::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:37:28::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:37:28::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:37:28::SCWWriter::formatted JSON is {
+	"platformName":	"EMC2_BSP_platform",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"EMC2_BSP_platform",
+	"platHandOff":	"/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/firmware/design_1_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/design_1_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"EMC2_BSP_platform",
+	"systems":	[{
+			"systemName":	"EMC2_BSP_platform",
+			"systemDesc":	"EMC2_BSP_platform",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"EMC2_BSP_platform",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psu_cortexa53_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/qemu",
+					"pmuQemuArgs":	"<platformDir>/resources/EMC2_BSP_platform/standalone_domain/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"9.0",
+					"mssFile":	"",
+					"md5Digest":	"547114f553c08e11d92e1640fec9878a",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:5.1", "xilpm:5.1", "xilsecure:5.2"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2024-02-22.13:37:28::SCWPlatform::updated the xpfm file.
+TRACE::2024-02-22.13:37:36::SCWPlatform::Trying to open the hw design at /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:37:36::SCWPlatform::DSA given /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:37:36::SCWPlatform::DSA absoulate path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:37:36::SCWPlatform::DSA directory /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw
+TRACE::2024-02-22.13:37:36::SCWPlatform:: Platform Path /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/hw/design_1_wrapper.xsa
+TRACE::2024-02-22.13:37:36::SCWPlatform:: Unique name xilinx:emc2-dp_te0820_4ev_1e::0.0
+TRACE::2024-02-22.13:37:36::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_2
+TRACE::2024-02-22.13:37:36::SCWPlatform::Opened existing hwdb design_1_wrapper_2
+TRACE::2024-02-22.13:37:36::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2024-02-22.13:37:36::SCWMssOS::Checking the sw design at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2024-02-22.13:37:36::SCWMssOS::DEBUG:  swdes dump  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2024-02-22.13:37:36::SCWMssOS::Sw design exists and opened at  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/psu_cortexa53_0/standalone_domain/bsp/system.mss

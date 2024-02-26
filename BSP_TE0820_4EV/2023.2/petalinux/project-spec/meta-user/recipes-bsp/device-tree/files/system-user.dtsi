@@ -1,3 +1,23 @@
 /include/ "system-conf.dtsi"
 / {
+chosen{
+ bootargs = "earlycon clk_ignore_unused console=ttyPS0,115200 earlyprintk root=/dev/mmcblk1p2 rw rootwait";
+ };
+ };
+ 
+ &sdhci1 {
+ disable-wp;
+ no-1-8-v;
 };
+
+&usb0 {
+  status = "okay";
+};
+
+&dwc3_0 {
+    status = "okay";
+    dr_mode = "host";
+};
+
+
+
