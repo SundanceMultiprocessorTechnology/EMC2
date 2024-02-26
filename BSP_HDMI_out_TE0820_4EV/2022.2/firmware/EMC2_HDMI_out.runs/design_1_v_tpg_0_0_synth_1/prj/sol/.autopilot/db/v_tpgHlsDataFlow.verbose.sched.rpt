@@ -1,0 +1,208 @@
+
+
+================================================================
+== Vitis HLS Report for 'v_tpgHlsDataFlow'
+================================================================
+* Date:           Thu Feb 22 13:13:20 2024
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu4ev-sfvc784-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  13.75 ns|  8.930 ns|     3.71 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 8, States = { 1 2 3 4 5 6 7 8 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.34>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%srcYUV = alloca i64 1"   --->   Operation 9 'alloca' 'srcYUV' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.25> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 16> <FIFO>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%bckgndYUV = alloca i64 1"   --->   Operation 10 'alloca' 'bckgndYUV' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.25> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 16> <FIFO>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%ovrlayYUV = alloca i64 1"   --->   Operation 11 'alloca' 'ovrlayYUV' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.25> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 16> <FIFO>
+ST_1 : Operation 12 [2/2] (1.34ns)   --->   "%call_ln297 = call void @AXIvideo2MultiPixStream, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i24 %srcYUV, i8 %enableInput, i16 %height, i16 %width, i8 %colorFormat" [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:297]   --->   Operation 12 'call' 'call_ln297' <Predicate = true> <Delay = 1.34> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 13 [1/2] (0.00ns)   --->   "%call_ln297 = call void @AXIvideo2MultiPixStream, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, i24 %srcYUV, i8 %enableInput, i16 %height, i16 %width, i8 %colorFormat" [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:297]   --->   Operation 13 'call' 'call_ln297' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 1.92>
+ST_3 : Operation 14 [2/2] (1.92ns)   --->   "%call_ln300 = call void @tpgBackground, i24 %srcYUV, i16 %height, i16 %width, i16 %passthruStartX, i16 %passthruStartY, i16 %passthruEndX, i16 %passthruEndY, i8 %enableInput, i8 %bckgndId, i16 %ZplateHorContStart, i16 %ZplateHorContDelta, i16 %ZplateVerContStart, i16 %ZplateVerContDelta, i8 %dpDynamicRange, i8 %dpYUVCoef, i8 %motionSpeed, i8 %colorFormat, i24 %bckgndYUV, i8 %rampStart, i16 %rampVal_1, i8 %rampVal, i8 %hBarSel_2, i16 %zonePlateVAddr, i3 %vBarSel, i3 %hBarSel, i16 %hdata, i8 %vBarSel_2, i3 %hBarSel_3, i16 %rampVal_2, i1 %vBarSel_1, i3 %hBarSel_1, i8 %redYuv, i8 %grnYuv, i8 %bluYuv, i8 %blkYuv, i8 %whiYuv, i2 %tpgBarSelRgb_r, i8 %tpgBarSelYuv_y, i2 %tpgBarSelRgb_g, i8 %tpgBarSelYuv_u, i8 %tpgBarSelYuv_v, i11 %xBar_V, i32 %s, i2 %tpgBarSelRgb_b, i20 %tpgSinTableArray, i16 %zonePlateVDelta, i3 %tpgTartanBarArray, i10 %xCount_V, i10 %yCount_V, i10 %xCount_V_2, i1 %vHatch, i10 %yCount_V_2, i8 %whiYuv_1, i8 %blkYuv_1, i8 %tpgSinTableArray_9bit_0, i8 %tpgSinTableArray_9bit_1, i9 %tpgSinTableArray_9bit_2, i8 %tpgSinTableArray_9bit_3, i8 %tpgSinTableArray_9bit_4, i2 %tpgCheckerBoardArray, i10 %xCount_V_3, i10 %yCount_V_3, i28 %rSerie_V, i28 %gSerie_V, i28 %bSerie_V, i2 %DPtpgBarSelRgb_VESA_r, i2 %DPtpgBarSelRgb_VESA_g, i2 %DPtpgBarSelRgb_VESA_b, i3 %DPtpgBarArray, i10 %xCount_V_1, i6 %yCount_V_1, i6 %DPtpgBarSelRgb_CEA_r, i6 %DPtpgBarSelRgb_CEA_g, i6 %DPtpgBarSelRgb_CEA_b, i8 %DPtpgBarSelYuv_601_y, i8 %DPtpgBarSelYuv_601_v, i8 %DPtpgBarSelYuv_601_u, i8 %DPtpgBarSelYuv_709_y, i8 %DPtpgBarSelYuv_709_v, i8 %DPtpgBarSelYuv_709_u" [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:300]   --->   Operation 14 'call' 'call_ln300' <Predicate = true> <Delay = 1.92> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 15 [1/2] (0.00ns)   --->   "%call_ln300 = call void @tpgBackground, i24 %srcYUV, i16 %height, i16 %width, i16 %passthruStartX, i16 %passthruStartY, i16 %passthruEndX, i16 %passthruEndY, i8 %enableInput, i8 %bckgndId, i16 %ZplateHorContStart, i16 %ZplateHorContDelta, i16 %ZplateVerContStart, i16 %ZplateVerContDelta, i8 %dpDynamicRange, i8 %dpYUVCoef, i8 %motionSpeed, i8 %colorFormat, i24 %bckgndYUV, i8 %rampStart, i16 %rampVal_1, i8 %rampVal, i8 %hBarSel_2, i16 %zonePlateVAddr, i3 %vBarSel, i3 %hBarSel, i16 %hdata, i8 %vBarSel_2, i3 %hBarSel_3, i16 %rampVal_2, i1 %vBarSel_1, i3 %hBarSel_1, i8 %redYuv, i8 %grnYuv, i8 %bluYuv, i8 %blkYuv, i8 %whiYuv, i2 %tpgBarSelRgb_r, i8 %tpgBarSelYuv_y, i2 %tpgBarSelRgb_g, i8 %tpgBarSelYuv_u, i8 %tpgBarSelYuv_v, i11 %xBar_V, i32 %s, i2 %tpgBarSelRgb_b, i20 %tpgSinTableArray, i16 %zonePlateVDelta, i3 %tpgTartanBarArray, i10 %xCount_V, i10 %yCount_V, i10 %xCount_V_2, i1 %vHatch, i10 %yCount_V_2, i8 %whiYuv_1, i8 %blkYuv_1, i8 %tpgSinTableArray_9bit_0, i8 %tpgSinTableArray_9bit_1, i9 %tpgSinTableArray_9bit_2, i8 %tpgSinTableArray_9bit_3, i8 %tpgSinTableArray_9bit_4, i2 %tpgCheckerBoardArray, i10 %xCount_V_3, i10 %yCount_V_3, i28 %rSerie_V, i28 %gSerie_V, i28 %bSerie_V, i2 %DPtpgBarSelRgb_VESA_r, i2 %DPtpgBarSelRgb_VESA_g, i2 %DPtpgBarSelRgb_VESA_b, i3 %DPtpgBarArray, i10 %xCount_V_1, i6 %yCount_V_1, i6 %DPtpgBarSelRgb_CEA_r, i6 %DPtpgBarSelRgb_CEA_g, i6 %DPtpgBarSelRgb_CEA_b, i8 %DPtpgBarSelYuv_601_y, i8 %DPtpgBarSelYuv_601_v, i8 %DPtpgBarSelYuv_601_u, i8 %DPtpgBarSelYuv_709_y, i8 %DPtpgBarSelYuv_709_v, i8 %DPtpgBarSelYuv_709_u" [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:300]   --->   Operation 15 'call' 'call_ln300' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 1.30>
+ST_5 : Operation 16 [2/2] (1.30ns)   --->   "%call_ln313 = call void @tpgForeground, i24 %bckgndYUV, i16 %height, i16 %width, i8 %ovrlayId, i8 %maskId, i8 %colorFormat, i16 %crossHairX, i16 %crossHairY, i16 %boxSize, i16 %boxColorR, i16 %boxColorG, i16 %boxColorB, i8 %motionSpeed, i24 %ovrlayYUV, i16 %boxHCoord, i16 %boxVCoord, i1 %vDir, i1 %hDir, i8 %whiYuv_2" [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:313]   --->   Operation 16 'call' 'call_ln313' <Predicate = true> <Delay = 1.30> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 17 [1/2] (0.00ns)   --->   "%call_ln313 = call void @tpgForeground, i24 %bckgndYUV, i16 %height, i16 %width, i8 %ovrlayId, i8 %maskId, i8 %colorFormat, i16 %crossHairX, i16 %crossHairY, i16 %boxSize, i16 %boxColorR, i16 %boxColorG, i16 %boxColorB, i8 %motionSpeed, i24 %ovrlayYUV, i16 %boxHCoord, i16 %boxVCoord, i1 %vDir, i1 %hDir, i8 %whiYuv_2" [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:313]   --->   Operation 17 'call' 'call_ln313' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.94>
+ST_7 : Operation 18 [2/2] (0.94ns)   --->   "%call_ln354 = call void @MultiPixStream2AXIvideo, i24 %ovrlayYUV, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i16 %height, i16 %width, i8 %colorFormat, i1 %fid_in, i1 %fid, i16 %field_id, i1 %fidStored, i16 %counter" [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:354]   --->   Operation 18 'call' 'call_ln354' <Predicate = true> <Delay = 0.94> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.85>
+ST_8 : Operation 19 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln0 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_19"   --->   Operation 19 'specdataflowpipeline' 'specdataflowpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 20 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, void @empty_34"   --->   Operation 20 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 21 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i24 %s_axis_video_V_data_V, i3 %s_axis_video_V_keep_V, i3 %s_axis_video_V_strb_V, i1 %s_axis_video_V_user_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_dest_V, void @empty_4"   --->   Operation 21 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 22 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %dpYUVCoef, void "   --->   Operation 22 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 23 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %dpDynamicRange, void "   --->   Operation 23 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 24 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %boxColorB, void "   --->   Operation 24 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 25 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %boxColorG, void "   --->   Operation 25 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 26 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %boxColorR, void "   --->   Operation 26 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 27 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %boxSize, void "   --->   Operation 27 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 28 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %ZplateVerContDelta, void "   --->   Operation 28 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 29 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %ZplateVerContStart, void "   --->   Operation 29 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 30 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %ZplateHorContDelta, void "   --->   Operation 30 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 31 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %ZplateHorContStart, void "   --->   Operation 31 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 32 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %crossHairY, void "   --->   Operation 32 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 33 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %crossHairX, void "   --->   Operation 33 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 34 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %colorFormat, void "   --->   Operation 34 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 35 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %motionSpeed, void "   --->   Operation 35 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 36 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %maskId, void "   --->   Operation 36 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 37 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %ovrlayId, void "   --->   Operation 37 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 38 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %bckgndId, void "   --->   Operation 38 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 39 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i8 %enableInput, void "   --->   Operation 39 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 40 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %passthruEndY, void "   --->   Operation 40 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 41 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %passthruEndX, void "   --->   Operation 41 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 42 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %passthruStartY, void "   --->   Operation 42 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 43 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %passthruStartX, void "   --->   Operation 43 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 44 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i1 %fid_in, void "   --->   Operation 44 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 45 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %field_id, void "   --->   Operation 45 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 46 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %height, void "   --->   Operation 46 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 47 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i16 %width, void "   --->   Operation 47 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 48 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %m_axis_video_V_dest_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_user_V, i3 %m_axis_video_V_strb_V, i3 %m_axis_video_V_keep_V, i24 %m_axis_video_V_data_V, void @empty_18, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_19, void @empty_19, void @empty_19, i32 0, i32 0, i32 0, i32 0, void @empty_19, void @empty_19, i32 4294967295, i32 0"   --->   Operation 48 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 49 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %s_axis_video_V_dest_V, i1 %s_axis_video_V_id_V, i1 %s_axis_video_V_last_V, i1 %s_axis_video_V_user_V, i3 %s_axis_video_V_strb_V, i3 %s_axis_video_V_keep_V, i24 %s_axis_video_V_data_V, void @empty_18, i32 0, i32 0, void @empty_13, i32 0, i32 0, void @empty_19, void @empty_19, void @empty_19, i32 0, i32 0, i32 0, i32 0, void @empty_19, void @empty_19, i32 4294967295, i32 0"   --->   Operation 49 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 50 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @srcYUV_str, i32 1, void @p_str, void @p_str, i32 16, i32 16, i24 %srcYUV, i24 %srcYUV"   --->   Operation 50 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 51 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %srcYUV, void @empty_11, i32 0, i32 0, void @empty_19, i32 0, i32 0, void @empty_19, void @empty_19, void @empty_19, i32 0, i32 0, i32 0, i32 0, void @empty_19, void @empty_19, i32 4294967295, i32 0"   --->   Operation 51 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 52 [1/1] (0.00ns)   --->   "%empty_73 = specchannel i32 @_ssdm_op_SpecChannel, void @bckgndYUV_str, i32 1, void @p_str, void @p_str, i32 16, i32 16, i24 %bckgndYUV, i24 %bckgndYUV"   --->   Operation 52 'specchannel' 'empty_73' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 53 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %bckgndYUV, void @empty_11, i32 0, i32 0, void @empty_19, i32 0, i32 0, void @empty_19, void @empty_19, void @empty_19, i32 0, i32 0, i32 0, i32 0, void @empty_19, void @empty_19, i32 4294967295, i32 0"   --->   Operation 53 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 54 [1/1] (0.00ns)   --->   "%empty_74 = specchannel i32 @_ssdm_op_SpecChannel, void @ovrlayYUV_str, i32 1, void @p_str, void @p_str, i32 16, i32 16, i24 %ovrlayYUV, i24 %ovrlayYUV"   --->   Operation 54 'specchannel' 'empty_74' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 55 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %ovrlayYUV, void @empty_11, i32 0, i32 0, void @empty_19, i32 0, i32 0, void @empty_19, void @empty_19, void @empty_19, i32 0, i32 0, i32 0, i32 0, void @empty_19, void @empty_19, i32 4294967295, i32 0"   --->   Operation 55 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 56 [1/2] (0.85ns)   --->   "%call_ln354 = call void @MultiPixStream2AXIvideo, i24 %ovrlayYUV, i24 %m_axis_video_V_data_V, i3 %m_axis_video_V_keep_V, i3 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i16 %height, i16 %width, i8 %colorFormat, i1 %fid_in, i1 %fid, i16 %field_id, i1 %fidStored, i16 %counter" [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:354]   --->   Operation 56 'call' 'call_ln354' <Predicate = true> <Delay = 0.85> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 57 [1/1] (0.00ns)   --->   "%ret_ln356 = ret" [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:356]   --->   Operation 57 'ret' 'ret_ln356' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 13.8ns, clock uncertainty: 3.71ns.
+
+ <State 1>: 1.34ns
+The critical path consists of the following:
+	'alloca' operation ('srcYUV') [142]  (0 ns)
+	'call' operation ('call_ln297', /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:297) to 'AXIvideo2MultiPixStream' [151]  (1.34 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 1.92ns
+The critical path consists of the following:
+	'call' operation ('call_ln300', /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:300) to 'tpgBackground' [152]  (1.92 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 1.3ns
+The critical path consists of the following:
+	'call' operation ('call_ln313', /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:313) to 'tpgForeground' [153]  (1.3 ns)
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0.948ns
+The critical path consists of the following:
+	'call' operation ('call_ln354', /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:354) to 'MultiPixStream2AXIvideo' [154]  (0.948 ns)
+
+ <State 8>: 0.859ns
+The critical path consists of the following:
+	'call' operation ('call_ln354', /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.runs/design_1_v_tpg_0_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:354) to 'MultiPixStream2AXIvideo' [154]  (0.859 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

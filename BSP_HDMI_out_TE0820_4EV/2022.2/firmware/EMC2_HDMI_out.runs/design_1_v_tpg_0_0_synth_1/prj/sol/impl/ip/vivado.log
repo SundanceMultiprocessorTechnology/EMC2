@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Feb 22 13:14:04 2024
+# Process ID: 162059
+# Current directory: /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.runs/design_1_v_tpg_0_0_synth_1/prj/sol/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.runs/design_1_v_tpg_0_0_synth_1/prj/sol/impl/ip/vivado.log
+# Journal file: /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.runs/design_1_v_tpg_0_0_synth_1/prj/sol/impl/ip/vivado.jou
+# Running On: viv-vit2022-2, OS: Linux, CPU Frequency: 2111.998 MHz, CPU Physical cores: 8, Host memory: 28729 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1754.410 ; gain = 96.992 ; free physical = 777 ; free virtual = 8561
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 22 13:14:31 2024...

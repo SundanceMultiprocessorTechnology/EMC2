@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="HDMI_out" location="/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/software/baremetal/HDMI_out" platform="/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/software/baremetal/EMC2_HDMI_out_platform/export/EMC2_HDMI_out_platform/EMC2_HDMI_out_platform.xpfm" platformUID="xilinx:emc2-dp_te0820_4ev_1e::0.0(custom)" systemProject="HDMI_out_system" sysConfig="EMC2_HDMI_out_platform" runtime="C/C++" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" language="CPP" mssSignature="9d2ab2c32426ebe2ffeffab0ac8dd607">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.389360053">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.802638163" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

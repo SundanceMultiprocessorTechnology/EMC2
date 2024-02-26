@@ -1,0 +1,12 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ipshared/83c4/src/axis_fb_conv_v1_0.vhd" \
+"../../../bd/design_1/ip/design_1_axis_fb_conv_0_0_1/sim/design_1_axis_fb_conv_0_0.vhd" \
+"../../../bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd" \
+"../../../bd/design_1/ip/design_1_video_io_to_hdmi_0_0_1/sim/design_1_video_io_to_hdmi_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_proc_sys_reset_0_0_1/sim/design_1_proc_sys_reset_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_processing_system7_0_100M_0_1/sim/design_1_rst_processing_system7_0_100M_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_vdma_0_0_1/sim/design_1_axi_vdma_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_v_tc_0_0_1/sim/design_1_v_tc_0_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+nosort

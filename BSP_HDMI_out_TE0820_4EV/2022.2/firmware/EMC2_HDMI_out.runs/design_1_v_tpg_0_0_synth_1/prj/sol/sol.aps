@@ -1,0 +1,27 @@
+<AutoPilot:solution xmlns:AutoPilot="com.autoesl.autopilot.solution">
+    <name>
+        <value string="sol"/>
+    </name>
+    <project>
+        <value string="prj"/>
+    </project>
+    <flowTarget value="vivado"/>
+    <config>
+        <config_interface m_axi_latency="0"/>
+        <config_rtl module_prefix="design_1_v_tpg_0_0_"/>
+        <config_export library="ip" vendor="xilinx.com" version="8.2" format="ip_catalog"/>
+    </config>
+    <targetInfo>
+        <TargetInfo value="xczu4ev:-sfvc784:-1-e"/>
+    </targetInfo>
+    <libraryList>
+        <library value="xilinx/zynquplus/zynquplus" name="DefaultPlatform"/>
+    </libraryList>
+    <clockList>
+        <clock name="ap_clk" period="13.750" default="false"/>
+    </clockList>
+    <ExportDesign askAgain="true" evaluate="false" rtl="verilog" formatName="ip_catalog">
+        <Format formatName="ip_catalog" description="" vendor="xilinx.com" library="ip" ipname="v_tpg" version="8.2" display_name="" taxonomy=""/>
+    </ExportDesign>
+</AutoPilot:solution>
+

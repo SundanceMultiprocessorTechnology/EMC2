@@ -1,0 +1,940 @@
+
+
+================================================================
+== Synthesis Summary Report of 'v_tpg'
+================================================================
++ General Information: 
+    * Date:           Thu Feb 22 13:13:40 2024
+    * Version:        2022.2 (Build 3670227 on Oct 13 2022)
+    * Project:        prj
+    * Solution:       sol (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu4ev-sfvc784-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------------------------------------------------------+------+-------+------------+-----------+----------+------------+-------+----------+---------+---------+-----------+-----------+-----+
+    |                          Modules                          | Issue|       |  Latency   |  Latency  | Iteration|            |  Trip |          |         |         |           |           |     |
+    |                          & Loops                          | Type | Slack |  (cycles)  |    (ns)   |  Latency |  Interval  | Count | Pipelined|  BRAM   |   DSP   |     FF    |    LUT    | URAM|
+    +-----------------------------------------------------------+------+-------+------------+-----------+----------+------------+-------+----------+---------+---------+-----------+-----------+-----+
+    |+ v_tpg                                                    |     -|   1.11|           -|          -|         -|           -|      -|        no|  13 (5%)|  13 (1%)|  6568 (3%)|  8661 (9%)|    -|
+    | + v_tpgHlsDataFlow*                                       |     -|   1.11|           -|          -|         -|           -|      -|  dataflow|  13 (5%)|  13 (1%)|  5886 (3%)|  7687 (8%)|    -|
+    |  + AXIvideo2MultiPixStream                                |     -|   7.34|      928806|  1.277e+07|         -|      928806|      -|        no|        -|        -|  226 (~0%)|  503 (~0%)|    -|
+    |   + AXIvideo2MultiPixStream_Pipeline_loop_wait_for_start  |     -|   9.55|           2|     27.500|         -|           2|      -|        no|        -|        -|    3 (~0%)|   34 (~0%)|    -|
+    |    o loop_wait_for_start                                  |     -|  10.04|           0|      0.000|         1|           1|      0|       yes|        -|        -|          -|          -|    -|
+    |   + reg_unsigned_short_s                                  |     -|  10.04|           1|     13.750|         -|           1|      -|       yes|        -|        -|   33 (~0%)|   14 (~0%)|    -|
+    |   + reg_unsigned_short_s                                  |     -|  10.04|           1|     13.750|         -|           1|      -|       yes|        -|        -|   33 (~0%)|   14 (~0%)|    -|
+    |   o loop_height                                           |     -|  10.04|      928800|  1.277e+07|      1290|           -|    720|        no|        -|        -|          -|          -|    -|
+    |    + AXIvideo2MultiPixStream_Pipeline_loop_width          |     -|   7.34|        1282|  1.763e+04|         -|        1282|      -|        no|        -|        -|   42 (~0%)|  175 (~0%)|    -|
+    |     o loop_width                                          |     -|  10.04|        1280|  1.760e+04|         2|           1|   1280|       yes|        -|        -|          -|          -|    -|
+    |    + AXIvideo2MultiPixStream_Pipeline_loop_wait_for_eol   |     -|   9.06|           2|     27.500|         -|           2|      -|        no|        -|        -|    4 (~0%)|   52 (~0%)|    -|
+    |     o loop_wait_for_eol                                   |     -|  10.04|           0|      0.000|         1|           1|      0|       yes|        -|        -|          -|          -|    -|
+    |  + tpgBackground                                          |     -|   1.11|  4296409066|  5.908e+10|         -|  4296409066|      -|        no|  13 (5%)|  13 (1%)|  4751 (2%)|  5642 (6%)|    -|
+    |   o VITIS_LOOP_518_1                                      |     -|  10.04|  4296409065|  5.908e+10|     65559|           -|  65535|        no|        -|        -|          -|          -|    -|
+    |    + tpgBackground_Pipeline_VITIS_LOOP_520_2              |     -|   1.11|       65555|  9.014e+05|         -|       65555|      -|        no|  13 (5%)|  13 (1%)|  4194 (2%)|  4986 (5%)|    -|
+    |     o VITIS_LOOP_520_2                                    |     -|  10.04|       65553|  9.014e+05|        19|           1|  65535|       yes|        -|        -|          -|          -|    -|
+    |      + reg_ap_uint_10_s                                   |     -|  10.04|           1|     13.750|         -|           1|      -|       yes|        -|        -|   21 (~0%)|   14 (~0%)|    -|
+    |      + reg_int_s                                          |     -|  10.04|           1|     13.750|         -|           1|      -|       yes|        -|        -|   33 (~0%)|   14 (~0%)|    -|
+    |  + tpgForeground                                          |     -|   4.48|           -|          -|         -|           -|      -|        no|        -|        -|  487 (~0%)|  875 (~0%)|    -|
+    |   o VITIS_LOOP_727_1                                      |     -|  10.04|           -|          -|         -|           -|      -|        no|        -|        -|          -|          -|    -|
+    |    + tpgForeground_Pipeline_VITIS_LOOP_729_2              |     -|   4.48|           -|          -|         -|           -|      -|        no|        -|        -|  279 (~0%)|  643 (~0%)|    -|
+    |     o VITIS_LOOP_729_2                                    |     -|  10.04|           -|          -|         2|           1|      -|       yes|        -|        -|          -|          -|    -|
+    |  + MultiPixStream2AXIvideo                                |     -|   7.33|      925921|  1.273e+07|         -|      925921|      -|        no|        -|        -|  123 (~0%)|  434 (~0%)|    -|
+    |   o VITIS_LOOP_934_1                                      |     -|  10.04|      925920|  1.273e+07|      1286|           -|    720|        no|        -|        -|          -|          -|    -|
+    |    + MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_936_2    |     -|   7.33|        1283|  1.764e+04|         -|        1283|      -|        no|        -|        -|   21 (~0%)|  203 (~0%)|    -|
+    |     o VITIS_LOOP_936_2                                    |     -|  10.04|        1280|  1.760e+04|         2|           1|   1280|       yes|        -|        -|          -|          -|    -|
+    | + reg_unsigned_short_s                                    |     -|  10.04|           1|     13.750|         -|           1|      -|       yes|        -|        -|   33 (~0%)|   14 (~0%)|    -|
+    +-----------------------------------------------------------+------+-------+------------+-----------+----------+------------+-------+----------+---------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++------------+------------+---------------+--------+----------+
+| Interface  | Data Width | Address Width | Offset | Register |
++------------+------------+---------------+--------+----------+
+| s_axi_CTRL | 32         | 8             | 16     | 0        |
++------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++------------+--------------------+--------+-------+--------+-----------------------------------+----------------------------------------------------------------------+
+| Interface  | Register           | Offset | Width | Access | Description                       | Bit Fields                                                           |
++------------+--------------------+--------+-------+--------+-----------------------------------+----------------------------------------------------------------------+
+| s_axi_CTRL | CTRL               | 0x00   | 32    | RW     | Control signals                   | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_CTRL | GIER               | 0x04   | 32    | RW     | Global Interrupt Enable Register  | 0=Enable                                                             |
+| s_axi_CTRL | IP_IER             | 0x08   | 32    | RW     | IP Interrupt Enable Register      | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_CTRL | IP_ISR             | 0x0c   | 32    | RW     | IP Interrupt Status Register      | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_CTRL | height             | 0x10   | 32    | W      | Data signal of height             |                                                                      |
+| s_axi_CTRL | width              | 0x18   | 32    | W      | Data signal of width              |                                                                      |
+| s_axi_CTRL | bckgndId           | 0x20   | 32    | W      | Data signal of bckgndId           |                                                                      |
+| s_axi_CTRL | ovrlayId           | 0x28   | 32    | W      | Data signal of ovrlayId           |                                                                      |
+| s_axi_CTRL | maskId             | 0x30   | 32    | W      | Data signal of maskId             |                                                                      |
+| s_axi_CTRL | motionSpeed        | 0x38   | 32    | W      | Data signal of motionSpeed        |                                                                      |
+| s_axi_CTRL | colorFormat        | 0x40   | 32    | W      | Data signal of colorFormat        |                                                                      |
+| s_axi_CTRL | crossHairX         | 0x48   | 32    | W      | Data signal of crossHairX         |                                                                      |
+| s_axi_CTRL | crossHairY         | 0x50   | 32    | W      | Data signal of crossHairY         |                                                                      |
+| s_axi_CTRL | ZplateHorContStart | 0x58   | 32    | W      | Data signal of ZplateHorContStart |                                                                      |
+| s_axi_CTRL | ZplateHorContDelta | 0x60   | 32    | W      | Data signal of ZplateHorContDelta |                                                                      |
+| s_axi_CTRL | ZplateVerContStart | 0x68   | 32    | W      | Data signal of ZplateVerContStart |                                                                      |
+| s_axi_CTRL | ZplateVerContDelta | 0x70   | 32    | W      | Data signal of ZplateVerContDelta |                                                                      |
+| s_axi_CTRL | boxSize            | 0x78   | 32    | W      | Data signal of boxSize            |                                                                      |
+| s_axi_CTRL | boxColorR          | 0x80   | 32    | W      | Data signal of boxColorR          |                                                                      |
+| s_axi_CTRL | boxColorG          | 0x88   | 32    | W      | Data signal of boxColorG          |                                                                      |
+| s_axi_CTRL | boxColorB          | 0x90   | 32    | W      | Data signal of boxColorB          |                                                                      |
+| s_axi_CTRL | enableInput        | 0x98   | 32    | W      | Data signal of enableInput        |                                                                      |
+| s_axi_CTRL | passthruStartX     | 0xa0   | 32    | W      | Data signal of passthruStartX     |                                                                      |
+| s_axi_CTRL | passthruStartY     | 0xa8   | 32    | W      | Data signal of passthruStartY     |                                                                      |
+| s_axi_CTRL | passthruEndX       | 0xb0   | 32    | W      | Data signal of passthruEndX       |                                                                      |
+| s_axi_CTRL | passthruEndY       | 0xb8   | 32    | W      | Data signal of passthruEndY       |                                                                      |
+| s_axi_CTRL | dpDynamicRange     | 0xc0   | 32    | W      | Data signal of dpDynamicRange     |                                                                      |
+| s_axi_CTRL | dpYUVCoef          | 0xc8   | 32    | W      | Data signal of dpYUVCoef          |                                                                      |
+| s_axi_CTRL | field_id           | 0xd0   | 32    | W      | Data signal of field_id           |                                                                      |
+| s_axi_CTRL | bck_motion_en      | 0xd8   | 32    | W      | Data signal of bck_motion_en      |                                                                      |
++------------+--------------------+--------+-------+--------+-----------------------------------+----------------------------------------------------------------------+
+
+* AXIS
++--------------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface    | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++--------------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| m_axis_video | both          | 24    | 1     | 1   | 3     | 1     | 1      | 3     | 1     | 1      |
+| s_axis_video | both          | 24    | 1     | 1   | 3     | 1     | 1      | 3     | 1     | 1      |
++--------------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* Other Ports
++-----------+---------+----------+
+| Interface | Mode    | Bitwidth |
++-----------+---------+----------+
+| fid       | ap_none | 1        |
+| fid_in    | ap_none | 1        |
++-----------+---------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++--------------------+-----------+---------------------------------------------+
+| Argument           | Direction | Datatype                                    |
++--------------------+-----------+---------------------------------------------+
+| s_axis_video       | in        | stream<hls::axis<ap_uint<24>, 1, 1, 1>, 0>& |
+| height             | in        | unsigned short&                             |
+| width              | in        | unsigned short&                             |
+| field_id           | in        | unsigned short&                             |
+| fid_in             | in        | bool&                                       |
+| passthruStartX     | in        | unsigned short&                             |
+| passthruStartY     | in        | unsigned short&                             |
+| passthruEndX       | in        | unsigned short&                             |
+| passthruEndY       | in        | unsigned short&                             |
+| enableInput        | in        | unsigned char&                              |
+| bckgndId           | in        | unsigned char&                              |
+| ovrlayId           | in        | unsigned char&                              |
+| maskId             | in        | unsigned char&                              |
+| motionSpeed        | in        | unsigned char&                              |
+| colorFormat        | in        | unsigned char&                              |
+| crossHairX         | in        | unsigned short&                             |
+| crossHairY         | in        | unsigned short&                             |
+| ZplateHorContStart | in        | unsigned short&                             |
+| ZplateHorContDelta | in        | unsigned short&                             |
+| ZplateVerContStart | in        | unsigned short&                             |
+| ZplateVerContDelta | in        | unsigned short&                             |
+| boxSize            | in        | unsigned short&                             |
+| boxColorR          | in        | unsigned short&                             |
+| boxColorG          | in        | unsigned short&                             |
+| boxColorB          | in        | unsigned short&                             |
+| dpDynamicRange     | in        | unsigned char&                              |
+| dpYUVCoef          | in        | unsigned char&                              |
+| bck_motion_en      | in        | unsigned short&                             |
+| m_axis_video       | out       | stream<hls::axis<ap_uint<24>, 1, 1, 1>, 0>& |
+| fid                | out       | bool&                                       |
++--------------------+-----------+---------------------------------------------+
+
+* SW-to-HW Mapping
++--------------------+--------------+-----------+----------------------------------------------+
+| Argument           | HW Interface | HW Type   | HW Info                                      |
++--------------------+--------------+-----------+----------------------------------------------+
+| s_axis_video       | s_axis_video | interface |                                              |
+| height             | s_axi_CTRL   | register  | name=height offset=0x10 range=32             |
+| width              | s_axi_CTRL   | register  | name=width offset=0x18 range=32              |
+| field_id           | s_axi_CTRL   | register  | name=field_id offset=0xd0 range=32           |
+| fid_in             | fid_in       | port      |                                              |
+| passthruStartX     | s_axi_CTRL   | register  | name=passthruStartX offset=0xa0 range=32     |
+| passthruStartY     | s_axi_CTRL   | register  | name=passthruStartY offset=0xa8 range=32     |
+| passthruEndX       | s_axi_CTRL   | register  | name=passthruEndX offset=0xb0 range=32       |
+| passthruEndY       | s_axi_CTRL   | register  | name=passthruEndY offset=0xb8 range=32       |
+| enableInput        | s_axi_CTRL   | register  | name=enableInput offset=0x98 range=32        |
+| bckgndId           | s_axi_CTRL   | register  | name=bckgndId offset=0x20 range=32           |
+| ovrlayId           | s_axi_CTRL   | register  | name=ovrlayId offset=0x28 range=32           |
+| maskId             | s_axi_CTRL   | register  | name=maskId offset=0x30 range=32             |
+| motionSpeed        | s_axi_CTRL   | register  | name=motionSpeed offset=0x38 range=32        |
+| colorFormat        | s_axi_CTRL   | register  | name=colorFormat offset=0x40 range=32        |
+| crossHairX         | s_axi_CTRL   | register  | name=crossHairX offset=0x48 range=32         |
+| crossHairY         | s_axi_CTRL   | register  | name=crossHairY offset=0x50 range=32         |
+| ZplateHorContStart | s_axi_CTRL   | register  | name=ZplateHorContStart offset=0x58 range=32 |
+| ZplateHorContDelta | s_axi_CTRL   | register  | name=ZplateHorContDelta offset=0x60 range=32 |
+| ZplateVerContStart | s_axi_CTRL   | register  | name=ZplateVerContStart offset=0x68 range=32 |
+| ZplateVerContDelta | s_axi_CTRL   | register  | name=ZplateVerContDelta offset=0x70 range=32 |
+| boxSize            | s_axi_CTRL   | register  | name=boxSize offset=0x78 range=32            |
+| boxColorR          | s_axi_CTRL   | register  | name=boxColorR offset=0x80 range=32          |
+| boxColorG          | s_axi_CTRL   | register  | name=boxColorG offset=0x88 range=32          |
+| boxColorB          | s_axi_CTRL   | register  | name=boxColorB offset=0x90 range=32          |
+| dpDynamicRange     | s_axi_CTRL   | register  | name=dpDynamicRange offset=0xc0 range=32     |
+| dpYUVCoef          | s_axi_CTRL   | register  | name=dpYUVCoef offset=0xc8 range=32          |
+| bck_motion_en      | s_axi_CTRL   | register  | name=bck_motion_en offset=0xd8 range=32      |
+| m_axis_video       | m_axis_video | interface |                                              |
+| fid                | fid          | port      |                                              |
++--------------------+--------------+-----------+----------------------------------------------+
+
+
+================================================================
+== M_AXI Burst Information
+================================================================
+ Note: All burst requests might be further partitioned into multiple requests during RTL generation based on max_read_burst_length or max_write_burst_length settings.
+
+  No burst in design
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------------------------+-----+--------+--------------------+-----+--------+---------+
+| Name                                                   | DSP | Pragma | Variable           | Op  | Impl   | Latency |
++--------------------------------------------------------+-----+--------+--------------------+-----+--------+---------+
+| + v_tpg                                                | 13  |        |                    |     |        |         |
+|   add_ln457_fu_589_p2                                  | -   |        | add_ln457          | add | fabric | 0       |
+|   add_ln462_fu_621_p2                                  | -   |        | add_ln462          | add | fabric | 0       |
+|  + v_tpgHlsDataFlow                                    | 13  |        |                    |     |        |         |
+|   + AXIvideo2MultiPixStream                            | 0   |        |                    |     |        |         |
+|     i_4_fu_317_p2                                      | -   |        | i_4                | add | fabric | 0       |
+|    + AXIvideo2MultiPixStream_Pipeline_loop_width       | 0   |        |                    |     |        |         |
+|      j_4_fu_223_p2                                     | -   |        | j_4                | add | fabric | 0       |
+|   + tpgBackground                                      | 13  |        |                    |     |        |         |
+|     add2_i_fu_778_p2                                   | -   |        | add2_i             | add | fabric | 0       |
+|     barWidthMinSamples_fu_794_p2                       | -   |        | barWidthMinSamples | add | fabric | 0       |
+|     add5_i_fu_808_p2                                   | -   |        | add5_i             | add | fabric | 0       |
+|     add_i_fu_830_p2                                    | -   |        | add_i              | add | fabric | 0       |
+|     sub_i_i_i_fu_860_p2                                | -   |        | sub_i_i_i          | add | fabric | 0       |
+|     sub40_i_fu_866_p2                                  | -   |        | sub40_i            | add | fabric | 0       |
+|     add_ln1404_fu_872_p2                               | -   |        | add_ln1404         | add | fabric | 0       |
+|     add_ln518_fu_1071_p2                               | -   |        | add_ln518          | add | fabric | 0       |
+|     add_ln1488_fu_1181_p2                              | -   |        | add_ln1488         | add | fabric | 0       |
+|     add_ln705_fu_1110_p2                               | -   |        | add_ln705          | add | fabric | 0       |
+|    + tpgBackground_Pipeline_VITIS_LOOP_520_2           | 13  |        |                    |     |        |         |
+|      add_ln520_fu_2063_p2                              | -   |        | add_ln520          | add | fabric | 0       |
+|      add_ln525_fu_2729_p2                              | -   |        | add_ln525          | add | fabric | 0       |
+|      add_ln840_2_fu_2311_p2                            | -   |        | add_ln840_2        | add | fabric | 0       |
+|      add_ln841_fu_2337_p2                              | -   |        | add_ln841          | add | fabric | 0       |
+|      add_ln1730_fu_2886_p2                             | -   |        | add_ln1730         | add | fabric | 0       |
+|      add_ln840_6_fu_2349_p2                            | -   |        | add_ln840_6        | add | fabric | 0       |
+|      rampVal_2_new_1_out                               | -   |        | add_ln1619         | add | fabric | 0       |
+|      add_ln1530_fu_2918_p2                             | -   |        | add_ln1530         | add | fabric | 0       |
+|      add_ln840_1_fu_2389_p2                            | -   |        | add_ln840_1        | add | fabric | 0       |
+|      sub_ln841_1_fu_2410_p2                            | -   |        | sub_ln841_1        | sub | fabric | 0       |
+|      add_ln1548_fu_2950_p2                             | -   |        | add_ln1548         | add | fabric | 0       |
+|      add_ln840_5_fu_2421_p2                            | -   |        | add_ln840_5        | add | fabric | 0       |
+|      add_ln1500_fu_4056_p2                             | -   |        | add_ln1500         | add | fabric | 0       |
+|      mul_mul_11ns_12ns_23_4_1_U61                      | 1   |        | mul_ln1236         | mul | dsp48  | 3       |
+|      add_ln1236_fu_3022_p2                             | -   |        | add_ln1236         | add | fabric | 0       |
+|      add_ln1236_1_fu_3044_p2                           | -   |        | add_ln1236_1       | add | fabric | 0       |
+|      grp_fu_2135_p0                                    | -   |        | add_ln1240         | add | fabric | 0       |
+|      mul_mul_11ns_12ns_23_4_1_U62                      | 1   |        | mul_ln1240         | mul | dsp48  | 3       |
+|      add_ln1240_1_fu_3102_p2                           | -   |        | add_ln1240_1       | add | fabric | 0       |
+|      add_ln1240_2_fu_3124_p2                           | -   |        | add_ln1240_2       | add | fabric | 0       |
+|      grp_fu_2438_p0                                    | -   |        | add_ln1244         | add | fabric | 0       |
+|      mul_mul_11ns_12ns_23_4_1_U63                      | 1   |        | mul_ln1244         | mul | dsp48  | 3       |
+|      add_ln1244_1_fu_3354_p2                           | -   |        | add_ln1244_1       | add | fabric | 0       |
+|      add_ln1244_2_fu_3376_p2                           | -   |        | add_ln1244_2       | add | fabric | 0       |
+|      mac_muladd_16ns_7ns_13ns_23_4_1_U64               | 1   |        | mul_ln1257         | mul | dsp48  | 3       |
+|      mac_muladd_16ns_8ns_23ns_24_4_1_U67               | 1   |        | mul_ln1257_1       | mul | dsp48  | 3       |
+|      mul_mul_16ns_5ns_21_4_1_U68                       | 1   |        | mul_ln1257_2       | mul | dsp48  | 3       |
+|      mac_muladd_16ns_7ns_13ns_23_4_1_U64               | 1   |        | add_ln1257         | add | dsp48  | 3       |
+|      mac_muladd_16ns_8ns_23ns_24_4_1_U67               | 1   |        | add_ln1257_1       | add | dsp48  | 3       |
+|      add_ln1257_2_fu_4271_p2                           | -   |        | add_ln1257_2       | add | fabric | 0       |
+|      add_ln1257_3_fu_4277_p2                           | -   |        | add_ln1257_3       | add | fabric | 0       |
+|      mac_muladd_16ns_7s_16ns_23_4_1_U65                | 1   |        | mul_ln1258         | mul | dsp48  | 3       |
+|      mac_muladd_16ns_8s_23s_24_4_1_U69                 | 1   |        | mul_ln1258_1       | mul | dsp48  | 3       |
+|      mac_muladd_16ns_7s_16ns_23_4_1_U65                | 1   |        | add_ln1258         | add | dsp48  | 3       |
+|      mac_muladd_16ns_8s_23s_24_4_1_U69                 | 1   |        | add_ln1258_1       | add | dsp48  | 3       |
+|      add_ln1258_2_fu_4297_p2                           | -   |        | add_ln1258_2       | add | fabric | 0       |
+|      mul_mul_16ns_8s_24_4_1_U66                        | 1   |        | mul_ln1259         | mul | dsp48  | 3       |
+|      mac_muladd_16ns_6s_24s_24_4_1_U70                 | 1   |        | mul_ln1259_1       | mul | dsp48  | 3       |
+|      add_ln1259_fu_4324_p2                             | -   |        | add_ln1259         | add | fabric | 0       |
+|      mac_muladd_16ns_6s_24s_24_4_1_U70                 | 1   |        | add_ln1259_1       | add | dsp48  | 3       |
+|      add_ln1259_2_fu_4337_p2                           | -   |        | add_ln1259_2       | add | fabric | 0       |
+|      add_ln840_3_fu_2462_p2                            | -   |        | add_ln840_3        | add | fabric | 0       |
+|      sub_ln841_2_fu_2514_p2                            | -   |        | sub_ln841_2        | sub | fabric | 0       |
+|      add_ln840_7_fu_2532_p2                            | -   |        | add_ln840_7        | add | fabric | 0       |
+|      add_ln1348_fu_3172_p2                             | -   |        | add_ln1348         | add | fabric | 0       |
+|      add_ln840_fu_2568_p2                              | -   |        | add_ln840          | add | fabric | 0       |
+|      sub_ln841_fu_2589_p2                              | -   |        | sub_ln841          | sub | fabric | 0       |
+|      add_ln1367_fu_3208_p2                             | -   |        | add_ln1367         | add | fabric | 0       |
+|      add_ln840_4_fu_2600_p2                            | -   |        | add_ln840_4        | add | fabric | 0       |
+|      add_ln1296_fu_2692_p2                             | -   |        | add_ln1296         | add | fabric | 0       |
+|      add_ln1298_fu_2704_p2                             | -   |        | add_ln1298         | add | fabric | 0       |
+|      am_addmul_16ns_1s_16ns_17_4_1_U59                 | 1   |        | add_ln1302         | add | dsp48  | 3       |
+|      am_addmul_16ns_1s_16ns_17_4_1_U59                 | 1   |        | mul_ln1302         | mul | dsp48  | 3       |
+|      mac_muladd_16s_16s_16ns_16_4_1_U60                | 1   |        | mul_ln1302_1       | mul | dsp48  | 3       |
+|      grp_fu_4652_p2                                    | -   |        | add_ln1306_1       | add | fabric | 0       |
+|      mac_muladd_16s_16s_16ns_16_4_1_U60                | 1   |        | add_ln1306         | add | dsp48  | 3       |
+|      mul_mul_20s_8ns_28_4_1_U71                        | 1   |        | mul_ln1311         | mul | dsp48  | 3       |
+|      sub_ln1311_fu_4511_p2                             | -   |        | sub_ln1311         | sub | fabric | 0       |
+|      sub_ln1311_1_fu_4527_p2                           | -   |        | sub_ln1311_1       | sub | fabric | 0       |
+|      outpix_val_V_54_fu_4550_p2                        | -   |        | outpix_val_V_54    | add | fabric | 0       |
+|      ret_V_fu_2620_p2                                  | -   |        | ret_V              | add | fabric | 0       |
+|      add_ln186_fu_2631_p2                              | -   |        | add_ln186          | add | fabric | 0       |
+|      sub_ln186_fu_2637_p2                              | -   |        | sub_ln186          | sub | fabric | 0       |
+|      add_ln1212_fu_3453_p2                             | -   |        | add_ln1212         | add | fabric | 0       |
+|      add_ln1056_fu_3630_p2                             | -   |        | add_ln1056         | add | fabric | 0       |
+|      add_ln1039_fu_4211_p2                             | -   |        | add_ln1039         | add | fabric | 0       |
+|   + tpgForeground                                      | 0   |        |                    |     |        |         |
+|     hMax_fu_240_p2                                     | -   |        | hMax               | sub | fabric | 0       |
+|     vMax_fu_246_p2                                     | -   |        | vMax               | sub | fabric | 0       |
+|     y_2_fu_353_p2                                      | -   |        | y_2                | add | fabric | 0       |
+|    + tpgForeground_Pipeline_VITIS_LOOP_729_2           | 0   |        |                    |     |        |         |
+|      x_2_fu_438_p2                                     | -   |        | x_2                | add | fabric | 0       |
+|      sub_ln1869_fu_507_p2                              | -   |        | sub_ln1869         | sub | fabric | 0       |
+|      add_ln1867_fu_512_p2                              | -   |        | add_ln1867         | add | fabric | 0       |
+|      sub_ln1873_fu_531_p2                              | -   |        | sub_ln1873         | sub | fabric | 0       |
+|      add_ln1871_fu_536_p2                              | -   |        | add_ln1871         | add | fabric | 0       |
+|      boxRight_fu_633_p2                                | -   |        | boxRight           | add | fabric | 0       |
+|      boxBottom_fu_638_p2                               | -   |        | boxBottom          | add | fabric | 0       |
+|   + MultiPixStream2AXIvideo                            | 0   |        |                    |     |        |         |
+|     sub_fu_201_p2                                      | -   |        | sub                | add | fabric | 0       |
+|     i_2_fu_281_p2                                      | -   |        | i_2                | add | fabric | 0       |
+|    + MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_936_2 | 0   |        |                    |     |        |         |
+|      j_2_fu_220_p2                                     | -   |        | j_2                | add | fabric | 0       |
+|      counter                                           | -   |        | add_ln960          | add | fabric | 0       |
++--------------------------------------------------------+-----+--------+--------------------+-----+--------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++----------------------------------------------+------+------+--------+-------------------------+---------+------+---------+
+| Name                                         | BRAM | URAM | Pragma | Variable                | Storage | Impl | Latency |
++----------------------------------------------+------+------+--------+-------------------------+---------+------+---------+
+| + v_tpg                                      | 13   | 0    |        |                         |         |      |         |
+|  + v_tpgHlsDataFlow                          | 13   | 0    |        |                         |         |      |         |
+|    srcYUV_U                                  | -    | -    |        | srcYUV                  | fifo    | srl  | 0       |
+|    bckgndYUV_U                               | -    | -    |        | bckgndYUV               | fifo    | srl  | 0       |
+|    ovrlayYUV_U                               | -    | -    |        | ovrlayYUV               | fifo    | srl  | 0       |
+|   + tpgBackground                            | 13   | 0    |        |                         |         |      |         |
+|    + tpgBackground_Pipeline_VITIS_LOOP_520_2 | 13   | 0    |        |                         |         |      |         |
+|      redYuv_U                                | -    | -    |        | redYuv                  | rom_1p  | auto | 1       |
+|      grnYuv_U                                | -    | -    |        | grnYuv                  | rom_1p  | auto | 1       |
+|      bluYuv_U                                | -    | -    |        | bluYuv                  | rom_1p  | auto | 1       |
+|      blkYuv_U                                | -    | -    |        | blkYuv                  | rom_1p  | auto | 1       |
+|      whiYuv_U                                | -    | -    |        | whiYuv                  | rom_1p  | auto | 1       |
+|      tpgBarSelRgb_r_U                        | -    | -    |        | tpgBarSelRgb_r          | rom_1p  | auto | 1       |
+|      tpgBarSelYuv_y_U                        | -    | -    |        | tpgBarSelYuv_y          | rom_1p  | auto | 1       |
+|      tpgBarSelRgb_g_U                        | -    | -    |        | tpgBarSelRgb_g          | rom_1p  | auto | 1       |
+|      tpgBarSelYuv_u_U                        | -    | -    |        | tpgBarSelYuv_u          | rom_1p  | auto | 1       |
+|      tpgBarSelYuv_v_U                        | -    | -    |        | tpgBarSelYuv_v          | rom_1p  | auto | 1       |
+|      tpgBarSelRgb_b_U                        | -    | -    |        | tpgBarSelRgb_b          | rom_1p  | auto | 1       |
+|      tpgSinTableArray_U                      | 3    | -    |        | tpgSinTableArray        | rom_1p  | auto | 1       |
+|      tpgTartanBarArray_U                     | -    | -    |        | tpgTartanBarArray       | rom_1p  | auto | 1       |
+|      whiYuv_1_U                              | -    | -    |        | whiYuv_1                | rom_1p  | auto | 1       |
+|      blkYuv_1_U                              | -    | -    |        | blkYuv_1                | rom_1p  | auto | 1       |
+|      tpgSinTableArray_9bit_0_U               | 2    | -    |        | tpgSinTableArray_9bit_0 | rom_np  | auto | 1       |
+|      tpgSinTableArray_9bit_1_U               | 2    | -    |        | tpgSinTableArray_9bit_1 | rom_np  | auto | 1       |
+|      tpgSinTableArray_9bit_2_U               | 2    | -    |        | tpgSinTableArray_9bit_2 | rom_np  | auto | 1       |
+|      tpgSinTableArray_9bit_3_U               | 2    | -    |        | tpgSinTableArray_9bit_3 | rom_np  | auto | 1       |
+|      tpgSinTableArray_9bit_4_U               | 2    | -    |        | tpgSinTableArray_9bit_4 | rom_np  | auto | 1       |
+|      tpgCheckerBoardArray_U                  | -    | -    |        | tpgCheckerBoardArray    | rom_1p  | auto | 1       |
+|      DPtpgBarSelRgb_VESA_r_U                 | -    | -    |        | DPtpgBarSelRgb_VESA_r   | rom_1p  | auto | 1       |
+|      DPtpgBarSelRgb_VESA_g_U                 | -    | -    |        | DPtpgBarSelRgb_VESA_g   | rom_1p  | auto | 1       |
+|      DPtpgBarSelRgb_VESA_b_U                 | -    | -    |        | DPtpgBarSelRgb_VESA_b   | rom_1p  | auto | 1       |
+|      DPtpgBarArray_U                         | -    | -    |        | DPtpgBarArray           | rom_1p  | auto | 1       |
+|      DPtpgBarSelRgb_CEA_r_U                  | -    | -    |        | DPtpgBarSelRgb_CEA_r    | rom_1p  | auto | 1       |
+|      DPtpgBarSelRgb_CEA_g_U                  | -    | -    |        | DPtpgBarSelRgb_CEA_g    | rom_1p  | auto | 1       |
+|      DPtpgBarSelRgb_CEA_b_U                  | -    | -    |        | DPtpgBarSelRgb_CEA_b    | rom_1p  | auto | 1       |
+|      DPtpgBarSelYuv_601_y_U                  | -    | -    |        | DPtpgBarSelYuv_601_y    | rom_1p  | auto | 1       |
+|      DPtpgBarSelYuv_601_v_U                  | -    | -    |        | DPtpgBarSelYuv_601_v    | rom_1p  | auto | 1       |
+|      DPtpgBarSelYuv_601_u_U                  | -    | -    |        | DPtpgBarSelYuv_601_u    | rom_1p  | auto | 1       |
+|      DPtpgBarSelYuv_709_y_U                  | -    | -    |        | DPtpgBarSelYuv_709_y    | rom_1p  | auto | 1       |
+|      DPtpgBarSelYuv_709_v_U                  | -    | -    |        | DPtpgBarSelYuv_709_v    | rom_1p  | auto | 1       |
+|      DPtpgBarSelYuv_709_u_U                  | -    | -    |        | DPtpgBarSelYuv_709_u    | rom_1p  | auto | 1       |
+|   + tpgForeground                            | 0    | 0    |        |                         |         |      |         |
+|    + tpgForeground_Pipeline_VITIS_LOOP_729_2 | 0    | 0    |        |                         |         |      |         |
+|      whiYuv_2_U                              | -    | -    |        | whiYuv_2                | rom_1p  | auto | 1       |
++----------------------------------------------+------+------+--------+-------------------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Pragmas with Warnings
++-----------+----------------------------------+-------------------------------------------------------------+---------------------------------------------------+
+| Type      | Options                          | Location                                                    | Messages                                          |
++-----------+----------------------------------+-------------------------------------------------------------+---------------------------------------------------+
+| interface | axis port=&s_axis_video register | prj/sol/.autopilot/db/v_tpg.cpp:383 in v_tpg, &s_axis_video | extra token before variable expression is ignored |
++-----------+----------------------------------+-------------------------------------------------------------+---------------------------------------------------+
+
+* Valid Pragma Syntax
++----------------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Type                 | Options                                                   | Location                                                                                                                                                                 |
++----------------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_axi_io.h:47 in axigetbitfields                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_axi_io.h:54 in axigetbitfields                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_axi_io.h:62 in axigetbitfields                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_axi_io.h:70 in axigetbitfields                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_axi_io.h:76 in axisetbitfields                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_axi_io.h:83 in axisetbitfields                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_axi_io.h:91 in axisetbitfields                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_axi_io.h:99 in axisetbitfields                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:117 in apply                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:131 in apply                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:145 in apply                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:157 in kernel_and_apply                                                 |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:163 in kernel_and_apply                                                 |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:175 in apply                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:184 in apply                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:193 in apply                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:202 in apply                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:216 in apply                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:227 in apply                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:238 in apply                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:249 in apply                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:262 in apply                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:274 in apply                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:290 in apply                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:320 in apply                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:329 in apply                                                            |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:356 in arithm_pro                                                       |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:357 in arithm_pro                                                       |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:388 in arithm_pro                                                       |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:389 in arithm_pro                                                       |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:428 in arithm_pro                                                       |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:429 in arithm_pro                                                       |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:460 in arithm_pro                                                       |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:461 in arithm_pro                                                       |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:492 in arithm_pro                                                       |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:493 in arithm_pro                                                       |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:524 in arithm_pro                                                       |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:531 in arithm_pro                                                       |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:532 in arithm_pro                                                       |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:556 in arithm_pro                                                       |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:565 in arithm_pro                                                       |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:566 in arithm_pro                                                       |
+| array_partition      | variable=dst_buffer complete dim=1                        | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:588 in reduce_opr, dst_buffer                                           |
+| array_partition      | variable=dst_buffer complete dim=2                        | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:589 in reduce_opr, dst_buffer                                           |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:596 in reduce_opr                                                       |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:601 in reduce_opr                                                       |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:602 in reduce_opr                                                       |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:705 in mins                                                             |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:725 in maxs                                                             |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:929 in zero                                                             |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:941 in zero                                                             |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1012 in cmps                                                            |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1088 in range                                                           |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1089 in range                                                           |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1108 in sum                                                             |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1124 in avg                                                             |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1142 in avg                                                             |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1219 in get_max_min                                                     |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1234 in get_max_min                                                     |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1235 in get_max_min                                                     |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1262 in get_max_min                                                     |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1278 in get_max_min                                                     |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1279 in get_max_min                                                     |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1314 in get_max_min                                                     |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1329 in get_max_min                                                     |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1330 in get_max_min                                                     |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1379 in get_max_min                                                     |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1395 in get_max_min                                                     |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1396 in get_max_min                                                     |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1491 in threshold                                                       |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1492 in threshold                                                       |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1532 in consume                                                         |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1533 in consume                                                         |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1559 in duplicate                                                       |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1560 in duplicate                                                       |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1590 in split                                                           |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1591 in split                                                           |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1623 in split                                                           |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1624 in split                                                           |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1659 in split                                                           |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1660 in split                                                           |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1692 in merge                                                           |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1693 in merge                                                           |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1725 in merge                                                           |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1726 in merge                                                           |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1761 in merge                                                           |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_arithm.h:1762 in merge                                                           |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:183 in scalar<n, t>                                                       |
+| array_partition      | variable=val dim=1 complete                               | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:184 in scalar<n, t>, val                                                  |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:188 in scalar<n, t>                                                       |
+| array_partition      | variable=val dim=1 complete                               | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:189 in scalar<n, t>, val                                                  |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:194 in scalar<n, t>                                                       |
+| array_partition      | variable=val dim=1 complete                               | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:195 in scalar<n, t>, val                                                  |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:200 in scalar<n, t>                                                       |
+| array_partition      | variable=val dim=1 complete                               | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:201 in scalar<n, t>, val                                                  |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:206 in scalar<n, t>                                                       |
+| array_partition      | variable=val dim=1 complete                               | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:207 in scalar<n, t>, val                                                  |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:217 in operator=                                                          |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:219 in operator=                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:238 in operator=                                                          |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:240 in operator=                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:247 in operator+                                                          |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:250 in operator+                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:258 in operator+                                                          |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:261 in operator+                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:269 in operator-                                                          |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:272 in operator-                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:280 in operator-                                                          |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:283 in operator-                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:292 in operator*                                                          |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:295 in operator*                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:303 in operator*                                                          |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:306 in operator*                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:315 in operator/                                                          |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:318 in operator/                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:326 in operator/                                                          |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:329 in operator/                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:341 in scalar_to_yuv422_8                                                 |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:349 in yuv422_8_to_scalar                                                 |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:359 in scalar_to_yuv444_8                                                 |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:368 in yuv444_8_to_scalar                                                 |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:379 in scalar_to_rgb_8                                                    |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:388 in rgb_8_to_scalar                                                    |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:399 in scalar_to_yuva422_8                                                |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:408 in yuva422_8_to_scalar                                                |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:419 in scalar_to_yuva444_8                                                |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:429 in yuva444_8_to_scalar                                                |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:441 in scalar_to_rgba_8                                                   |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:451 in rgba_8_to_scalar                                                   |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:463 in scalar_to_yuva420_8                                                |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:471 in yuva420_8_to_scalar                                                |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:481 in scalar_to_yuvd422_8                                                |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:490 in yuvd422_8_to_scalar                                                |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:501 in scalar_to_yuvd444_8                                                |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:511 in yuvd444_8_to_scalar                                                |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:523 in scalar_to_rgbd_8                                                   |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:533 in rgbd_8_to_scalar                                                   |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:545 in scalar_to_bayer_8                                                  |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:552 in bayer_8_to_scalar                                                  |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:561 in scalar_to_luma_8                                                   |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:568 in luma_8_to_scalar                                                   |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:590 in read                                                               |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:597 in write                                                              |
+| aggregate            | variable=data_stream                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:598 in write, data_stream                                                 |
+| protocol             | floating                                                  | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:604 in write                                                              |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:606 in write                                                              |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:615 in operator>>                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:622 in operator<<                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:640 in mat<rows, cols, t>                                                 |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:646 in mat<rows, cols, t>                                                 |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:652 in mat<rows, cols, t>                                                 |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:658 in init                                                               |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:667 in assignto                                                           |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:674 in read                                                               |
+| protocol             | floating                                                  | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:681 in read                                                               |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:683 in read                                                               |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:692 in read                                                               |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:698 in write                                                              |
+| aggregate            | variable=data_stream                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:699 in write, data_stream                                                 |
+| protocol             | floating                                                  | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:705 in write                                                              |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:707 in write                                                              |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:715 in operator>>                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:721 in operator<<                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:727 in empty                                                              |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:730 in empty                                                              |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:742 in type                                                               |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:748 in depth                                                              |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_core.h:753 in channels                                                           |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:49 in fast_pixel_diff                                                     |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:91 in corescore                                                           |
+| array_partition      | variable=flag_d_min2 dim=0                                | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:99 in corescore, flag_d_min2                                              |
+| array_partition      | variable=flag_d_max2 dim=0                                | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:100 in corescore, flag_d_max2                                             |
+| array_partition      | variable=flag_d_min4 dim=0                                | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:101 in corescore, flag_d_min4                                             |
+| array_partition      | variable=flag_d_max4 dim=0                                | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:102 in corescore, flag_d_max4                                             |
+| array_partition      | variable=flag_val dim=0                                   | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:160 in fast_judge, flag_val                                               |
+| array_partition      | variable=flag_d dim=0                                     | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:161 in fast_judge, flag_d                                                 |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:163 in fast_judge                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:193 in fast_nonmax                                                        |
+| array_partition      | variable=flag_val dim=0                                   | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:235 in fast_t_opr, flag_val                                               |
+| array_partition      | variable=flag_d dim=0                                     | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:236 in fast_t_opr, flag_d                                                 |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:246 in fast_t_opr                                                         |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:247 in fast_t_opr                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:324 in fastx                                                              |
+| array_partition      | variable=flag_val dim=0                                   | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:352 in fast_t_opr, flag_val                                               |
+| array_partition      | variable=flag_d dim=0                                     | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:353 in fast_t_opr, flag_d                                                 |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:363 in fast_t_opr                                                         |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:364 in fast_t_opr                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:446 in fastx                                                              |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:474 in paintmask                                                          |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_fast.h:475 in paintmask                                                          |
+| array_partition      | variable=rect complete dim=1                              | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_haar.h:59 in haarfeature, rect                                                   |
+| array_partition      | variable=haar_feature complete dim=1                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_haar.h:70 in haarclassifier<feature_max>, haar_feature                           |
+| array_partition      | variable=classifier complete dim=1                        | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_haar.h:85 in haarstageclassifier<stage, classifier_all, feature_max>, classifier |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_haar.h:174 in intergral_win                                                      |
+| inline               | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_haar.h:191 in icvevalhidhaarclassifier                                           |
+| function_instantiate | variable=classifier                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_haar.h:192 in icvevalhidhaarclassifier, classifier                               |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_haar.h:227 in runhaarclassifiercascade                                           |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_haar.h:284 in haarclassifierobject_opr                                           |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_haar.h:285 in haarclassifierobject_opr                                           |
+| dependence           | array inter false                                         | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_haar.h:286 in haarclassifierobject_opr                                           |
+| expression_balance   | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_haar.h:289 in haarclassifierobject_opr                                           |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_haar.h:398 in haarclassifierobject                                               |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_haar.h:462 in combin_mask                                                        |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_haar.h:503 in haarclassifierobject_group                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_harris.h:88 in ismax                                                             |
+| loop_tripcount       | MAX=ROWS                                                  | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_harris.h:115 in findmax                                                          |
+| dependence           | ARRAY INTER FALSE                                         | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_harris.h:118 in findmax                                                          |
+| loop_tripcount       | MAX=COLS                                                  | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_harris.h:119 in findmax                                                          |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_harris.h:120 in findmax                                                          |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_harris.h:121 in findmax                                                          |
+| loop_tripcount       | MAX=ROWS                                                  | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_harris.h:184 in calcim                                                           |
+| dependence           | ARRAY INTER FALSE                                         | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_harris.h:187 in calcim                                                           |
+| loop_tripcount       | MAX=COLS                                                  | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_harris.h:188 in calcim                                                           |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_harris.h:189 in calcim                                                           |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_harris.h:190 in calcim                                                           |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_harris.h:214 in harris_opr                                                       |
+| dataflow             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_harris.h:215 in harris_opr                                                       |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_harris.h:270 in cornerharris                                                     |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_harris.h:311 in harris                                                           |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_histogram.h:64 in equalize                                                       |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_histogram.h:80 in equalize                                                       |
+| loop_flatten         | OFF                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_histogram.h:81 in equalize                                                       |
+| dependence           | array inter false                                         | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_histogram.h:82 in equalize                                                       |
+| latency              | min=0 max=1                                               | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_histogram.h:98 in equalize                                                       |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_histogram.h:143 in equalize                                                      |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_histogram.h:154 in equalize                                                      |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_histogram.h:178 in equalizehist                                                  |
+| array_partition      | variable=addr complete dim=0                              | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_hough.h:104 in houghpolar, addr                                                  |
+| array_partition      | variable=accbuf complete dim=0                            | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_hough.h:105 in houghpolar, accbuf                                                |
+| array_partition      | variable=sinval complete dim=0                            | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_hough.h:111 in houghpolar, sinval                                                |
+| array_partition      | variable=cosval complete dim=0                            | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_hough.h:112 in houghpolar, cosval                                                |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_hough.h:117 in houghpolar                                                        |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_hough.h:135 in houghpolar                                                        |
+| dependence           | array inter false                                         | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_hough.h:136 in houghpolar                                                        |
+| array_partition      | variable=&accum_buf complete dim=1                        | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_hough.h:178 in sort_insert, &accum_buf                                           |
+| array_partition      | variable=lines_val complete dim=1                         | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_hough.h:179 in sort_insert, lines_val                                            |
+| array_partition      | variable=lines complete dim=0                             | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_hough.h:180 in sort_insert, lines                                                |
+| array_partition      | variable=&accum_win complete dim=0                        | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_hough.h:181 in sort_insert, &accum_win                                           |
+| array_partition      | variable=lines_flag complete dim=0                        | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_hough.h:182 in sort_insert, lines_flag                                           |
+| dependence           | array intra false                                         | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_hough.h:198 in sort_insert                                                       |
+| dependence           | array inter false                                         | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_hough.h:199 in sort_insert                                                       |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_hough.h:200 in sort_insert                                                       |
+| array_partition      | variable=_accum complete dim=1                            | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_hough.h:320 in houghlines2, _accum                                               |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgbase.h:115 in borderinterpolate                                               |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgbase.h:161 in normalizeanchor                                                 |
+| loop_tripcount       | min=20 max=2000                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgbase.h:188 in duplicateimagen                                                 |
+| loop_tripcount       | min=20 max=2000                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgbase.h:190 in duplicateimagen                                                 |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgbase.h:192 in duplicateimagen                                                 |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:152 in apply                                                           |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:178 in apply                                                           |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:280 in apply                                                           |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:302 in apply                                                           |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:316 in getstructuringelement                                           |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:373 in fill_pixelkernel                                                |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:396 in filter                                                          |
+| array_partition      | variable=col_buf complete dim=0                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:413 in filter, col_buf                                                 |
+| array_partition      | variable=&kernel complete dim=0                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:414 in filter, &kernel                                                 |
+| array_partition      | variable=src_kernel_win complete dim=0                    | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:415 in filter, src_kernel_win                                          |
+| array_partition      | variable=k_buf complete dim=1                             | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:416 in filter, k_buf                                                   |
+| array_partition      | variable=right_border_buf complete dim=0                  | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:417 in filter, right_border_buf                                        |
+| dependence           | array inter false                                         | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:447 in filter                                                          |
+| loop_flatten         | OFF                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:448 in filter                                                          |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:449 in filter                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:527 in get_parameters                                                  |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:589 in filter                                                          |
+| array_partition      | variable=&kernel complete dim=0                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:598 in filter, &kernel                                                 |
+| array_partition      | variable=src_kernel_win complete dim=0                    | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:599 in filter, src_kernel_win                                          |
+| array_partition      | variable=k_buf complete dim=1                             | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:600 in filter, k_buf                                                   |
+| array_partition      | variable=col_buf complete dim=0                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:601 in filter, col_buf                                                 |
+| loop_flatten         | OFF                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:628 in filter                                                          |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:629 in filter                                                          |
+| array_partition      | variable=col_buf complete dim=0                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:716 in column_filter, col_buf                                          |
+| array_partition      | variable=&kernelY complete dim=0                          | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:717 in column_filter, &kernelY                                         |
+| array_partition      | variable=src_kernel_winY complete dim=0                   | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:718 in column_filter, src_kernel_winY                                  |
+| array_partition      | variable=k_buf complete dim=1                             | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:719 in column_filter, k_buf                                            |
+| dependence           | array inter false                                         | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:762 in column_filter                                                   |
+| loop_flatten         | OFF                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:763 in column_filter                                                   |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:764 in column_filter                                                   |
+| array_partition      | variable=&kernelX complete dim=0                          | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:850 in row_filter, &kernelX                                            |
+| array_partition      | variable=src_kernel_winX complete dim=0                   | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:851 in row_filter, src_kernel_winX                                     |
+| array_partition      | variable=src_kernel_winX_temp complete dim=0              | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:852 in row_filter, src_kernel_winX_temp                                |
+| array_partition      | variable=row_buf complete dim=0                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:853 in row_filter, row_buf                                             |
+| array_partition      | variable=l_border_buf complete dim=1                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:854 in row_filter, l_border_buf                                        |
+| array_partition      | variable=r_border_buf complete dim=1                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:855 in row_filter, r_border_buf                                        |
+| dependence           | array inter false                                         | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:911 in row_filter                                                      |
+| loop_flatten         | OFF                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:912 in row_filter                                                      |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:913 in row_filter                                                      |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:979 in filter                                                          |
+| dataflow             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:980 in filter                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1002 in filter                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1023 in filter                                                         |
+| array_partition      | variable=&kernelX complete dim=0                          | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1034 in filter, &kernelX                                               |
+| array_partition      | variable=&kernelY complete dim=0                          | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1035 in filter, &kernelY                                               |
+| array_partition      | variable=src_kernel_winX complete dim=0                   | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1036 in filter, src_kernel_winX                                        |
+| array_partition      | variable=src_kernel_winX_temp complete dim=0              | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1037 in filter, src_kernel_winX_temp                                   |
+| array_partition      | variable=src_kernel_winY complete dim=0                   | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1038 in filter, src_kernel_winY                                        |
+| array_partition      | variable=k_buf complete dim=1                             | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1039 in filter, k_buf                                                  |
+| loop_flatten         | OFF                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1060 in filter                                                         |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1061 in filter                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1130 in filter                                                         |
+| dataflow             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1157 in filter_opr_iter                                                |
+| array_partition      | dim=1 type=complete variable=internal                     | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1159 in filter_opr_iter, internal                                      |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1163 in filter_opr_iter                                                |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1174 in morp_opr                                                       |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1196 in morp_opr                                                       |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1241 in erode                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1268 in dilate                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1493 in convert                                                        |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1509 in max                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1518 in min                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1555 in apply                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1566 in apply                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1707 in apply                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1772 in apply                                                          |
+| array_partition      | variable=tab dim=0 complete                               | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1783 in apply, tab                                                     |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1822 in apply                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1905 in apply                                                          |
+| array_partition      | variable=tab dim=0 complete                               | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1916 in apply, tab                                                     |
+| loop_flatten         | OFF                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1971 in cvtcolor                                                       |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1972 in cvtcolor                                                       |
+| loop_flatten         | OFF                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1998 in integral                                                       |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:1999 in integral                                                       |
+| loop_flatten         | OFF                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2038 in integral                                                       |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2039 in integral                                                       |
+| inline               | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2075 in init_scale_coefficients                                        |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2106 in scale_operator                                                 |
+| array_partition      | variable= temp_in dim=0 complete                          | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2146 in resize_opr_bicubic                                             |
+| array_partition      | variable= temp_out dim=0 complete                         | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2147 in resize_opr_bicubic                                             |
+| array_partition      | variable= h_fir dim=0 complete                            | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2148 in resize_opr_bicubic                                             |
+| array_partition      | variable= v_fir dim=0 complete                            | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2149 in resize_opr_bicubic                                             |
+| array_partition      | variable=hcoeffs dim=2 complete                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2150 in resize_opr_bicubic, hcoeffs                                    |
+| array_partition      | variable=vcoeffs dim=2 complete                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2151 in resize_opr_bicubic, vcoeffs                                    |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2173 in resize_opr_bicubic                                             |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2174 in resize_opr_bicubic                                             |
+| dependence           | array inter false                                         | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2175 in resize_opr_bicubic                                             |
+| loop_flatten         | OFF                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2317 in resize_opr_linear                                              |
+| dependence           | array inter false                                         | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2318 in resize_opr_linear                                              |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2319 in resize_opr_linear                                              |
+| loop_flatten         | OFF                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2501 in convertscale                                                   |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2502 in convertscale                                                   |
+| loop_flatten         | OFF                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2530 in convertscaleabs                                                |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2531 in convertscaleabs                                                |
+| inline               | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2639 in getgaussiankernel                                              |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2776 in pyrup_opr                                                      |
+| array_partition      | variable=col_buf complete dim=0                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2787 in pyrup_opr, col_buf                                             |
+| array_partition      | variable=&kernel complete dim=0                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2788 in pyrup_opr, &kernel                                             |
+| array_partition      | variable=src_kernel_win complete dim=0                    | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2789 in pyrup_opr, src_kernel_win                                      |
+| array_partition      | variable=k_buf complete dim=1                             | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2790 in pyrup_opr, k_buf                                               |
+| array_partition      | variable=right_border_buf complete dim=0                  | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2791 in pyrup_opr, right_border_buf                                    |
+| loop_flatten         | OFF                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2803 in pyrup_opr                                                      |
+| dependence           | array inter false                                         | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2804 in pyrup_opr                                                      |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2805 in pyrup_opr                                                      |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2972 in pyrdown_opr                                                    |
+| array_partition      | variable=col_buf complete dim=0                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2983 in pyrdown_opr, col_buf                                           |
+| array_partition      | variable=&kernel complete dim=0                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2984 in pyrdown_opr, &kernel                                           |
+| array_partition      | variable=src_kernel_win complete dim=0                    | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2985 in pyrdown_opr, src_kernel_win                                    |
+| array_partition      | variable=k_buf complete dim=1                             | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2986 in pyrdown_opr, k_buf                                             |
+| array_partition      | variable=right_border_buf complete dim=0                  | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:2987 in pyrdown_opr, right_border_buf                                  |
+| loop_flatten         | OFF                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:3004 in pyrdown_opr                                                    |
+| dependence           | array inter false                                         | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:3005 in pyrdown_opr                                                    |
+| pipeline             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_imgproc.h:3006 in pyrdown_opr                                                    |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_io.h:66 in axivideo2mat                                                          |
+| loop_tripcount       | avg=0 max=0                                               | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_io.h:67 in axivideo2mat                                                          |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_io.h:74 in axivideo2mat                                                          |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_io.h:75 in axivideo2mat                                                          |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_io.h:97 in axivideo2mat                                                          |
+| loop_tripcount       | avg=0 max=0                                               | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_io.h:98 in axivideo2mat                                                          |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_io.h:127 in mat2axivideo                                                         |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_io.h:128 in mat2axivideo                                                         |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_io.h:176 in array2mat                                                            |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_io.h:177 in array2mat                                                            |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_io.h:183 in array2mat                                                            |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_io.h:242 in mat2array                                                            |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_io.h:243 in mat2array                                                            |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_io.h:248 in mat2array                                                            |
+| array_partition      | variable=val dim=1 complete                               | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:52 in window<rows, cols, t>, val                                           |
+| array_partition      | variable=val dim=2 complete                               | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:53 in window<rows, cols, t>, val                                           |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:114 in shift_pixels_left                                                   |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:124 in shift_pixels_left                                                   |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:126 in shift_pixels_left                                                   |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:152 in shift_pixels_right                                                  |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:162 in shift_pixels_right                                                  |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:164 in shift_pixels_right                                                  |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:190 in shift_pixels_up                                                     |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:200 in shift_pixels_up                                                     |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:202 in shift_pixels_up                                                     |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:228 in shift_pixels_down                                                   |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:238 in shift_pixels_down                                                   |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:240 in shift_pixels_down                                                   |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:265 in insert_pixel                                                        |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:297 in insert_row                                                          |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:307 in insert_row                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:332 in insert_top_row                                                      |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:363 in insert_bottom_row                                                   |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:394 in insert_col                                                          |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:404 in insert_col                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:429 in insert_left_col                                                     |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:460 in insert_right_col                                                    |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:491 in getval                                                              |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:500 in operator()                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:532 in shift_left                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:542 in shift_right                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:552 in shift_up                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:562 in shift_down                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:572 in insert                                                              |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:582 in insert_top                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:592 in insert_bottom                                                       |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:602 in insert_left                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:612 in insert_right                                                        |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:624 in linebuffer<rows, cols, type-parameter-0-2, 0>                       |
+| array_partition      | variable=val dim=1 complete                               | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:625 in linebuffer<rows, cols, type-parameter-0-2, 0>, val                  |
+| dependence           | variable=val inter false                                  | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:626 in linebuffer<rows, cols, type-parameter-0-2, 0>, val                  |
+| dependence           | variable=val intra false                                  | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:627 in linebuffer<rows, cols, type-parameter-0-2, 0>, val                  |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:678 in shift_pixels_down                                                   |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:689 in shift_pixels_down                                                   |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:718 in shift_pixels_up                                                     |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:729 in shift_pixels_up                                                     |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:757 in insert_bottom_row                                                   |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:789 in insert_top_row                                                      |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:821 in get_col                                                             |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:825 in get_col                                                             |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:834 in getval                                                              |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:843 in operator()                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:853 in shift_down                                                          |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:863 in shift_up                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:873 in insert_bottom                                                       |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:883 in insert_top                                                          |
+| array_reshape        | variable=val dim=1                                        | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:912 in linebuffer<rows, cols, type-parameter-0-2, 1>, val                  |
+| dependence           | variable=val inter false                                  | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:913 in linebuffer<rows, cols, type-parameter-0-2, 1>, val                  |
+| dependence           | variable=val intra false                                  | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:914 in linebuffer<rows, cols, type-parameter-0-2, 1>, val                  |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:966 in shift_pixels_down                                                   |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:977 in shift_pixels_down                                                   |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:1006 in shift_pixels_up                                                    |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:1017 in shift_pixels_up                                                    |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:1045 in insert_bottom_row                                                  |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:1077 in insert_top_row                                                     |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:1109 in get_col                                                            |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:1113 in get_col                                                            |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:1122 in getval                                                             |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:1131 in operator()                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:1141 in shift_down                                                         |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:1151 in shift_up                                                           |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:1161 in insert_bottom                                                      |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_mem.h:1171 in insert_top                                                         |
+| array_partition      | variable=tmp complete dim=0                               | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:164 in prefilternorm, tmp                                             |
+| array_partition      | variable=tmp complete dim=0                               | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:166 in prefilternorm, tmp                                             |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:178 in prefilternorm                                                  |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:179 in prefilternorm                                                  |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:229 in clip                                                           |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:242 in absdiff                                                        |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:265 in updatetexture                                                  |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:282 in sad_compute_inc                                                |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:307 in find                                                           |
+| array_partition      | variable=a complete dim=0                                 | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:308 in find, a                                                        |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:336 in find                                                           |
+| array_partition      | variable=a complete dim=0                                 | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:337 in find, a                                                        |
+| inline               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:348 in find                                                           |
+| array_partition      | variable=a complete dim=0                                 | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:349 in find, a                                                        |
+| array_partition      | variable=l_tmp complete dim=0                             | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:387 in sadblockmatching, l_tmp                                        |
+| array_partition      | variable=r_tmp complete dim=0                             | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:389 in sadblockmatching, r_tmp                                        |
+| array_partition      | variable=sad complete dim=0                               | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:392 in sadblockmatching, sad                                          |
+| array_partition      | variable=sad_cols complete dim=0                          | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:394 in sadblockmatching, sad_cols                                     |
+| loop_flatten         | off                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:411 in sadblockmatching                                               |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:412 in sadblockmatching                                               |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:416 in sadblockmatching                                               |
+| unroll               |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:419 in sadblockmatching                                               |
+| dataflow             |                                                           | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_stereobm.h:575 in findstereocorrespondencebm                                     |
+| loop_flatten         | OFF                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_undistort.h:229 in remap_nearest                                                 |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_undistort.h:232 in remap_nearest                                                 |
+| dependence           | array inter false                                         | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_undistort.h:233 in remap_nearest                                                 |
+| array_partition      | complete variable=buf dim=2                               | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_undistort.h:274 in remap_linear, buf                                             |
+| array_partition      | complete variable=buf dim=4                               | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_undistort.h:275 in remap_linear, buf                                             |
+| loop_flatten         | OFF                                                       | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_undistort.h:289 in remap_linear                                                  |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_undistort.h:292 in remap_linear                                                  |
+| dependence           | array inter false                                         | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_undistort.h:293 in remap_linear                                                  |
+| array_partition      | variable=distCoeffs complete                              | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_undistort.h:673 in initundistortrectifymapinverse, distCoeffs                    |
+| pipeline             | II=1                                                      | ../../EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_v_tpg_0_0_1/src/hls/hls_video_undistort.h:687 in initundistortrectifymapinverse                                |
+| dataflow             |                                                           | prj/sol/.autopilot/db/v_tpg.cpp:287 in v_tpghlsdataflow                                                                                                                  |
+| stream               | variable=bckgndYUV depth=16                               | prj/sol/.autopilot/db/v_tpg.cpp:289 in v_tpghlsdataflow, bckgndYUV                                                                                                       |
+| stream               | variable=ovrlayYUV depth=16                               | prj/sol/.autopilot/db/v_tpg.cpp:290 in v_tpghlsdataflow, ovrlayYUV                                                                                                       |
+| stream               | variable=srcYUV depth=16                                  | prj/sol/.autopilot/db/v_tpg.cpp:293 in v_tpghlsdataflow, srcYUV                                                                                                          |
+| interface            | axis port=m_axis_video register                           | prj/sol/.autopilot/db/v_tpg.cpp:386 in v_tpg, m_axis_video                                                                                                               |
+| interface            | s_axilite port=height bundle=CTRL offset=0x10             | prj/sol/.autopilot/db/v_tpg.cpp:388 in v_tpg, height                                                                                                                     |
+| interface            | s_axilite port=width bundle=CTRL offset=0x18              | prj/sol/.autopilot/db/v_tpg.cpp:389 in v_tpg, width                                                                                                                      |
+| interface            | s_axilite port=passthruStartX bundle=CTRL offset=0xa0     | prj/sol/.autopilot/db/v_tpg.cpp:392 in v_tpg, passthruStartX                                                                                                             |
+| interface            | s_axilite port=passthruStartY bundle=CTRL offset=0xa8     | prj/sol/.autopilot/db/v_tpg.cpp:393 in v_tpg, passthruStartY                                                                                                             |
+| interface            | s_axilite port=passthruEndX bundle=CTRL offset=0xb0       | prj/sol/.autopilot/db/v_tpg.cpp:394 in v_tpg, passthruEndX                                                                                                               |
+| interface            | s_axilite port=passthruEndY bundle=CTRL offset=0xb8       | prj/sol/.autopilot/db/v_tpg.cpp:395 in v_tpg, passthruEndY                                                                                                               |
+| interface            | s_axilite port=enableInput bundle=CTRL offset=0x98        | prj/sol/.autopilot/db/v_tpg.cpp:396 in v_tpg, enableInput                                                                                                                |
+| interface            | s_axilite port=bckgndId bundle=CTRL offset=0x20           | prj/sol/.autopilot/db/v_tpg.cpp:399 in v_tpg, bckgndId                                                                                                                   |
+| interface            | s_axilite port=ovrlayId bundle=CTRL offset=0x28           | prj/sol/.autopilot/db/v_tpg.cpp:400 in v_tpg, ovrlayId                                                                                                                   |
+| interface            | s_axilite port=maskId bundle=CTRL offset=0x30             | prj/sol/.autopilot/db/v_tpg.cpp:401 in v_tpg, maskId                                                                                                                     |
+| interface            | s_axilite port=motionSpeed bundle=CTRL offset=0x38        | prj/sol/.autopilot/db/v_tpg.cpp:402 in v_tpg, motionSpeed                                                                                                                |
+| interface            | s_axilite port=colorFormat bundle=CTRL offset=0x40        | prj/sol/.autopilot/db/v_tpg.cpp:403 in v_tpg, colorFormat                                                                                                                |
+| interface            | s_axilite port=crossHairX bundle=CTRL offset=0x48         | prj/sol/.autopilot/db/v_tpg.cpp:404 in v_tpg, crossHairX                                                                                                                 |
+| interface            | s_axilite port=crossHairY bundle=CTRL offset=0x50         | prj/sol/.autopilot/db/v_tpg.cpp:405 in v_tpg, crossHairY                                                                                                                 |
+| interface            | s_axilite port=ZplateHorContStart bundle=CTRL offset=0x58 | prj/sol/.autopilot/db/v_tpg.cpp:406 in v_tpg, ZplateHorContStart                                                                                                         |
+| interface            | s_axilite port=ZplateHorContDelta bundle=CTRL offset=0x60 | prj/sol/.autopilot/db/v_tpg.cpp:407 in v_tpg, ZplateHorContDelta                                                                                                         |
+| interface            | s_axilite port=ZplateVerContStart bundle=CTRL offset=0x68 | prj/sol/.autopilot/db/v_tpg.cpp:408 in v_tpg, ZplateVerContStart                                                                                                         |
+| interface            | s_axilite port=ZplateVerContDelta bundle=CTRL offset=0x70 | prj/sol/.autopilot/db/v_tpg.cpp:409 in v_tpg, ZplateVerContDelta                                                                                                         |
+| interface            | s_axilite port=boxSize bundle=CTRL offset=0x78            | prj/sol/.autopilot/db/v_tpg.cpp:410 in v_tpg, boxSize                                                                                                                    |
+| interface            | s_axilite port=boxColorR bundle=CTRL offset=0x80          | prj/sol/.autopilot/db/v_tpg.cpp:411 in v_tpg, boxColorR                                                                                                                  |
+| interface            | s_axilite port=boxColorG bundle=CTRL offset=0x88          | prj/sol/.autopilot/db/v_tpg.cpp:412 in v_tpg, boxColorG                                                                                                                  |
+| interface            | s_axilite port=boxColorB bundle=CTRL offset=0x90          | prj/sol/.autopilot/db/v_tpg.cpp:413 in v_tpg, boxColorB                                                                                                                  |
+| interface            | s_axilite port=dpDynamicRange bundle=CTRL offset=0xc0     | prj/sol/.autopilot/db/v_tpg.cpp:414 in v_tpg, dpDynamicRange                                                                                                             |
+| interface            | s_axilite port=dpYUVCoef bundle=CTRL offset=0xc8          | prj/sol/.autopilot/db/v_tpg.cpp:415 in v_tpg, dpYUVCoef                                                                                                                  |
+| interface            | s_axilite port=field_id bundle=CTRL offset=0xd0           | prj/sol/.autopilot/db/v_tpg.cpp:416 in v_tpg, field_id                                                                                                                   |
+| interface            | s_axilite port=bck_motion_en bundle=CTRL offset=0xd8      | prj/sol/.autopilot/db/v_tpg.cpp:417 in v_tpg, bck_motion_en                                                                                                              |
+| interface            | s_axilite port=return bundle=CTRL                         | prj/sol/.autopilot/db/v_tpg.cpp:418 in v_tpg, return                                                                                                                     |
+| stable               | variable=width                                            | prj/sol/.autopilot/db/v_tpg.cpp:420 in v_tpg, width                                                                                                                      |
+| stable               | variable=height                                           | prj/sol/.autopilot/db/v_tpg.cpp:421 in v_tpg, height                                                                                                                     |
+| stable               | variable=field_id                                         | prj/sol/.autopilot/db/v_tpg.cpp:422 in v_tpg, field_id                                                                                                                   |
+| stable               | variable=bck_motion_en                                    | prj/sol/.autopilot/db/v_tpg.cpp:423 in v_tpg, bck_motion_en                                                                                                              |
+| interface            | ap_none port=fid                                          | prj/sol/.autopilot/db/v_tpg.cpp:424 in v_tpg, fid                                                                                                                        |
+| stable               | variable=fid_in                                           | prj/sol/.autopilot/db/v_tpg.cpp:425 in v_tpg, fid_in                                                                                                                     |
+| stable               | variable=passthruStartX                                   | prj/sol/.autopilot/db/v_tpg.cpp:428 in v_tpg, passthruStartX                                                                                                             |
+| stable               | variable=passthruStartY                                   | prj/sol/.autopilot/db/v_tpg.cpp:429 in v_tpg, passthruStartY                                                                                                             |
+| stable               | variable=passthruEndX                                     | prj/sol/.autopilot/db/v_tpg.cpp:430 in v_tpg, passthruEndX                                                                                                               |
+| stable               | variable=passthruEndY                                     | prj/sol/.autopilot/db/v_tpg.cpp:431 in v_tpg, passthruEndY                                                                                                               |
+| stable               | variable=enableInput                                      | prj/sol/.autopilot/db/v_tpg.cpp:432 in v_tpg, enableInput                                                                                                                |
+| stable               | variable=bckgndId                                         | prj/sol/.autopilot/db/v_tpg.cpp:435 in v_tpg, bckgndId                                                                                                                   |
+| stable               | variable=ovrlayId                                         | prj/sol/.autopilot/db/v_tpg.cpp:436 in v_tpg, ovrlayId                                                                                                                   |
+| stable               | variable=maskId                                           | prj/sol/.autopilot/db/v_tpg.cpp:437 in v_tpg, maskId                                                                                                                     |
+| stable               | variable=motionSpeed                                      | prj/sol/.autopilot/db/v_tpg.cpp:438 in v_tpg, motionSpeed                                                                                                                |
+| stable               | variable=colorFormat                                      | prj/sol/.autopilot/db/v_tpg.cpp:439 in v_tpg, colorFormat                                                                                                                |
+| stable               | variable=crossHairX                                       | prj/sol/.autopilot/db/v_tpg.cpp:440 in v_tpg, crossHairX                                                                                                                 |
+| stable               | variable=crossHairY                                       | prj/sol/.autopilot/db/v_tpg.cpp:441 in v_tpg, crossHairY                                                                                                                 |
+| stable               | variable=ZplateHorContStart                               | prj/sol/.autopilot/db/v_tpg.cpp:442 in v_tpg, ZplateHorContStart                                                                                                         |
+| stable               | variable=ZplateHorContDelta                               | prj/sol/.autopilot/db/v_tpg.cpp:443 in v_tpg, ZplateHorContDelta                                                                                                         |
+| stable               | variable=ZplateVerContStart                               | prj/sol/.autopilot/db/v_tpg.cpp:444 in v_tpg, ZplateVerContStart                                                                                                         |
+| stable               | variable=ZplateVerContDelta                               | prj/sol/.autopilot/db/v_tpg.cpp:445 in v_tpg, ZplateVerContDelta                                                                                                         |
+| stable               | variable=boxSize                                          | prj/sol/.autopilot/db/v_tpg.cpp:446 in v_tpg, boxSize                                                                                                                    |
+| stable               | variable=boxColorR                                        | prj/sol/.autopilot/db/v_tpg.cpp:447 in v_tpg, boxColorR                                                                                                                  |
+| stable               | variable=boxColorG                                        | prj/sol/.autopilot/db/v_tpg.cpp:448 in v_tpg, boxColorG                                                                                                                  |
+| stable               | variable=boxColorB                                        | prj/sol/.autopilot/db/v_tpg.cpp:449 in v_tpg, boxColorB                                                                                                                  |
+| stable               | variable=dpDynamicRange                                   | prj/sol/.autopilot/db/v_tpg.cpp:450 in v_tpg, dpDynamicRange                                                                                                             |
+| stable               | variable=dpYUVCoef                                        | prj/sol/.autopilot/db/v_tpg.cpp:451 in v_tpg, dpYUVCoef                                                                                                                  |
+| loop_flatten         | OFF                                                       | prj/sol/.autopilot/db/v_tpg.cpp:522 in tpgbackground                                                                                                                     |
+| pipeline             | II=1                                                      | prj/sol/.autopilot/db/v_tpg.cpp:523 in tpgbackground                                                                                                                     |
+| loop_flatten         | OFF                                                       | prj/sol/.autopilot/db/v_tpg.cpp:731 in tpgforeground                                                                                                                     |
+| pipeline             | II=1                                                      | prj/sol/.autopilot/db/v_tpg.cpp:732 in tpgforeground                                                                                                                     |
+| pipeline             | II=1                                                      | prj/sol/.autopilot/db/v_tpg.cpp:794 in axivideo2multipixstream                                                                                                           |
+| loop_tripcount       | avg=0 max=0                                               | prj/sol/.autopilot/db/v_tpg.cpp:795 in axivideo2multipixstream                                                                                                           |
+| loop_flatten         | off                                                       | prj/sol/.autopilot/db/v_tpg.cpp:807 in axivideo2multipixstream                                                                                                           |
+| pipeline             | II=1                                                      | prj/sol/.autopilot/db/v_tpg.cpp:808 in axivideo2multipixstream                                                                                                           |
+| array_partition      | variable=map complete dim=0                               | prj/sol/.autopilot/db/v_tpg.cpp:831 in axivideo2multipixstream, map                                                                                                      |
+| pipeline             | II=1                                                      | prj/sol/.autopilot/db/v_tpg.cpp:854 in axivideo2multipixstream                                                                                                           |
+| loop_tripcount       | avg=0 max=0                                               | prj/sol/.autopilot/db/v_tpg.cpp:855 in axivideo2multipixstream                                                                                                           |
+| loop_flatten         | off                                                       | prj/sol/.autopilot/db/v_tpg.cpp:938 in multipixstream2axivideo                                                                                                           |
+| pipeline             | II=1                                                      | prj/sol/.autopilot/db/v_tpg.cpp:939 in multipixstream2axivideo                                                                                                           |
++----------------------+-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+

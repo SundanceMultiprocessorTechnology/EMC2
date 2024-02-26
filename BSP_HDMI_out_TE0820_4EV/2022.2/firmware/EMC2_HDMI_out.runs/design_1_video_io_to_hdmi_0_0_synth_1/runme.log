@@ -1,0 +1,336 @@
+
+*** Running vivado
+    with args -log design_1_video_io_to_hdmi_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_video_io_to_hdmi_0_0.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_1_video_io_to_hdmi_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:18 . Memory (MB): peak = 1713.035 ; gain = 98.992 ; free physical = 409 ; free virtual = 14398
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.ipdefs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_video_io_to_hdmi_0_0
+Command: synth_design -top design_1_video_io_to_hdmi_0_0 -part xczu4ev-sfvc784-1-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu4ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu4ev'
+INFO: [Device 21-403] Loading part xczu4ev-sfvc784-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 159607
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 2924.711 ; gain = 237.801 ; free physical = 351 ; free virtual = 9630
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2182.644; parent = 2037.659; children = 144.984
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3921.688; parent = 2927.684; children = 994.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_video_io_to_hdmi_0_0' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_video_io_to_hdmi_0_0_1/synth/design_1_video_io_to_hdmi_0_0.vhd:71]
+INFO: [Synth 8-3491] module 'video_io_to_hdmi' declared at '/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:34' bound to instance 'U0' of component 'video_io_to_hdmi' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_video_io_to_hdmi_0_0_1/synth/design_1_video_io_to_hdmi_0_0.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'video_io_to_hdmi' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:52]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'DE_FF_inst' to cell 'FDRE' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:72]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'CLK_ODDR_inst' to cell 'ODDRE1' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:86]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO_ODDR_inst' to cell 'ODDRE1' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:102]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO_ODDR_inst' to cell 'ODDRE1' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:102]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO_ODDR_inst' to cell 'ODDRE1' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:102]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO_ODDR_inst' to cell 'ODDRE1' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:102]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO_ODDR_inst' to cell 'ODDRE1' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:102]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO_ODDR_inst' to cell 'ODDRE1' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:102]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO_ODDR_inst' to cell 'ODDRE1' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:102]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO_ODDR_inst' to cell 'ODDRE1' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:102]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO_ODDR_inst' to cell 'ODDRE1' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:102]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO_ODDR_inst' to cell 'ODDRE1' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:102]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO_ODDR_inst' to cell 'ODDRE1' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:102]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'IO_ODDR_inst' to cell 'ODDRE1' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:102]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'VSYNC_ODDR_inst' to cell 'ODDRE1' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:118]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'HSYNC_ODDR_inst' to cell 'ODDRE1' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:133]
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRVAL bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'DE_ODDR_inst' to cell 'ODDRE1' [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:148]
+INFO: [Synth 8-256] done synthesizing module 'video_io_to_hdmi' (0#1) [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ipshared/1d53/video_io_to_hdmi.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'design_1_video_io_to_hdmi_0_0' (0#1) [/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.gen/sources_1/bd/design_1/ip/design_1_video_io_to_hdmi_0_0_1/synth/design_1_video_io_to_hdmi_0_0.vhd:71]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 2995.648 ; gain = 308.738 ; free physical = 541 ; free virtual = 9828
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2182.644; parent = 2037.659; children = 144.984
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3989.656; parent = 2995.652; children = 994.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 3013.461 ; gain = 326.551 ; free physical = 603 ; free virtual = 9891
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2182.644; parent = 2037.659; children = 144.984
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4007.469; parent = 3013.465; children = 994.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 3013.461 ; gain = 326.551 ; free physical = 598 ; free virtual = 9887
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2182.644; parent = 2037.659; children = 144.984
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4007.469; parent = 3013.465; children = 994.004
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3019.398 ; gain = 0.000 ; free physical = 552 ; free virtual = 9840
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3119.336 ; gain = 0.000 ; free physical = 476 ; free virtual = 9764
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  ODDRE1 => OSERDESE3: 16 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3143.148 ; gain = 23.812 ; free physical = 480 ; free virtual = 9768
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 3143.148 ; gain = 456.238 ; free physical = 507 ; free virtual = 9794
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2182.644; parent = 2037.659; children = 144.984
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4105.141; parent = 3111.137; children = 994.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu4ev-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 3143.148 ; gain = 456.238 ; free physical = 498 ; free virtual = 9787
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2182.644; parent = 2037.659; children = 144.984
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4105.141; parent = 3111.137; children = 994.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 3143.148 ; gain = 456.238 ; free physical = 494 ; free virtual = 9785
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2182.644; parent = 2037.659; children = 144.984
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4105.141; parent = 3111.137; children = 994.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:30 . Memory (MB): peak = 3143.148 ; gain = 456.238 ; free physical = 470 ; free virtual = 9763
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2182.644; parent = 2037.659; children = 144.984
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4105.141; parent = 3111.137; children = 994.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 728 (col length:96)
+BRAMs: 256 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 3143.148 ; gain = 456.238 ; free physical = 500 ; free virtual = 9798
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2182.644; parent = 2037.659; children = 144.984
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4105.141; parent = 3111.137; children = 994.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:58 . Memory (MB): peak = 3542.492 ; gain = 855.582 ; free physical = 305 ; free virtual = 7736
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2710.311; parent = 2565.498; children = 144.984
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4536.500; parent = 3542.496; children = 994.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:00:58 . Memory (MB): peak = 3542.492 ; gain = 855.582 ; free physical = 268 ; free virtual = 7698
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2710.311; parent = 2565.498; children = 144.984
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4536.500; parent = 3542.496; children = 994.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:00:58 . Memory (MB): peak = 3561.523 ; gain = 874.613 ; free physical = 273 ; free virtual = 7704
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2715.494; parent = 2566.238; children = 149.256
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4555.531; parent = 3561.527; children = 994.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:01:05 . Memory (MB): peak = 3567.461 ; gain = 880.551 ; free physical = 705 ; free virtual = 8131
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2728.384; parent = 2574.519; children = 153.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4561.469; parent = 3567.465; children = 994.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:01:05 . Memory (MB): peak = 3567.461 ; gain = 880.551 ; free physical = 710 ; free virtual = 8136
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2728.384; parent = 2574.534; children = 153.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4561.469; parent = 3567.465; children = 994.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:01:05 . Memory (MB): peak = 3567.461 ; gain = 880.551 ; free physical = 704 ; free virtual = 8130
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2728.414; parent = 2574.550; children = 153.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4561.469; parent = 3567.465; children = 994.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:01:05 . Memory (MB): peak = 3567.461 ; gain = 880.551 ; free physical = 711 ; free virtual = 8137
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2728.414; parent = 2574.550; children = 153.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4561.469; parent = 3567.465; children = 994.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:01:05 . Memory (MB): peak = 3567.461 ; gain = 880.551 ; free physical = 706 ; free virtual = 8132
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2728.430; parent = 2574.565; children = 153.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4561.469; parent = 3567.465; children = 994.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:01:05 . Memory (MB): peak = 3567.461 ; gain = 880.551 ; free physical = 713 ; free virtual = 8139
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2728.433; parent = 2574.567; children = 153.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4561.469; parent = 3567.465; children = 994.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |LUT2   |     1|
+|2     |ODDRE1 |    16|
+|3     |FDRE   |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:01:05 . Memory (MB): peak = 3567.461 ; gain = 880.551 ; free physical = 711 ; free virtual = 8137
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2728.448; parent = 2574.583; children = 153.865
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 4561.469; parent = 3567.465; children = 994.004
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:50 ; elapsed = 00:01:03 . Memory (MB): peak = 3567.461 ; gain = 750.863 ; free physical = 759 ; free virtual = 8185
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:01:06 . Memory (MB): peak = 3567.469 ; gain = 880.551 ; free physical = 803 ; free virtual = 8229
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3567.469 ; gain = 0.000 ; free physical = 803 ; free virtual = 8229
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3600.180 ; gain = 0.000 ; free physical = 1354 ; free virtual = 8775
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  ODDRE1 => OSERDESE3: 16 instances
+
+Synth Design complete, checksum: cd7d80e8
+INFO: [Common 17-83] Releasing license: Synthesis
+46 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:21 . Memory (MB): peak = 3600.180 ; gain = 1820.363 ; free physical = 1735 ; free virtual = 9156
+INFO: [Common 17-1381] The checkpoint '/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.runs/design_1_video_io_to_hdmi_0_0_synth_1/design_1_video_io_to_hdmi_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_video_io_to_hdmi_0_0, cache-ID = 7f037047f69297a7
+INFO: [Common 17-1381] The checkpoint '/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2022.2/firmware/EMC2_HDMI_out.runs/design_1_video_io_to_hdmi_0_0_synth_1/design_1_video_io_to_hdmi_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_video_io_to_hdmi_0_0_utilization_synth.rpt -pb design_1_video_io_to_hdmi_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 22 13:08:43 2024...
