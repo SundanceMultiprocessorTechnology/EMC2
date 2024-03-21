@@ -1,0 +1,7 @@
+//arch = zynqmp; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader, destination_cpu = a53-0]../../software/baremetal_classic/zynqmp_fsbl_TE/Debug/zynqmp_fsbl_TE.elf
+	[destination_device = pl]../../firmware/EMC2_BSP.runs/impl_1/design_1_wrapper.bit
+	[destination_cpu = a53-0]../../software/baremetal_classic/test_pex/Debug/test_pex.elf
+}

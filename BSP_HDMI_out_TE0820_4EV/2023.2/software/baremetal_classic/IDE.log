@@ -14,3 +14,109 @@
 11:36:02 INFO  : Checking for BSP changes to sync application flags for project 'fsbl'...
 11:38:52 INFO  : Checking for BSP changes to sync application flags for project 'fsbl'...
 11:47:04 INFO  : Checking for BSP changes to sync application flags for project 'fsbl'...
+10:19:15 DEBUG : Logs will be stored at '/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/software/baremetal_classic/IDE.log'.
+10:19:15 INFO  : Launching XSCT server: xsct -n  -interactive /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/software/baremetal_classic/temp_xsdb_launch_script.tcl
+10:19:17 INFO  : XSCT server has started successfully.
+10:19:17 INFO  : plnx-install-location is set to ''
+10:19:17 INFO  : Successfully done setting XSCT server connection channel  
+10:19:17 INFO  : Successfully done setting workspace for the tool. 
+10:19:21 INFO  : Successfully done query RDI_DATADIR 
+10:19:21 INFO  : Registering command handlers for Vitis TCF services
+10:19:23 INFO  : Platform repository initialization has completed.
+10:24:37 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+10:26:32 INFO  : Result from executing command 'getProjects': EMC2_HDMI_out_plat
+10:26:32 INFO  : Result from executing command 'getPlatforms': EMC2_HDMI_out_plat|/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_HDMI_out_plat/export/EMC2_HDMI_out_plat/EMC2_HDMI_out_plat.xpfm;xilinx_vck190_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+10:26:40 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+10:26:49 INFO  : Updating application flags with new BSP settings...
+10:26:49 INFO  : Successfully updated application flags for project zynqmp_fsbl.
+10:27:27 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+10:27:45 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+10:32:02 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynqmp -o /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/boot/BOOT.bin -w on
+10:32:02 INFO  : Overwriting existing bif file /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/boot/output.bif
+10:32:03 INFO  : Bootgen command execution is done.
+10:40:09 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+10:40:52 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynqmp -o /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/boot/BOOT.bin -w on
+10:40:53 INFO  : Bootgen command execution is done.
+10:43:27 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+10:44:35 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynqmp -o /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/boot/BOOT.bin -w on
+10:44:35 INFO  : Overwriting existing bif file /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/boot/output.bif
+10:44:37 INFO  : Bootgen command execution is done.
+10:44:49 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+10:46:57 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynqmp -o /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/boot/BOOT.bin -w on
+10:46:57 INFO  : Overwriting existing bif file /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/boot/output.bif
+10:46:59 INFO  : Bootgen command execution is done.
+10:49:38 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+10:49:51 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+10:50:22 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynqmp -o /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/boot/BOOT.bin -w on
+10:50:22 INFO  : Overwriting existing bif file /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/boot/output.bif
+10:50:25 INFO  : Bootgen command execution is done.
+10:53:34 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+10:54:50 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynqmp -o /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/boot/BOOT.bin -w on
+10:54:50 INFO  : Overwriting existing bif file /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/boot/output.bif
+10:54:52 INFO  : Bootgen command execution is done.
+11:00:42 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+11:01:18 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+11:01:38 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynqmp -o /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/boot/BOOT.bin -w on
+11:01:40 INFO  : Bootgen command execution is done.
+11:08:25 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+11:09:02 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynqmp -o /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/boot/BOOT.bin -w on
+11:09:02 INFO  : Overwriting existing bif file /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/boot/output.bif
+11:09:04 INFO  : Bootgen command execution is done.
+11:11:23 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+11:11:31 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+11:11:44 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+11:13:34 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+11:14:04 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+11:14:15 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+11:16:05 INFO  : Checking for BSP changes to sync application flags for project 'zynqmp_fsbl'...
+11:16:28 INFO  : Invoking Bootgen: bootgen -image output.bif -arch zynqmp -o /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/boot/BOOT.bin -w on
+11:16:28 INFO  : Overwriting existing bif file /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/boot/output.bif
+11:16:30 INFO  : Bootgen command execution is done.
+10:03:49 DEBUG : Logs will be stored at '/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/software/baremetal_classic/IDE.log'.
+10:05:44 INFO  : Launching XSCT server: xsct -n  -interactive /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/software/baremetal_classic/temp_xsdb_launch_script.tcl
+10:05:44 INFO  : Registering command handlers for Vitis TCF services
+10:05:47 INFO  : Platform repository initialization has completed.
+10:05:47 INFO  : XSCT server has started successfully.
+10:05:47 INFO  : plnx-install-location is set to ''
+10:05:49 INFO  : Successfully done setting XSCT server connection channel  
+10:05:49 INFO  : Successfully done query RDI_DATADIR 
+10:05:49 INFO  : Successfully done setting workspace for the tool. 
+10:06:21 DEBUG : Logs will be stored at '/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/software/baremetal_classic/IDE.log'.
+10:06:25 INFO  : Launching XSCT server: xsct -n  -interactive /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/software/baremetal_classic/temp_xsdb_launch_script.tcl
+10:06:25 INFO  : Registering command handlers for Vitis TCF services
+10:06:26 INFO  : Platform repository initialization has completed.
+10:06:27 INFO  : XSCT server has started successfully.
+10:06:27 INFO  : plnx-install-location is set to ''
+10:06:27 INFO  : Successfully done setting XSCT server connection channel  
+10:06:27 INFO  : Successfully done query RDI_DATADIR 
+10:06:27 INFO  : Successfully done setting workspace for the tool. 
+10:08:10 DEBUG : Logs will be stored at '/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/software/baremetal_classic/IDE.log'.
+10:08:14 INFO  : Launching XSCT server: xsct -n  -interactive /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/software/baremetal_classic/temp_xsdb_launch_script.tcl
+10:08:14 INFO  : Registering command handlers for Vitis TCF services
+10:08:15 INFO  : Platform repository initialization has completed.
+10:08:16 INFO  : XSCT server has started successfully.
+10:08:16 INFO  : Successfully done setting XSCT server connection channel  
+10:08:16 INFO  : plnx-install-location is set to ''
+10:08:16 INFO  : Successfully done setting workspace for the tool. 
+10:08:16 INFO  : Successfully done query RDI_DATADIR 
+10:09:29 INFO  : Platform 'EMC2_HDMI_out_plat' is added to custom repositories.
+10:20:05 INFO  : Result from executing command 'getProjects': EMC2_HDMI_out_plat
+10:20:05 INFO  : Result from executing command 'getPlatforms': EMC2_HDMI_out_plat|/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_HDMI_out_plat/export/EMC2_HDMI_out_plat/EMC2_HDMI_out_plat.xpfm;xilinx_vck190_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_202320_1/xilinx_vck190_base_202320_1.xpfm;xilinx_vck190_base_dfx_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vck190_base_dfx_202320_1/xilinx_vck190_base_dfx_202320_1.xpfm;xilinx_vek280_es1_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vek280_es1_base_202320_1/xilinx_vek280_es1_base_202320_1.xpfm;xilinx_vmk180_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_vmk180_base_202320_1/xilinx_vmk180_base_202320_1.xpfm;xilinx_zcu102_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_202320_1/xilinx_zcu102_base_202320_1.xpfm;xilinx_zcu102_base_dfx_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu102_base_dfx_202320_1/xilinx_zcu102_base_dfx_202320_1.xpfm;xilinx_zcu104_base_202320_1|/tools/Xilinx/Vitis/2023.2/base_platforms/xilinx_zcu104_base_202320_1/xilinx_zcu104_base_202320_1.xpfm
+10:20:09 INFO  : Checking for BSP changes to sync application flags for project 'test_pex'...
+10:27:11 INFO  : Checking for BSP changes to sync application flags for project 'test_pex'...
+10:27:41 INFO  : Checking for BSP changes to sync application flags for project 'test_pex'...
+10:30:03 INFO  : Checking for BSP changes to sync application flags for project 'fsbl'...
+10:30:03 INFO  : Updating application flags with new BSP settings...
+10:30:03 INFO  : Successfully updated application flags for project fsbl.
+10:32:12 INFO  : Invoking Bootgen: bootgen -image output_sa.bif -arch zynqmp -o /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/boot/standalone/PEX/BOOT.bin
+10:32:12 INFO  : Creating new bif file /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/boot/standalone/PEX/output_sa.bif
+10:32:14 INFO  : Bootgen command execution is done.
+10:29:20 DEBUG : Logs will be stored at '/home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/software/baremetal_classic/IDE.log'.
+10:29:21 INFO  : Launching XSCT server: xsct -n  -interactive /home/sundance/Emilie_Projects/git/EMC2/BSP_HDMI_out_TE0820_4EV/2023.2/software/baremetal_classic/temp_xsdb_launch_script.tcl
+10:29:23 INFO  : XSCT server has started successfully.
+10:29:23 INFO  : plnx-install-location is set to ''
+10:29:23 INFO  : Successfully done setting XSCT server connection channel  
+10:29:23 INFO  : Successfully done setting workspace for the tool. 
+10:29:26 INFO  : Successfully done query RDI_DATADIR 
+10:29:26 INFO  : Registering command handlers for Vitis TCF services
+10:29:27 INFO  : Platform repository initialization has completed.

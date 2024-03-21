@@ -23,3 +23,39 @@ bsp write
 bsp reload
 catch {bsp regenerate}
 platform generate
+platform generate
+platform clean
+platform active {EMC2_BSP_platform}
+platform generate
+platform clean
+platform clean
+platform generate
+platform clean
+platform generate
+platform active {EMC2_BSP_platform}
+bsp reload
+bsp config extra_compiler_flags "-g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+bsp config extra_compiler_flags "-g -Wall -Wextra -fno-tree-loop-distribute-patterns -DNDEBUG"
+bsp write
+bsp reload
+catch {bsp regenerate}
+platform generate -domains standalone_domain 
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform config -updatehw {/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/firmware/design_1_wrapper.xsa}
+platform config -updatehw {/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/firmware/design_1_wrapper.xsa}
+platform generate -domains 
+bsp reload
+platform clean
+platform generate
+platform generate
+platform active {EMC2_BSP_platform}
+platform generate -domains 
+platform active {EMC2_BSP_platform}
+bsp reload
+bsp config extra_compiler_flags "-g -Wall -Wextra -fno-tree-loop-distribute-patterns -DNDEBUG"
+bsp reload

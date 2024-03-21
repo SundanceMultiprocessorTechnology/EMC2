@@ -18076,12 +18076,12 @@ unsigned long psu_serdes_init_data(void)
     *  0x9 - 27MHz, 0xA - 38.4MHz, 0xB - 40MHz, 0xC - 52MHz, 0xD - 100MHz, 0xE
     *  - 108MHz, 0xF - 125MHz, 0x10 - 135MHz, 0x11 - 150 MHz. 0x12 to 0x1F - R
     * eserved
-    *  PSU_SERDES_PLL_REF_SEL0_PLLREFSEL0                          0x8
+    *  PSU_SERDES_PLL_REF_SEL0_PLLREFSEL0                          0xD
 
     * PLL0 Reference Selection Register
-    * (OFFSET, MASK, VALUE)      (0XFD410000, 0x0000001FU ,0x00000008U)
+    * (OFFSET, MASK, VALUE)      (0XFD410000, 0x0000001FU ,0x0000000DU)
     */
-	PSU_Mask_Write(SERDES_PLL_REF_SEL0_OFFSET, 0x0000001FU, 0x00000008U);
+	PSU_Mask_Write(SERDES_PLL_REF_SEL0_OFFSET, 0x0000001FU, 0x0000000DU);
 /*##################################################################### */
 
     /*
@@ -18155,26 +18155,26 @@ unsigned long psu_serdes_init_data(void)
     * Register : L0_PLL_SS_STEPS_0_LSB @ 0XFD402368
 
     * Spread Spectrum No of Steps [7:0]
-    *  PSU_SERDES_L0_PLL_SS_STEPS_0_LSB_SS_NUM_OF_STEPS_0_LSB      0x38
+    *  PSU_SERDES_L0_PLL_SS_STEPS_0_LSB_SS_NUM_OF_STEPS_0_LSB      0x22
 
     * Spread Spectrum No of Steps bits 7:0
-    * (OFFSET, MASK, VALUE)      (0XFD402368, 0x000000FFU ,0x00000038U)
+    * (OFFSET, MASK, VALUE)      (0XFD402368, 0x000000FFU ,0x00000022U)
     */
 	PSU_Mask_Write(SERDES_L0_PLL_SS_STEPS_0_LSB_OFFSET,
-		0x000000FFU, 0x00000038U);
+		0x000000FFU, 0x00000022U);
 /*##################################################################### */
 
     /*
     * Register : L0_PLL_SS_STEPS_1_MSB @ 0XFD40236C
 
     * Spread Spectrum No of Steps [10:8]
-    *  PSU_SERDES_L0_PLL_SS_STEPS_1_MSB_SS_NUM_OF_STEPS_1_MSB      0x03
+    *  PSU_SERDES_L0_PLL_SS_STEPS_1_MSB_SS_NUM_OF_STEPS_1_MSB      0x4
 
     * Spread Spectrum No of Steps bits 10:8
-    * (OFFSET, MASK, VALUE)      (0XFD40236C, 0x00000007U ,0x00000003U)
+    * (OFFSET, MASK, VALUE)      (0XFD40236C, 0x00000007U ,0x00000004U)
     */
 	PSU_Mask_Write(SERDES_L0_PLL_SS_STEPS_1_MSB_OFFSET,
-		0x00000007U, 0x00000003U);
+		0x00000007U, 0x00000004U);
 /*##################################################################### */
 
     /*
@@ -18207,39 +18207,39 @@ unsigned long psu_serdes_init_data(void)
     * Register : L0_PLL_SS_STEP_SIZE_0_LSB @ 0XFD402370
 
     * Step Size for Spread Spectrum [7:0]
-    *  PSU_SERDES_L0_PLL_SS_STEP_SIZE_0_LSB_SS_STEP_SIZE_0_LSB     0xF4
+    *  PSU_SERDES_L0_PLL_SS_STEP_SIZE_0_LSB_SS_STEP_SIZE_0_LSB     0xED
 
     * Step Size for Spread Spectrum LSB
-    * (OFFSET, MASK, VALUE)      (0XFD402370, 0x000000FFU ,0x000000F4U)
+    * (OFFSET, MASK, VALUE)      (0XFD402370, 0x000000FFU ,0x000000EDU)
     */
 	PSU_Mask_Write(SERDES_L0_PLL_SS_STEP_SIZE_0_LSB_OFFSET,
-		0x000000FFU, 0x000000F4U);
+		0x000000FFU, 0x000000EDU);
 /*##################################################################### */
 
     /*
     * Register : L0_PLL_SS_STEP_SIZE_1 @ 0XFD402374
 
     * Step Size for Spread Spectrum [15:8]
-    *  PSU_SERDES_L0_PLL_SS_STEP_SIZE_1_SS_STEP_SIZE_1             0x31
+    *  PSU_SERDES_L0_PLL_SS_STEP_SIZE_1_SS_STEP_SIZE_1             0x55
 
     * Step Size for Spread Spectrum 1
-    * (OFFSET, MASK, VALUE)      (0XFD402374, 0x000000FFU ,0x00000031U)
+    * (OFFSET, MASK, VALUE)      (0XFD402374, 0x000000FFU ,0x00000055U)
     */
 	PSU_Mask_Write(SERDES_L0_PLL_SS_STEP_SIZE_1_OFFSET,
-		0x000000FFU, 0x00000031U);
+		0x000000FFU, 0x00000055U);
 /*##################################################################### */
 
     /*
     * Register : L0_PLL_SS_STEP_SIZE_2 @ 0XFD402378
 
     * Step Size for Spread Spectrum [23:16]
-    *  PSU_SERDES_L0_PLL_SS_STEP_SIZE_2_SS_STEP_SIZE_2             0x2
+    *  PSU_SERDES_L0_PLL_SS_STEP_SIZE_2_SS_STEP_SIZE_2             0x1
 
     * Step Size for Spread Spectrum 2
-    * (OFFSET, MASK, VALUE)      (0XFD402378, 0x000000FFU ,0x00000002U)
+    * (OFFSET, MASK, VALUE)      (0XFD402378, 0x000000FFU ,0x00000001U)
     */
 	PSU_Mask_Write(SERDES_L0_PLL_SS_STEP_SIZE_2_OFFSET,
-		0x000000FFU, 0x00000002U);
+		0x000000FFU, 0x00000001U);
 /*##################################################################### */
 
     /*
@@ -18493,26 +18493,26 @@ unsigned long psu_serdes_init_data(void)
 
     * IQ ILL F0 CALCODE bypass value. MPHY : G1a, PCIE : Gen 1, SATA : Gen1 ,
     * USB3 : SS
-    *  PSU_SERDES_L0_TM_IQ_ILL1_ILL_BYPASS_IQ_CALCODE_F0           0x1A
+    *  PSU_SERDES_L0_TM_IQ_ILL1_ILL_BYPASS_IQ_CALCODE_F0           0x64
 
     * iqpi cal code
-    * (OFFSET, MASK, VALUE)      (0XFD4018F8, 0x000000FFU ,0x0000001AU)
+    * (OFFSET, MASK, VALUE)      (0XFD4018F8, 0x000000FFU ,0x00000064U)
     */
 	PSU_Mask_Write(SERDES_L0_TM_IQ_ILL1_OFFSET,
-		0x000000FFU, 0x0000001AU);
+		0x000000FFU, 0x00000064U);
 /*##################################################################### */
 
     /*
     * Register : L0_TM_IQ_ILL2 @ 0XFD4018FC
 
     * IQ ILL F1 CALCODE bypass value. MPHY : G1b, PCIE : Gen2, SATA: Gen2
-    *  PSU_SERDES_L0_TM_IQ_ILL2_ILL_BYPASS_IQ_CALCODE_F1           0x1A
+    *  PSU_SERDES_L0_TM_IQ_ILL2_ILL_BYPASS_IQ_CALCODE_F1           0x64
 
     * iqpi cal code
-    * (OFFSET, MASK, VALUE)      (0XFD4018FC, 0x000000FFU ,0x0000001AU)
+    * (OFFSET, MASK, VALUE)      (0XFD4018FC, 0x000000FFU ,0x00000064U)
     */
 	PSU_Mask_Write(SERDES_L0_TM_IQ_ILL2_OFFSET,
-		0x000000FFU, 0x0000001AU);
+		0x000000FFU, 0x00000064U);
 /*##################################################################### */
 
     /*
@@ -18556,13 +18556,13 @@ unsigned long psu_serdes_init_data(void)
     * Register : L0_TM_IQ_ILL3 @ 0XFD401900
 
     * IQ ILL F2CALCODE bypass value. MPHY : G2a, SATA : Gen3
-    *  PSU_SERDES_L0_TM_IQ_ILL3_ILL_BYPASS_IQ_CALCODE_F2           0x1A
+    *  PSU_SERDES_L0_TM_IQ_ILL3_ILL_BYPASS_IQ_CALCODE_F2           0x64
 
     * iqpi cal code
-    * (OFFSET, MASK, VALUE)      (0XFD401900, 0x000000FFU ,0x0000001AU)
+    * (OFFSET, MASK, VALUE)      (0XFD401900, 0x000000FFU ,0x00000064U)
     */
 	PSU_Mask_Write(SERDES_L0_TM_IQ_ILL3_OFFSET,
-		0x000000FFU, 0x0000001AU);
+		0x000000FFU, 0x00000064U);
 /*##################################################################### */
 
     /*
