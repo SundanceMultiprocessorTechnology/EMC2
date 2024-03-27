@@ -5,7 +5,7 @@ Welcome to the EMC2 repository.
 
 This repository stores the EMC2 source code and documentation.
 
-Go to the [wiki](https://github.com/SundanceMultiprocessorTechnology/template/wiki) for more information.
+Go to the [wiki](https://github.com/SundanceMultiprocessorTechnology/EMC2/wiki) for more information.
 
 # Directory Structure
 		|── board_files
