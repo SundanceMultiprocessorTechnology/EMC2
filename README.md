@@ -1,9 +1,9 @@
 <img align="right" src=https://www.sundance.com/wp-content/uploads/docs/sundance_logo_105.png>
 
-# BOARD NAME
-Welcome to the BOARD_NAME repository.
+# EMC2
+Welcome to the EMC2 repository.
 
-This repository stores the BOARD_NAME source code and documentation.
+This repository stores the EMC2 source code and documentation.
 
 Go to the [wiki](https://github.com/SundanceMultiprocessorTechnology/template/wiki) for more information.
 
