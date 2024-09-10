@@ -1,0 +1,5 @@
+PETALINUX_VER=2023.2
+VALIDATE_HW_CHKSUM=1
+HARDWARE_PATH=/home/sundance/Emilie_Projects/git/EMC2/BSP_PCIe_TE0715/2023.2/firmware/design_1_wrapper.xsa
+HDF_EXT=xsa
+YOCTO_SDK=a9a66fe3348fe7cfe61d2bbfbaf53942

@@ -23,3 +23,12 @@ bsp write
 bsp reload
 catch {bsp regenerate}
 platform generate
+platform active {EMC2_HDMI_out_plat}
+bsp reload
+bsp config extra_compiler_flags "-g -Wall -Wextra -fno-tree-loop-distribute-patterns"
+bsp config extra_compiler_flags "-g -Wall -Wextra -fno-tree-loop-distribute-patterns -DNDEBUG"
+bsp write
+bsp reload
+catch {bsp regenerate}
+platform generate -domains standalone_domain 
+platform generate

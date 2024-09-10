@@ -297,6 +297,9 @@
           "PSU_MIO_25_SLEW": {
             "value": "slow"
           },
+          "PSU_MIO_26_DIRECTION": {
+            "value": "inout"
+          },
           "PSU_MIO_26_DRIVE_STRENGTH": {
             "value": "12"
           },
@@ -308,6 +311,9 @@
           },
           "PSU_MIO_26_SLEW": {
             "value": "slow"
+          },
+          "PSU_MIO_27_DIRECTION": {
+            "value": "inout"
           },
           "PSU_MIO_27_DRIVE_STRENGTH": {
             "value": "12"
@@ -2653,7 +2659,7 @@
             "value": "MIO 52 .. 63"
           },
           "PSU__USB0__REF_CLK_FREQ": {
-            "value": "26"
+            "value": "100"
           },
           "PSU__USB0__REF_CLK_SEL": {
             "value": "Ref Clk3"

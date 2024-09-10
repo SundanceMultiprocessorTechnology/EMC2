@@ -140,11 +140,11 @@ extern "C" {
  *       header is not authenticated" is excluded
  */
 #ifndef FSBL_NAND_EXCLUDE_VAL
-#define FSBL_NAND_EXCLUDE_VAL			(1U)
+#define FSBL_NAND_EXCLUDE_VAL			(0U)
 #endif
 
 #ifndef FSBL_QSPI_EXCLUDE_VAL
-#define FSBL_QSPI_EXCLUDE_VAL			(1U)
+#define FSBL_QSPI_EXCLUDE_VAL			(0U)
 #endif
 
 #ifndef FSBL_SD_EXCLUDE_VAL

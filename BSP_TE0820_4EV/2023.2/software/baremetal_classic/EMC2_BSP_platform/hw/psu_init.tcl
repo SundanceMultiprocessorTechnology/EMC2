@@ -14682,11 +14682,11 @@ set psu_serdes_init_data {
     #  0x9 - 27MHz, 0xA - 38.4MHz, 0xB - 40MHz, 0xC - 52MHz, 0xD - 100MHz, 0xE
     #  - 108MHz, 0xF - 125MHz, 0x10 - 135MHz, 0x11 - 150 MHz. 0x12 to 0x1F - R
     # eserved
-		# PSU_SERDES_PLL_REF_SEL0_PLLREFSEL0                                              0x8
+		# PSU_SERDES_PLL_REF_SEL0_PLLREFSEL0                                              0xD
 
 		# PLL0 Reference Selection Register
-		#(OFFSET, MASK, VALUE)      (0XFD410000, 0x0000001FU ,0x00000008U)  */
-    mask_write 0XFD410000 0x0000001F 0x00000008
+		#(OFFSET, MASK, VALUE)      (0XFD410000, 0x0000001FU ,0x0000000DU)  */
+    mask_write 0XFD410000 0x0000001F 0x0000000D
 		# Register : PLL_REF_SEL1 @ 0XFD410004</p>
 
 		# PLL1 Reference Selection. 0x0 - 5MHz, 0x1 - 9.6MHz, 0x2 - 10MHz, 0x3 - 1
@@ -14734,19 +14734,19 @@ set psu_serdes_init_data {
 		# Register : L0_PLL_SS_STEPS_0_LSB @ 0XFD402368</p>
 
 		# Spread Spectrum No of Steps [7:0]
-		# PSU_SERDES_L0_PLL_SS_STEPS_0_LSB_SS_NUM_OF_STEPS_0_LSB                          0x38
+		# PSU_SERDES_L0_PLL_SS_STEPS_0_LSB_SS_NUM_OF_STEPS_0_LSB                          0x22
 
 		# Spread Spectrum No of Steps bits 7:0
-		#(OFFSET, MASK, VALUE)      (0XFD402368, 0x000000FFU ,0x00000038U)  */
-    mask_write 0XFD402368 0x000000FF 0x00000038
+		#(OFFSET, MASK, VALUE)      (0XFD402368, 0x000000FFU ,0x00000022U)  */
+    mask_write 0XFD402368 0x000000FF 0x00000022
 		# Register : L0_PLL_SS_STEPS_1_MSB @ 0XFD40236C</p>
 
 		# Spread Spectrum No of Steps [10:8]
-		# PSU_SERDES_L0_PLL_SS_STEPS_1_MSB_SS_NUM_OF_STEPS_1_MSB                          0x03
+		# PSU_SERDES_L0_PLL_SS_STEPS_1_MSB_SS_NUM_OF_STEPS_1_MSB                          0x4
 
 		# Spread Spectrum No of Steps bits 10:8
-		#(OFFSET, MASK, VALUE)      (0XFD40236C, 0x00000007U ,0x00000003U)  */
-    mask_write 0XFD40236C 0x00000007 0x00000003
+		#(OFFSET, MASK, VALUE)      (0XFD40236C, 0x00000007U ,0x00000004U)  */
+    mask_write 0XFD40236C 0x00000007 0x00000004
 		# Register : L1_PLL_SS_STEPS_0_LSB @ 0XFD406368</p>
 
 		# Spread Spectrum No of Steps [7:0]
@@ -14766,27 +14766,27 @@ set psu_serdes_init_data {
 		# Register : L0_PLL_SS_STEP_SIZE_0_LSB @ 0XFD402370</p>
 
 		# Step Size for Spread Spectrum [7:0]
-		# PSU_SERDES_L0_PLL_SS_STEP_SIZE_0_LSB_SS_STEP_SIZE_0_LSB                         0xF4
+		# PSU_SERDES_L0_PLL_SS_STEP_SIZE_0_LSB_SS_STEP_SIZE_0_LSB                         0xED
 
 		# Step Size for Spread Spectrum LSB
-		#(OFFSET, MASK, VALUE)      (0XFD402370, 0x000000FFU ,0x000000F4U)  */
-    mask_write 0XFD402370 0x000000FF 0x000000F4
+		#(OFFSET, MASK, VALUE)      (0XFD402370, 0x000000FFU ,0x000000EDU)  */
+    mask_write 0XFD402370 0x000000FF 0x000000ED
 		# Register : L0_PLL_SS_STEP_SIZE_1 @ 0XFD402374</p>
 
 		# Step Size for Spread Spectrum [15:8]
-		# PSU_SERDES_L0_PLL_SS_STEP_SIZE_1_SS_STEP_SIZE_1                                 0x31
+		# PSU_SERDES_L0_PLL_SS_STEP_SIZE_1_SS_STEP_SIZE_1                                 0x55
 
 		# Step Size for Spread Spectrum 1
-		#(OFFSET, MASK, VALUE)      (0XFD402374, 0x000000FFU ,0x00000031U)  */
-    mask_write 0XFD402374 0x000000FF 0x00000031
+		#(OFFSET, MASK, VALUE)      (0XFD402374, 0x000000FFU ,0x00000055U)  */
+    mask_write 0XFD402374 0x000000FF 0x00000055
 		# Register : L0_PLL_SS_STEP_SIZE_2 @ 0XFD402378</p>
 
 		# Step Size for Spread Spectrum [23:16]
-		# PSU_SERDES_L0_PLL_SS_STEP_SIZE_2_SS_STEP_SIZE_2                                 0x2
+		# PSU_SERDES_L0_PLL_SS_STEP_SIZE_2_SS_STEP_SIZE_2                                 0x1
 
 		# Step Size for Spread Spectrum 2
-		#(OFFSET, MASK, VALUE)      (0XFD402378, 0x000000FFU ,0x00000002U)  */
-    mask_write 0XFD402378 0x000000FF 0x00000002
+		#(OFFSET, MASK, VALUE)      (0XFD402378, 0x000000FFU ,0x00000001U)  */
+    mask_write 0XFD402378 0x000000FF 0x00000001
 		# Register : L0_PLL_SS_STEP_SIZE_3_MSB @ 0XFD40237C</p>
 
 		# Step Size for Spread Spectrum [25:24]
@@ -14959,19 +14959,19 @@ set psu_serdes_init_data {
 
 		# IQ ILL F0 CALCODE bypass value. MPHY : G1a, PCIE : Gen 1, SATA : Gen1 ,
     # USB3 : SS
-		# PSU_SERDES_L0_TM_IQ_ILL1_ILL_BYPASS_IQ_CALCODE_F0                               0x1A
+		# PSU_SERDES_L0_TM_IQ_ILL1_ILL_BYPASS_IQ_CALCODE_F0                               0x64
 
 		# iqpi cal code
-		#(OFFSET, MASK, VALUE)      (0XFD4018F8, 0x000000FFU ,0x0000001AU)  */
-    mask_write 0XFD4018F8 0x000000FF 0x0000001A
+		#(OFFSET, MASK, VALUE)      (0XFD4018F8, 0x000000FFU ,0x00000064U)  */
+    mask_write 0XFD4018F8 0x000000FF 0x00000064
 		# Register : L0_TM_IQ_ILL2 @ 0XFD4018FC</p>
 
 		# IQ ILL F1 CALCODE bypass value. MPHY : G1b, PCIE : Gen2, SATA: Gen2
-		# PSU_SERDES_L0_TM_IQ_ILL2_ILL_BYPASS_IQ_CALCODE_F1                               0x1A
+		# PSU_SERDES_L0_TM_IQ_ILL2_ILL_BYPASS_IQ_CALCODE_F1                               0x64
 
 		# iqpi cal code
-		#(OFFSET, MASK, VALUE)      (0XFD4018FC, 0x000000FFU ,0x0000001AU)  */
-    mask_write 0XFD4018FC 0x000000FF 0x0000001A
+		#(OFFSET, MASK, VALUE)      (0XFD4018FC, 0x000000FFU ,0x00000064U)  */
+    mask_write 0XFD4018FC 0x000000FF 0x00000064
 		# Register : L0_TM_ILL12 @ 0XFD401990</p>
 
 		# G1A pll ctr bypass value
@@ -15000,11 +15000,11 @@ set psu_serdes_init_data {
 		# Register : L0_TM_IQ_ILL3 @ 0XFD401900</p>
 
 		# IQ ILL F2CALCODE bypass value. MPHY : G2a, SATA : Gen3
-		# PSU_SERDES_L0_TM_IQ_ILL3_ILL_BYPASS_IQ_CALCODE_F2                               0x1A
+		# PSU_SERDES_L0_TM_IQ_ILL3_ILL_BYPASS_IQ_CALCODE_F2                               0x64
 
 		# iqpi cal code
-		#(OFFSET, MASK, VALUE)      (0XFD401900, 0x000000FFU ,0x0000001AU)  */
-    mask_write 0XFD401900 0x000000FF 0x0000001A
+		#(OFFSET, MASK, VALUE)      (0XFD401900, 0x000000FFU ,0x00000064U)  */
+    mask_write 0XFD401900 0x000000FF 0x00000064
 		# Register : L0_TM_E_ILL3 @ 0XFD40192C</p>
 
 		# E ILL F2CALCODE bypass value. MPHY : G2a, SATA : Gen3

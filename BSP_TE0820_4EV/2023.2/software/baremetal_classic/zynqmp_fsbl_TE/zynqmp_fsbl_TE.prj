@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="zynqmp_fsbl_TE" location="/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/zynqmp_fsbl_TE" platform="/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4EV/2023.2/software/baremetal_classic/EMC2_BSP_platform/export/EMC2_BSP_platform/EMC2_BSP_platform.xpfm" platformUID="xilinx:emc2-dp_te0820_4ev_1e::0.0(custom)" systemProject="zynqmp_fsbl_TE_system" sysConfig="EMC2_BSP_platform" runtime="C/C++" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="855b4058574ff8c5a05bc0962a27f1ea">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.1015488890">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.2048790033" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="zynqmp_fsbl" hasBspSettings="true"/>
+</sdkproject:SdkProject>

@@ -1,0 +1,5 @@
+set_property LOC GTXE2_CHANNEL_X0Y0 [get_cells {design_1_i/axi_pcie_0/inst/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/pcie_7x_v2_0_2_inst/pcie_top_with_gt_top.gt_ges.gt_top_i/pipe_wrapper_i/pipe_lane[1].gt_wrapper_i/gtx_channel.gtxe2_channel_i}]
+set_property PACKAGE_PIN AA7 [get_ports {pcie_7x_mgt_0_rxp[1]}]
+set_property LOC GTXE2_CHANNEL_X0Y1 [get_cells {design_1_i/axi_pcie_0/inst/comp_axi_enhanced_pcie/comp_enhanced_core_top_wrap/axi_pcie_enhanced_core_top_i/pcie_7x_v2_0_2_inst/pcie_top_with_gt_top.gt_ges.gt_top_i/pipe_wrapper_i/pipe_lane[0].gt_wrapper_i/gtx_channel.gtxe2_channel_i}]
+set_property PACKAGE_PIN W8 [get_ports {pcie_7x_mgt_0_rxp[0]}]
+set_property PACKAGE_PIN U9 [get_ports {ref_clk_clk_p[0]}]
