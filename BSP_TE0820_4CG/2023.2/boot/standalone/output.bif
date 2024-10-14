@@ -1,0 +1,7 @@
+//arch = zynqmp; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader, destination_cpu = a53-0]/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4CG/2023.2/software/baremetal_classic/EMC2_platform/export/EMC2_platform/sw/EMC2_platform/boot/fsbl.elf
+	[destination_device = pl]/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4CG/2023.2/firmware/EMC2_BSP.runs/impl_1/design_1_wrapper.bit
+	[destination_cpu = a53-0]/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4CG/2023.2/software/baremetal_classic/HelloWorld/Debug/HelloWorld.elf
+}

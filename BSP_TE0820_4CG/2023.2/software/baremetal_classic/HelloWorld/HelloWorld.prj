@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="HelloWorld" location="/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4CG/2023.2/software/baremetal_classic/HelloWorld" platform="/home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4CG/2023.2/software/baremetal_classic/EMC2_platform/export/EMC2_platform/EMC2_platform.xpfm" platformUID="xilinx:emc2-dp_te0820_4ev_1e::0.0(custom)" systemProject="HelloWorld_system" sysConfig="EMC2_platform" runtime="C/C++" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="6e66e872d8b0854df0ae0286cb787427">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.1518252253">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.1847067242" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

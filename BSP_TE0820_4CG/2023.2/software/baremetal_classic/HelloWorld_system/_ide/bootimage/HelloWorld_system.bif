@@ -1,0 +1,12 @@
+/* /tmp/bootgen_HelloWorld_system4076657678810079213/sd_card_temp/boot.bif */
+/* Command to create bitstream .bin file:       */
+/*   bootgen -image <bif_file> -split bin -w    */
+/* Command to create BOOT.BIN file:             */
+/*   bootgen -arch zynqmp -image <bif_file> -w -o i BOOT.BIN */
+/*EMC2_platform*/
+the_ROM_image:
+{
+ [bootloader, destination_cpu=a53-0] /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4CG/2023.2/software/baremetal_classic/EMC2_platform/export/EMC2_platform/sw/EMC2_platform/boot/fsbl.elf
+ [destination_device=pl] /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4CG/2023.2/software/baremetal_classic/HelloWorld/_ide/bitstream/design_1_wrapper.bit
+ [destination_cpu=a53-0, exception_level=el-3] /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4CG/2023.2/software/baremetal_classic/HelloWorld/Debug/HelloWorld.elf
+}

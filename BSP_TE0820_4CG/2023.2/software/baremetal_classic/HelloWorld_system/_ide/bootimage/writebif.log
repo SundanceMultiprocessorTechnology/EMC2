@@ -1,0 +1,14 @@
+TRACE::2024-10-14.11:50:50::SCWBifWriter::Found the complete platform /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4CG/2023.2/software/baremetal_classic/EMC2_platform/export/EMC2_platform/EMC2_platform.xpfm
+TRACE::2024-10-14.11:50:50::SCWBifWriter::hardware databse : design_1_wrapper_3
+TRACE::2024-10-14.11:50:50::SCWBifWriter::bitstream found in the design
+TRACE::2024-10-14.11:50:50::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2024-10-14.11:50:50::SCWBifWriter::proc type : 
+TRACE::2024-10-14.11:50:50::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2024-10-14.11:50:50::SCWBifWriter::Device type is : zynqMP
+TRACE::2024-10-14.11:50:50::SCWBifWriter::Writing BIF to file : /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4CG/2023.2/software/baremetal_classic/HelloWorld_system/_ide/bootimage/template_HelloWorld_system.bif
+TRACE::2024-10-14.11:50:50::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2024-10-14.11:50:50::SCWBifWriter::System Command Ran  /tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-none/bin/aarch64-none-elf-readelf -A  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4CG/2023.2/software/baremetal_classic/EMC2_platform/export/EMC2_platform/sw/fsbl.elf
+TRACE::2024-10-14.11:50:50::SCWBifWriter:: Command result  
+TRACE::2024-10-14.11:50:50::SCWBifWriter::FSBL processor, command ran /tools/Xilinx/Vitis/2023.2/gnu/aarch64/lin/aarch64-none/bin/aarch64-none-elf-readelf -A  /home/sundance/Emilie_Projects/git/EMC2/BSP_TE0820_4CG/2023.2/software/baremetal_classic/EMC2_platform/export/EMC2_platform/sw/fsbl.elf
+TRACE::2024-10-14.11:50:50::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2024-10-14.11:50:50::SCWBifWriter::Boot processor is :a53-0
