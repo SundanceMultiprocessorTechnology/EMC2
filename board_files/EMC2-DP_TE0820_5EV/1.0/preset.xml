@@ -27,8 +27,8 @@
 				<user_parameter  name="CONFIG.PSU__SD0__PERIPHERAL__ENABLE" value="1"/>
 				<user_parameter  name="CONFIG.PSU__SD0__SLOT_TYPE" value="eMMC"/>
 				<user_parameter  name="CONFIG.PSU__SD0__PERIPHERAL__IO" value="MIO 13 .. 22"/>
-				<user_parameter  name="CONFIG.PSU__SD0__RESET__ENABLE" value="1"/>
-				<user_parameter  name="CONFIG.PSU__SD0__GRP_POW__IO" value="MIO 23"/>
+				<user_parameter  name="CONFIG.PSU__SD0__DATA_TRANSFER_MODE" value="8Bit"/>
+				<!-- user_parameter  name="CONFIG.PSU__SD0__GRP_POW__IO" value="MIO 23"/-->
 				<user_parameter  name="CONFIG.PSU__TTC0__PERIPHERAL__ENABLE" value="1"/>
 				<user_parameter  name="CONFIG.PSU__TTC1__PERIPHERAL__ENABLE" value="1"/>
 				<user_parameter  name="CONFIG.PSU__TTC2__PERIPHERAL__ENABLE" value="1"/>
