@@ -2,7 +2,7 @@
 
 # Build Vivado project
 
-Make sure the board files are [installed](https://github.com/SundanceMultiprocessorTechnology/EMC2/blob/main/BSP_TE0820_5EV/2024.2/wiki/pages/README.md#installing-the-board-files)
+Make sure the board files are [installed](https://github.com/SundanceMultiprocessorTechnology/EMC2/blob/main/BSP_TE0820_5EV/2024.2/wiki/README.md#installing-the-board-files)
 
 ## Open the project from Vivado GUI
 1. File -> Project -> Open
