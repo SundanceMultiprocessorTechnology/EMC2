@@ -1,0 +1,15 @@
+firmware/EMC2_BSP.srcs/sources_1/bd/design_1/*
+!firmware/EMC2_BSP.srcs/sources_1/bd/design_1/design_1.bd
+firmware/EMC2_BSP.srcs/constrs_1/imports/constraints/*
+!firmware/EMC2_BSP.srcs/constrs_1/imports/constraints/EMC2_Constraints.xdc
+firmware/EMC2_BSP.sim/
+firmware/EMC2_BSP.runs/**
+firmware/EMC2_BSP.runs/impl_1/*
+firmware/EMC2_BSP.ip_user_files/
+firmware/EMC2_BSP.hw
+firmware/EMC2_BSP.gen/sources_1/bd/design_1/**
+!firmware/EMC2_BSP.gen/sources_1/bd/design_1/hdl/
+firmware/EMC2_BSP.gen/sources_1/bd/design_1/hdl/*
+!firmware/EMC2_BSP.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+firmware/EMC2_BSP.cache/
+firmware/design_1_wrapper.xsa
